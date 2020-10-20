@@ -7,6 +7,8 @@
 
 <style type="text/css">
 
+
+
 .JesterBox div {
   visibility: hidden;
   position: fixed;
@@ -57,9 +59,18 @@
   transition-duration: 0.1s;
 }
 
+
+/*hyde scrollbar for webkit*/
 ::-webkit-scrollbar {
     display:none;
 }
+
+/*<!-- hyde scrollbars in other browsers for selected DIV -->*/
+div {
+	-ms-overflow-style: none;  /* IE and Edge */
+  	scrollbar-width: none;  /* Firefox */
+}
+
 	
 </style>
 </head>
@@ -95,7 +106,7 @@
 
 <!-- style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;" -->
 
-<div id="lefttext" style="position:fixed; width:25%; height: 50%; left:2rem; top:4rem; border: solid; background-color: red; overflow: scroll; padding-left: 0.5rem; z-index: 0;" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
+<div id="lefttext" style="position:fixed; width:25%; height: 50%; left:2rem; top:4rem; border: solid; background-color: red; overflow: scroll; padding-left: 0.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
 	<h3>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</h3>
