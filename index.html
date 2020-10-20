@@ -56,6 +56,10 @@
   opacity: 1;
   transition-duration: 0.1s;
 }
+
+::-webkit-scrollbar {
+    display:none;
+}
 	
 </style>
 </head>
@@ -91,14 +95,14 @@
 
 <!-- style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;" -->
 
-<div style="position:fixed; width:25%; height: 50%; left:2rem; top:4rem; border: solid; background-color: red; overflow: scroll; padding-left: 0.5rem;">
+<div id="lefttext" style="position:fixed; width:25%; height: 50%; left:2rem; top:4rem; border: solid; background-color: red; overflow: scroll; padding-left: 0.5rem; z-index: 0;" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
 	<h3>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</h3>
 </div>
 
 
-<div style="position:fixed; width:15rem; height: 15rem; right:2rem; top:40%; border: solid; background-color: blue; overflow: scroll; z-index: 0; padding-left: 0.5rem;">
+<div style="position:fixed; width:15rem; height: 15rem; right:2rem; top:40%; border: solid; background-color: blue; overflow: scroll; z-index: 1; padding-left: 0.5rem;">
 	<h3>
 		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 	</h3>
@@ -125,6 +129,24 @@ border-color: transparent #ff6600 transparent transparent;">
 	<a href="#image1"><img style="position: absolute; height: auto; width: 100%;" src="./yuri_mtg_recap.JPG">
 	</a>
 </div>
+<script type="text/javascript">
+	
+	function leftTextZindexUp(){
+	var lma = document.getElementById("lefttext");
+	{
+		lma.style.zIndex = "7";
+	}
+	};
 
+	function leftTextZindexDown(){
+	var lma = document.getElementById("lefttext");
+	{
+		lma.style.zIndex = "0";
+		// console.log('lol')
+	}
+	}
+
+
+</script>
 </body>
 </html>
