@@ -3,11 +3,16 @@
 <head>
 	<title>Le Biennali Invisibili</title>
 	<style type="text/css"></style>
-	<link href="css_file.css" rel="stylesheet" type="text/css" media="all">
+	<!-- <link href="css_file.css" rel="stylesheet" type="text/css" media="all"> -->
 
 <style type="text/css">
 
-
+h1 {
+  font-size: 1.3rem;
+}
+h2 {
+  font-size: 1rem;
+}
 
 .JesterBox div {
   visibility: hidden;
@@ -70,81 +75,214 @@ div {
 	-ms-overflow-style: none;  /* IE and Edge */
   	scrollbar-width: none;  /* Firefox */
 }
+* {
+  box-sizing: border-box;
+}
 
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 2vh;
+  cursor: pointer;
+  /*animation: movement 5s linear 2s infinite alternate;*/
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+  padding: 1vw;
+}
+
+/*@keyframes movement {
+  0% {width: 15%;}
+  15% {width: 10%}
+  25% {width: 60%}
+  35% {width: 30%}
+  45% {width: 40%}
+  50% {width: 25%;}
+  60% {width: 50%}
+  70% {width: 42%}
+  80% {width: 35%;}
+  90% {width: 22%}
+}
+
+@keyframes myfirst {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
 	
+html {
+  animation: myfirst 5s linear 2s infinite alternate;
+}*/
+#item { 
+  cursor: pointer;
+  position: absolute; 
+  top: 0px; 
+  left: 0px; 
+  transition: all 3s linear;
+}
+#item2 { 
+  cursor: pointer;
+  position: absolute; 
+  top: 0px; 
+  left: 40vw; 
+  transition: all 3s linear;
+}
+#item3 { 
+  cursor: pointer;
+  position: absolute; 
+  top: 0; 
+  right: 0; 
+  transition: all 3s linear;
+}
+
+
+
+.rotate {
+
+  transform: rotate(45deg);
+}
+
+
+
 </style>
 </head>
 <body>
 
-<!-- <div class="sketchfab-embed-wrapper">
-    <iframe title="A 3D model" width="800" height="600" src="https://sketchfab.com/models/61766c1e6e1e4b2b803c174f33433a74/embed?autostart=1&amp;autospin=0.5&amp;transparent=0&amp;annotations_visible=0&amp;ui_controls=0&amp;ui_fullscreen=0&amp;ui_general_controls=0&amp;ui_help=0&amp;ui_hint=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_settings=0&amp;ui_vr=0&amp;ui_watermark_link=0&amp;ui_watermark=0&amp;ui_watermark_link=0" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-    </p>
-</div> -->
+<!-- <div class="row">
+  <div class="column">
+    <img id="randImg" src="./data/screen1.png" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./data/screen1.png" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img class="randImg" src="./data/screen1.png" alt="Mountains" style="width:100%">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="./data/screen1.png" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./data/screen1.png" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./data/screen1.png" alt="Mountains" style="width:100%">
+  </div>
+</div>
+<div class="row">
+  <div class="column">
+    <img src="./data/screen1.png" alt="Snow" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./data/screen1.png" alt="Forest" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="./data/screen1.png" alt="Mountains" style="width:100%">
+  </div>
+</div>
+ -->
 
-<div style="visibility: visible;">
-	<iframe style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" src="https://sketchfab.com/models/1824596741a547acae864e130f6ef294/embed?api_version=1.0.2&amp;api_id=9112981716129502&amp;camera=0&amp;autostart=1&amp;autospin=0&amp;transparent=0&amp;annotations_visible=0&amp;ui_controls=0&amp;ui_fullscreen=0&amp;ui_general_controls=0&amp;ui_help=0&amp;ui_hint=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_settings=0&amp;ui_vr=0&amp;ui_watermark_link=0&ui_hint=0&amp;ui_watermark=0&amp;preload=1" id="api-frame" frameborder="0" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+<div id="startPage">
+  <div id="triangle-corner" style="width: 0;
+    height: 0;
+    z-index: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-style: solid;
+    border-width: 0 8rem 8rem 0;
+    border-color: transparent #2232B3 transparent transparent;">
+      <h4 class="rotate" style="position: fixed; letter-spacing: 0.5rem; color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</h4>
+  </div>  
+
+  <h1 style="text-align: center; padding-top: 1rem; letter-spacing: 0.2rem;">LE BIENNALI INVISIBILI</h1>
+  <br>
+  <div id="introText" style="font-size: 1rem; padding-left: 4rem; padding-right: 4rem; position: fixed; display: block; overflow: scroll; height: 85%; line-height: 150%; letter-spacing: 0.2rem;">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+  </div>
+    <img class="item" id="item" src="./data/screen1.png" alt="1" style="width:20%; cursor: pointer;" onclick="showSketch1()">
+    <img class="item" id="item2" src="./data/screen1.png" alt="2" style="width:20%; cursor: pointer;" onclick="showSketch1()">
+    <img class="item" id="item3" src="./data/screen1.png" alt="3" style="width:20%; cursor: pointer;" onclick="showSketch1()">
+
+    <img class="item" id="item4" src="./data/screen1.png" alt="4" style="width:20%;   cursor: pointer; position: absolute; top: 50vh; left: 0; transition: all 3s linear;" onclick="showSketch1()">
+    <img class="item" id="item5" src="./data/screen1.png" alt="5" style="width:20%;   cursor: pointer; position: absolute; top: 50vh; left: 40vw; transition: all 3s linear;" onclick="showSketch1()">
+    <img class="item" id="item6" src="./data/screen1.png" alt="6" style="width:20%;   cursor: pointer; position: absolute; top: 50vh; right: 0; transition: all 3s linear;" onclick="showSketch1()">
+
+    <img class="item" id="item7" src="./data/screen1.png" alt="7" style="width:20%;   cursor: pointer; position: absolute; top: 90vh; left: 0; transition: all 3s linear;" onclick="showSketch1()">
+    <img class="item" id="item8" src="./data/screen1.png" alt="item8" style="width:20%;   cursor: pointer; position: absolute; top: 90vh; left: 40vw; transition: all 3s linear;" onclick="showSketch1()">
+    <img class="item" id="item9" src="./data/screen1.png" alt="itm9" style="width:20%;   cursor: pointer; position: absolute; top: 90vh; right: 0; transition: all 3s linear;" onclick="showSketch1()">
 </div>
 
-<!-- <div class="sketchfab-embed-wrapper"> -->
-<div style="visibility: visible;">	
-    <iframe style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/39c7f847a46f47cc84356e5ad5cbf521/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-</div>
 
 
-<!-- <div style="visibility: visible; position: absolute;top: 2rem;">
-	<iframe style="position:fixed; top:0; left:0; bottom:0; right:0; width:50%; height:40%; border:none; margin:0; padding:0; overflow:hidden; z-index:2;" src="https://sketchfab.com/models/442c548d94744641ba279ae94b5f45ec/embed?autospin=0&autostart=1&camera=0&ui_infos=0&ui_controls=0&ui_stop=0&ui_watermark=0&ui_hint=0&autostart=1" frameborder="0"></iframe>
-</div> -->
-
-<!-- <div style="visibility: visible; position: absolute; right: 0">
-	<iframe style="position:fixed; right:0; width:50%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:2;" src="https://sketchfab.com/models/07ca1ff39a134fdf83aeaaa567c6d682/embed?ui_infos=0&ui_watermark=0&autostart=1&ui_stop=1&ui_help=0&ui_vr=0&ui_settings=0&ui_inspector=0&ui_animations=0&ui_annotations=0&ui_ar=1&ui_fullscreen=1&ui_hint=0&autostart=1" frameborder="0"></iframe>
-</div> -->
-
-<!-- <div style="position:fixed; right:0; width:50%; height:100%; border:none; margin:0; padding:0; overflow:auto; z-index:3;">
-	<H1>Some text goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</H1>
-</div> -->
 
 
-<!-- style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:999999;" -->
 
-<div id="lefttext" style="position:fixed; width:25%; height: 50%; left:2rem; top:4rem; border: solid; background-color: red; overflow: scroll; padding-left: 0.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
-	<h3>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	</h3>
-</div>
+<div id="sketch1" style="display: none;">
+    <div style="visibility: visible;">	
+        <iframe loading=lazy style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/39c7f847a46f47cc84356e5ad5cbf521/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" srcdoc="<a href=https://sketchfab.com/models/39c7f847a46f47cc84356e5ad5cbf521/embed?autostart=1> <span>▶</span></a>" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
 
 
-<div style="position:fixed; width:15rem; height: 15rem; right:2rem; top:40%; border: solid; background-color: blue; overflow: scroll; z-index: 0; padding-left: 0.5rem;">
-	<h3>
-		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-	</h3>
-</div>
+    <div id="lefttext" style="position:fixed; width:25%; height: 50%; left:2rem; top:4rem; border: solid; background-color: red; overflow: scroll; padding-left: 0.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
+    	<h3>
+    		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    	</h3>
+    </div>
 
-<div id="triangle-corner" style="width: 0;
-height: 0;
-z-index: 0;
-position: fixed;
-right: 0;
-top: 0;
-border-style: solid;
-border-width: 0 8rem 8rem 0;
-border-color: transparent #ff6600 transparent transparent;">
-	<h4 style="right:0.8rem; position: fixed;" >Main<br>Page</h4>
-</div>
 
-<div style="position:fixed; width:25%; height: 40%; left:15%; top:50%; border: solid; background-color: green; overflow: scroll;">
-	
-	<a href="#" class="JesterBox">
-  		<div id="image1"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./yuri_mtg_recap.JPG"></div>
-	</a>
+    <div style="position:fixed; width:15rem; height: 15rem; right:2rem; top:40%; border: solid; background-color: blue; overflow: scroll; z-index: 0; padding-left: 0.5rem;">
+    	<h3>
+    		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    	</h3>
+    </div>
 
-	<a href="#image1"><img style="position:absolute; height:100%; object-fit: cover;" src="./yuri_mtg_recap.JPG">
-	</a>
+    <div id="triangle-corner" onclick="showMainPage()" style="width: 0;
+    height: 0;
+    z-index: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-style: solid;
+    border-width: 0 8rem 8rem 0;
+    border-color: transparent #ff6600 transparent transparent;">
+    	<h4 class="rotate" style="position: fixed; letter-spacing: 0.5rem; color: white;">&nbsp;&nbsp;&nbsp;&nbsp;start<br>&nbsp;&nbsp;&nbsp;&nbsp;page&nbsp;&nbsp;&nbsp;&nbsp;</h4> 
+    </div>
+
+    <div style="position:fixed; width:25%; height: 40%; left:15%; top:50%; border: solid; background-color: green; overflow: scroll;">
+    	
+    	<a href="#" class="JesterBox">
+      		<div id="image1"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./yuri_mtg_recap.JPG"></div>
+    	</a>
+
+    	<a href="#image1"><img style="position:absolute; height:100%; object-fit: cover;" src="./yuri_mtg_recap.JPG">
+    	</a>
+    </div>
 </div>
 
 
 
 
 <script type="text/javascript">
+
+  function showSketch1(){
+    document.getElementById('sketch1').style.display = "block";
+    document.getElementById('startPage').style.display = "none";
+  }
+
+  function showMainPage(){
+    document.getElementById('sketch1').style.display = "none";
+    document.getElementById('startPage').style.display = "block";
+  }
+
 	
 	function leftTextZindexUp(){
 	var lma = document.getElementById("lefttext");
@@ -160,6 +298,36 @@ border-color: transparent #ff6600 transparent transparent;">
 		// console.log('lol')
 	}
 	}
+
+
+var object = document.getElementsByClassName('item');
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * Math.floor(max));
+}
+
+setInterval(function(){ 
+  
+  for (var i = 0; i < object.length; i++) {
+    // var x = Math.floor(Math.random()*50);
+    // var y = Math.floor(Math.random()*50);
+    // console.log(getRandomInt(window.innerWidth));
+     object[i].style.top = getRandomInt(window.innerHeight-50) + 'px';
+     object[i].style.left = getRandomInt(window.innerWidth-50) + 'px';
+   }
+
+  // object.style.top = x + 'px';
+  // object.style.left = y + 'px';
+
+}, 3500);
+
+
+   var change = document.getElementsByClassName("myclass");
+
+   for (var i = 0; i < change.length; i++) {
+     change[i].innerHTML = "New text";
+   }
+
 
 
 </script>
