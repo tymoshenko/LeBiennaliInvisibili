@@ -6,9 +6,16 @@
 	<!-- <link href="css_file.css" rel="stylesheet" type="text/css" media="all"> -->
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
-
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
 
 <style type="text/css">
+
+html {
+/*  width:auto; 
+  height:100%; 
+  background:url(./data/LeBiennaliInvisibili.png) center center no-repeat;*/
+}
 
 body {
   font-family: 'EB Garamond', serif;
@@ -132,29 +139,6 @@ div {
 html {
   animation: myfirst 5s linear 2s infinite alternate;
 }*/
-#item { 
-  cursor: pointer;
-  position: absolute; 
-  top: 0px; 
-  left: 0px; 
-  transition: all 3s linear;
-}
-#item2 { 
-  cursor: pointer;
-  position: absolute; 
-  top: 0px; 
-  left: 40vw; 
-  transition: all 3s linear;
-}
-#item3 { 
-  cursor: pointer;
-  position: absolute; 
-  top: 0; 
-  right: 0; 
-  transition: all 3s linear;
-}
-
-
 
 .rotate {
 
@@ -203,8 +187,10 @@ html {
  -->
 
 
-<div id="startPage">
-  <div id="triangle-corner" style="width: 0;
+<div id="startPage"
+style="">
+<!-- style="background-image: url('./data/LeBiennaliInvisibili.png'); background-color: #cccccc;" -->
+<!--   <div id="triangle-corner" style="width: 0;
     height: 0;
     z-index: 0;
     position: fixed;
@@ -213,25 +199,67 @@ html {
     border-style: solid;
     border-width: 0 8rem 8rem 0;
     border-color: transparent #2232B3 transparent transparent;">
-      <h4 class="rotate" style="position: fixed; letter-spacing: 0.5rem; color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;start</h4>
-  </div>  
-
-  <h1 style="text-align: center; padding-top: 1rem; letter-spacing: 0.2rem;">LE BIENNALI INVISIBILI</h1>
-  <br>
-  <div id="introText" style="font-size: 1rem; padding-left: 4rem; padding-right: 4rem; position: fixed; display: block; overflow: scroll; height: 85%; line-height: 150%; letter-spacing: 0.2rem;">
-    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <h4 class="rotate" style="position: fixed; letter-spacing: 0.5rem; color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MENU</h4>
+  </div>  --> 
+  <!-- line-height: 150%; letter-spacing: 0.2rem; -->
+  <!-- './data/LeBiennaliInvisibili.png' -->
+  <div style="display: flex; justify-content: center; vertical-align: middle; height: 100%;">
+  <img src="./data/LeBiennaliInvisibili.png" style="position:absolute; width:100%; height:auto; display:inline-flex; vertical-align: middle;">
   </div>
-    <img class="item" id="item" src="./data/screen1.png" alt="1" style="width:20%; cursor: pointer;" onclick="showSketch1()">
-    <img class="item" id="item2" src="./data/Objects/PALIMPSESTIA.png" alt="2" style="width:20%; cursor: pointer;" onclick="showSketch2()">
-    <img class="item" id="item3" src="./data/screen1.png" alt="3" style="width:20%; cursor: pointer;" onclick="showSketch1()">
+  <div id="introText" style="font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.5rem; padding-left: 4rem; padding-right: 4rem; position: fixed; display: block; overflow: scroll; height: 95%; padding-top: 4rem;" >
+    The Mayor does not necessarily believe everything The Ambassador tells her when she describes the
+    Biennials visited on her expeditions, but the Mayor does continue listening to the celebrated cultural
+    advisor, and former curator, with greater attention and curiosity than she shows any other cultural
+    attaché or UNESCO representative of hers. In the careers of leaders there is a moment which follows
+    pride in the eclectic line up of the cultural pursuit we have exhibited, and the excitement and
+    fulfillment of knowing we shall soon celebrate any thought of collecting and publicizing them.
+    “Biennials can make or destroy your city, Ma’am” the Ambassador would warn “It is up to you, to
+    choose wisely the alchemy of terms and accents of the gathering you want to create”.<br>
+    <br>
+    There is a sense of contemplation that comes over us in the morning, with the sound of commuters
+    after eight o’clock and the fumes of traf ic filling streets and squares; a fogginess that makes the
+    buildings and neighborhoods blur on the semi-orthogonal grid of the horizon. From this horizon, a
+    series of curators show up, one after the other, reporting to us the reviews of the last visiting critics,
+    from libel to laudatory, and printouts of the articles of renowned artists who af irm our curatorial
+    production, of ering in exchange periodic submissions of Biennial themes, budget proposals, contact
+    sheets. A sea of tote bags, of memories of chance encounters, of air-kisses, of new names and new
+    zeitgeists.<br>
+    <br>
+    On this occasion, The Mayor has summoned the Ambassador to report on Biennials from far away
+    lands to prepare her own Mayor’s Biennial. It was through the websites and catalogs destined to be
+    archived, The Mayor started realizing that the construction of realities could be diverse enough to
+    escape the spectator’s conventions. “But, Mrs. Mayor, if one thing you should know about Biennials,
+    it is this: the collaboration between minds and the gathering of spirits has spread as far as beyond
+    our scope and control. What might have begun as a singular cultural event, has spread into
+    myriads of autonomous formations, each of which can seduce and enthrall everyone; even those who
+    never visited, even Biennials that never existed.”<br>
+  </div>
 
-    <img class="item" id="item4" src="./data/screen1.png" alt="4" style="width:20%;   cursor: pointer; position: absolute; top: 50vh; left: 0; transition: all 3s linear;" onclick="showSketch1()">
-    <img class="item" id="item5" src="./data/screen1.png" alt="5" style="width:20%;   cursor: pointer; position: absolute; top: 50vh; left: 40vw; transition: all 3s linear;" onclick="showSketch1()">
-    <img class="item" id="item6" src="./data/screen1.png" alt="6" style="width:20%;   cursor: pointer; position: absolute; top: 50vh; right: 0; transition: all 3s linear;" onclick="showSketch1()">
+    <img class="item" id="item" src="./data/Objects/bottavia.gif" alt="Bottavia. A bot-curated biennial" style="width:20%; cursor: pointer; position:absolute; top:0px; left: 0px; transition:all 3s linear;" onclick="showSketch1()">
 
-    <img class="item" id="item7" src="./data/screen1.png" alt="7" style="width:20%;   cursor: pointer; position: absolute; top: 90vh; left: 0; transition: all 3s linear;" onclick="showSketch1()">
-    <img class="item" id="item8" src="./data/screen1.png" alt="item8" style="width:20%;   cursor: pointer; position: absolute; top: 90vh; left: 40vw; transition: all 3s linear;" onclick="showSketch1()">
-    <img class="item" id="item9" src="./data/screen1.png" alt="itm9" style="width:20%;   cursor: pointer; position: absolute; top: 90vh; right: 0; transition: all 3s linear;" onclick="showSketch1()">
+    <img class="item" id="item2" src="./data/Objects/canonice.gif" alt="Canonice. A conservative triennial" style="width:20%; cursor:pointer; position:absolute; top: 0px; left: 40vw; transition: all 3s linear;" onclick="showSketch1()">
+
+    <img class="item" id="item3" src="./data/Objects/eccessa.gif" alt="Eccessa. A for-profit biennial" style="width:20%; cursor:pointer; position: absolute; top: 0;right: 0; transition: all 3s linear;" onclick="showSketch1()">
+
+    <img class="item" id="item4" src="./data/Objects/evenia.gif" alt="Evenia. A one-day quadrennial" style="width:20%;   cursor: pointer; position: absolute; top: 50vh; left: 0; transition: all 3s linear;" onclick="showSketch1()">
+
+    <img class="item" id="item5" src="./data/Objects/generica.gif" alt="Generica. A biennial that never changes" style="width:20%;   cursor: pointer; position: absolute; top: 50vh; left: 40vw; transition: all 3s linear;" onclick="showSketch1()">
+
+    <img class="item" id="item6" src="./data/Objects/insegna.gif" alt="Insegna. A word-less biennial" style="width:20%;   cursor: pointer; position: absolute; top: 50vh; right: 0; transition: all 3s linear;" onclick="showSketch1()">
+
+    <img class="item" id="item7" src="./data/Objects/novichelovekan.gif" alt="Novichelovekan. A biennial with new faces" style="width:20%;   cursor: pointer; position: absolute; top: 90vh; left: 0; transition: all 3s linear;" onclick="showSketch1()">
+
+    <img class="item" id="item8" src="./data/Objects/palimpsestia.gif" alt="Palimpsestia. A biennial that builds on" style="width:20%;   cursor: pointer; position: absolute; top: 90vh; left: 40vw; transition: all 3s linear;" onclick="showSketch8()">
+
+   <img class="item" id="item9" src="./data/Objects/puerilia.gif" alt="Puerilia. A biennial by and for children" style="width:20%;   cursor: pointer; position: absolute; top: 90vh; right: 0; transition: all 3s linear;" onclick="showSketch1()">
+
+   <img class="item" id="item10" src="./data/Objects/referenda.gif" alt="Referenda. A democratic biennial" style="width:20%;   cursor: pointer; position: absolute; top:110vh; right: 0; transition: all 3s linear;" onclick="showSketch1()">
+
+   <img class="item" id="item11" src="./data/Objects/rexia.gif" alt="Rexia. A dynastic biennial" style="width:20%;   cursor: pointer; position: absolute; top: 110vh; right: 0; transition: all 3s linear;" onclick="showSketch1()">
+
+   <img class="item" id="item12" src="./data/Objects/GI.png" alt="About" style="width:20%;   cursor: pointer; position: absolute; top: 110vh; right: 0; transition: all 3s linear;" onclick="showSketch1()">      
+
+
 </div>
 
 
@@ -297,7 +325,6 @@ html {
 
 
     <div class="lefttext" style="position:fixed; width:25%; height: 50%; left:2rem; top:4rem; border: none; background-color: white; overflow: scroll; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
-
       <div style="text-align: justify; text-justify: inter-word; padding: 0 2rem;">
       <h3>
         <br>
@@ -375,7 +402,7 @@ html {
     document.getElementById('startPage').style.display = "none";
   }
 
-  function showSketch2(){
+  function showSketch8(){
     document.getElementById('sketch2').style.display = "block";
     document.getElementById('startPage').style.display = "none";
   }
