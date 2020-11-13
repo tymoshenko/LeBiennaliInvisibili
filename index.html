@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital@1&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap" rel="stylesheet">
 
 <style type="text/css">
 
@@ -15,6 +17,11 @@ html {
 /*  width:auto; 
   height:100%; 
   background:url(./data/LeBiennaliInvisibili.png) center center no-repeat;*/
+    user-select: none; /* supported by Chrome and Opera */
+   -webkit-user-select: none; /* Safari */
+   -khtml-user-select: none; /* Konqueror HTML */
+   -moz-user-select: none; /* Firefox */
+   -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 body {
@@ -33,6 +40,7 @@ h3 {
 h4 {
   font-size: 0.5rem;
 }
+
 
 .JesterBox div {
   visibility: hidden;
@@ -151,62 +159,95 @@ html {
 </head>
 <body>
 
-<!-- <div class="row">
-  <div class="column">
-    <img id="randImg" src="./data/screen1.png" alt="Snow" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="./data/screen1.png" alt="Forest" style="width:100%">
-  </div>
-  <div class="column">
-    <img class="randImg" src="./data/screen1.png" alt="Mountains" style="width:100%">
-  </div>
-</div>
-<div class="row">
-  <div class="column">
-    <img src="./data/screen1.png" alt="Snow" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="./data/screen1.png" alt="Forest" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="./data/screen1.png" alt="Mountains" style="width:100%">
-  </div>
-</div>
-<div class="row">
-  <div class="column">
-    <img src="./data/screen1.png" alt="Snow" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="./data/screen1.png" alt="Forest" style="width:100%">
-  </div>
-  <div class="column">
-    <img src="./data/screen1.png" alt="Mountains" style="width:100%">
-  </div>
-</div>
- -->
+<div id="MenuItems" style="position: fixed; display: none; z-index: 10; transition: all 3s linear; overflow: scroll; right: 0; top: 0; width: 25%; height: 100%; opacity: 90%; background-color: white; padding-left: 1.5rem; padding-right: 3rem; padding-top: 2.5rem;">
+
+<div style="cursor: pointer;">
+<span style="font-weight: bold;">Bottavia<br></span>
+<span style="font-style: italic;">A bot-curated biennial<br></span>
+With Merve Bedir, in conversation with Bager Akbay.<br></div>
+<br>
+<div style="cursor: pointer;">
+<span style="font-weight: bold;">Canonice<br></span>
+<span style="font-style: italic;">A conservative triennial<br></span>
+With Sabina Shikhilinsakaya<br></div>
+<br>
+<div style="cursor: pointer;">
+<span style="font-weight: bold;">Eccessa<br></span>
+<span style="font-style: italic;">A  for-profit biennial<br></span>
+With Nora Akawi and Eduardo Rega<br></div>
+<br>
+<div style="cursor: pointer;">
+<span style="font-weight: bold;">Evenia<br></span>
+<span style="font-style: italic;">A one-day quadrennial<br></span>
+With Sofia Pia Belenky<br></div>
+<br>
+<div style="cursor: pointer;">
+<span style="font-weight: bold;">Generica<br></span>
+<span style="font-style: italic;">A biennial that never changes<br></span>
+With Marco Montiel-Soto<br></div>
+<br>
+<div style="cursor: pointer;">
+<span style="font-weight: bold;">Insegna<br></span>
+<span style="font-style: italic;">A word-less biennial<br></span>
+With Gili Merin<br></div>
+<br>
+<div style="cursor: pointer;">
+<span style="font-weight: bold;">Novichelovekan<br></span>
+<span style="font-style: italic;">A biennial with new faces<br></span>
+With Abhijan Toto<br></div>
+<br>
+<div style="cursor: pointer;">
+<span style="font-weight: bold;">Palimpsestia<br></span>
+<span style="font-style: italic;">A biennial that builds on<br></span>
+With Tinatin Gurgenidze<br></div>
+<br>
+<div style="cursor: pointer;">
+<span style="font-weight: bold;">Puerilia<br></span>
+<span style="font-style: italic;">A biennial by and for children<br></span>
+With Araks Sahakyan<br></div>
+<br>
+<div style="cursor: pointer;">
+<span style="font-weight: bold;">Referenda<br></span>
+<span style="font-style: italic;">A democratic biennial<br></span>
+With Shumi Bose<br></div>
+<br>
+<div style="cursor: pointer;">
+<span style="font-weight: bold;">Rexia<br></span>
+<span style="font-style: italic;">A dynastic biennial<br></span>
+With Georg Seesslen<br></div>
+<br>
+<div style="cursor: pointer;">
+<span style="font-weight: bold;">About<br></span>
+<span style="font-style: italic;">Le Biennali Invisibili is a project by Animali Domestici (Alicia Lazaronni and Antonio Bernacchi), Tijn van de Wijdeven, and Eduardo Cassina, commissioned by Goethe-Zentrum Baku, and curated by Alfons Hug.<br><br></span></div>
 
 
-<div id="startPage"
-style="">
-<!-- style="background-image: url('./data/LeBiennaliInvisibili.png'); background-color: #cccccc;" -->
-<!--   <div id="triangle-corner" style="width: 0;
+</div>
+
+
+<div id="startPage">
+
+  <div id="triangle-corner" onclick="openCloseMenu()" 
+    style="width: 0;
     height: 0;
-    z-index: 0;
+    z-index: 14;
+    cursor: pointer;
     position: fixed;
     right: 0;
     top: 0;
     border-style: solid;
     border-width: 0 8rem 8rem 0;
-    border-color: transparent #2232B3 transparent transparent;">
-      <h4 class="rotate" style="position: fixed; letter-spacing: 0.5rem; color: white;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MENU</h4>
-  </div>  --> 
+    border-color: transparent black transparent transparent;">
+      <h2 class="rotate" style="position:fixed; letter-spacing:0.5rem; color:white; font-family:'EB Garamond', serif; font-style: italic; font-size:2rem; text-align: center;">&nbsp;&nbsp;&nbsp;menu&nbsp;&nbsp;&nbsp;</h2>
+  </div>  
+
+
+
   <!-- line-height: 150%; letter-spacing: 0.2rem; -->
   <!-- './data/LeBiennaliInvisibili.png' -->
   <div style="display: flex; justify-content: center; vertical-align: middle; height: 100%;">
-  <img src="./data/LeBiennaliInvisibili.png" style="position:absolute; width:100%; height:auto; display:inline-flex; vertical-align: middle;">
+  <img src="./data/LeBiennaliInvisibili.png" style="position:fixed; width:100%; height:auto; display:inline-flex; vertical-align: middle;">
   </div>
-  <div id="introText" style="font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.5rem; padding-left: 4rem; padding-right: 4rem; position: fixed; display: block; overflow: scroll; height: 95%; padding-top: 4rem;" >
+  <div id="introText" style="font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.45rem; padding-left: 4rem; padding-right: 4rem; position: fixed; display: block; overflow: scroll; height: 95%; padding-top: 4rem;" >
     The Mayor does not necessarily believe everything The Ambassador tells her when she describes the
     Biennials visited on her expeditions, but the Mayor does continue listening to the celebrated cultural
     advisor, and former curator, with greater attention and curiosity than she shows any other cultural
@@ -234,31 +275,174 @@ style="">
     myriads of autonomous formations, each of which can seduce and enthrall everyone; even those who
     never visited, even Biennials that never existed.”<br>
   </div>
+    
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:0; left: 0; transition:all 3s linear;" onmouseover="show1()" onmouseout="hyde1()">
+  <img id="item" src="./data/Objects/bottavia.gif" alt="Bottavia. A bot-curated biennial" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+  <div id="alt-Bottavia" style="z-index: 8; position: fixed; display: none;">
+    <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Bottavia</h1>
+    <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A bot-curated biennial</h1>
+  </div>
+</div>
 
-    <img class="item" id="item" src="./data/Objects/bottavia.gif" alt="Bottavia. A bot-curated biennial" style="width:20%; cursor: pointer; position:absolute; top:0px; left: 0px; transition:all 3s linear;" onclick="showSketch1()">
+    
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:0; left: 40vw; transition:all 3s linear;" onmouseover="show2()" onmouseout="hyde2()">
+  <img id="item2" src="./data/Objects/canonice.gif" alt="Canonice. A conservative triennial" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+  <div id="alt-Canonice" style="z-index: 8; position: fixed; display: none;">
+    <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Canonice</h1>
+    <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A conservative triennial</h1>
+  </div>
+</div>
 
-    <img class="item" id="item2" src="./data/Objects/canonice.gif" alt="Canonice. A conservative triennial" style="width:20%; cursor:pointer; position:absolute; top: 0px; left: 40vw; transition: all 3s linear;" onclick="showSketch1()">
 
-    <img class="item" id="item3" src="./data/Objects/eccessa.gif" alt="Eccessa. A for-profit biennial" style="width:20%; cursor:pointer; position: absolute; top: 0;right: 0; transition: all 3s linear;" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:0; right: 0; transition:all 3s linear;" onmouseover="show3()" onmouseout="hyde3()">
+  <img id="item3" src="./data/Objects/eccessa.gif" alt="Eccessa. A for-profit biennial" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+  <div id="alt-Eccessa" style="z-index: 8; position: fixed; display: none;">
+    <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Eccessa</h1>
+    <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A for-profit biennial</h1>
+  </div>
+</div>
 
-    <img class="item" id="item4" src="./data/Objects/evenia.gif" alt="Evenia. A one-day quadrennial" style="width:20%;   cursor: pointer; position: absolute; top: 25vh; left: 0; transition: all 3s linear;" onclick="showSketch1()">
 
-    <img class="item" id="item5" src="./data/Objects/generica.gif" alt="Generica. A biennial that never changes" style="width:20%;   cursor: pointer; position: absolute; top: 25vh; left: 40vw; transition: all 3s linear;" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:25vh; left: 0; transition:all 3s linear;" onmouseover="show4()" onmouseout="hyde4()">
+  <img id="item4" src="./data/Objects/evenia.gif" alt="Evenia. A one-day quadrennial" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+  <div id="alt-Evenia" style="z-index: 8; position: fixed; display: none;">
+    <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Evenia</h1>
+    <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A one-day quadrennial</h1>
+  </div>
+</div>
 
-    <img class="item" id="item6" src="./data/Objects/insegna.gif" alt="Insegna. A word-less biennial" style="width:20%;   cursor: pointer; position: absolute; top: 25vh; right: 0; transition: all 3s linear;" onclick="showSketch1()">
 
-    <img class="item" id="item7" src="./data/Objects/novichelovekan.gif" alt="Novichelovekan. A biennial with new faces" style="width:20%;   cursor: pointer; position: absolute; top: 50vh; left: 0; transition: all 3s linear;" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:25vh; left: 40vw; transition:all 3s linear;" onmouseover="show5()" onmouseout="hyde5()">
+  <img id="item5" src="./data/Objects/generica.gif" alt="Generica. A biennial that never changes" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+  <div id="alt-Generica" style="z-index: 8; position: fixed; display: none;">
+    <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Generica</h1>
+    <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A biennial that never changes</h1>
+  </div>
+</div>
+    
 
-    <img class="item" id="item8" src="./data/Objects/palimpsestia.gif" alt="Palimpsestia. A biennial that builds on" style="width:20%;   cursor: pointer; position: absolute; top: 50vh; left: 40vw; transition: all 3s linear;" onclick="showSketch8()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:25vh; right: 0; transition:all 3s linear;" onmouseover="show6()" onmouseout="hyde6()">
+  <img id="item6" src="./data/Objects/insegna.gif" alt="Insegna. A word-less biennial" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+  <div id="alt-Insegna" style="z-index: 8; position: fixed; display: none;">
+    <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Insegna</h1>
+    <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A word-less biennial</h1>
+  </div>
+</div>
+    
 
-   <img class="item" id="item9" src="./data/Objects/puerilia.gif" alt="Puerilia. A biennial by and for children" style="width:20%;   cursor: pointer; position: absolute; top: 50vh; right: 0; transition: all 3s linear;" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:50vh; left: 0; transition:all 3s linear;" onmouseover="show7()" onmouseout="hyde7()">
+  <img id="item7" src="./data/Objects/novichelovekan.gif" alt="Novichelovekan. A biennial with new faces" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+  <div id="alt-Novichelovekan" style="z-index: 8; position: fixed; display: none;">
+    <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Novichelovekan</h1>
+    <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A biennial with new faces</h1>
+  </div>
+</div>
+    
 
-   <img class="item" id="item10" src="./data/Objects/referenda.gif" alt="Referenda. A democratic biennial" style="width:20%;   cursor: pointer; position: absolute; top:75vh; left: 0; transition: all 3s linear;" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:50vh; left: 40vw; transition:all 3s linear;" onmouseover="show8()" onmouseout="hyde8()">
+  <img id="item8" src="./data/Objects/palimpsestia.gif" alt="Palimpsestia. A biennial that builds on" style="cursor: pointer; width:100%;" onclick="showSketch8()">
+  <div id="alt-Palimpsestia" style="z-index: 8; position: fixed; display: none;">
+    <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Palimpsestia</h1>
+    <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A biennial that builds on</h1>
+  </div>
+</div>
+    
 
-   <img class="item" id="item11" src="./data/Objects/rexia.gif" alt="Rexia. A dynastic biennial" style="width:20%;   cursor: pointer; position: absolute; top: 75vh; left: 40vw; transition: all 3s linear;" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:50vh; right: 0; transition:all 3s linear;" onmouseover="show9()" onmouseout="hyde9()">
+  <img id="item9" src="./data/Objects/puerilia.gif" alt="Puerilia. A biennial by and for children" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+  <div id="alt-Puerilia" style="z-index: 8; position: fixed; display: none;">
+    <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Puerilia</h1>
+    <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A biennial by and for children</h1>
+  </div>
+</div>
+   
 
-   <img class="item" id="item12" src="./data/Objects/GI.png" alt="About" style="width:20%;   cursor: pointer; position: absolute; top: 75vh; right: 0; transition: all 3s linear;" onclick="showSketch1()">      
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:75vh; left: 0; transition:all 3s linear;" onmouseover="show10()" onmouseout="hyde10()">
+  <img id="item10" src="./data/Objects/referenda.gif" alt="Referenda. A democratic biennial" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+  <div id="alt-Referenda" style="z-index: 8; position: fixed; display: none;">
+    <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Referenda</h1>
+    <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A democratic biennial</h1>
+  </div>
+</div>
+   
 
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:75vh; left: 40vw; transition:all 3s linear;" onmouseover="show11()" onmouseout="hyde11()">
+  <img id="item11" src="./data/Objects/rexia.gif" alt="Rexia. A dynastic biennial" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+  <div id="alt-Rexia" style="z-index: 8; position: fixed; display: none;">
+    <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Rexia</h1>
+    <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A dynastic biennial</h1>
+  </div>
+</div>
+   
+
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:75vh; right: 0; transition:all 3s linear;" onmouseover="show12()" onmouseout="hyde12()">
+  <img id="item12" src="./data/Objects/GI.png" alt="About. Le Biennali Invisibili" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+  <div id="alt-About" style="z-index: 8; position: fixed; display: none;">
+    <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">About</h1>
+    <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">Le Biennali Invisibili</h1>
+  </div>
+</div>
+
+
+      <div id="About" style="position: fixed; display: block; z-index: 8; background-color: white; left: 50%; top: 4rem; bottom: 2rem; right: 5rem; padding-left: 3rem; margin-right: 3rem; padding-bottom: 4rem; box-shadow: -1.5rem 1rem black; text-align: justify; text-justify: inter-word; overflow: scroll;">
+      <div id="cross" onclick="closeAbout()" style="display: block; font-style: italic; font-size: 1.5rem; padding-left: 94%; cursor: pointer;">X</div>  
+      <div style="position: absolute; left: 3rem; right: 2rem; padding-bottom:  2rem;">
+        <br>
+        Not all biennials are the same. Neither will they return to being what they once were. However, the format of showcasing new work, triggering discussions, and letting new canons emerge, as a time-based event that takes place once every two years at the same location, has become the pilgrimage for the culture industries in the new millennium. Biennials - or biennales, a bastardization of the italian original term that has slipped into as many different languages as locations - not only have the power to forge discourse, but also transient communities united by gatherings every two or three years, and cities that are momentarily transformed and forever associated with those festivals of human culture.<br>
+        <br>
+        Le Biennali Invisibili is a project that explores eleven imaginaries of such encounters, under the same lens that Italo Calvino created when describing alternative urban realities in his book Le città invisibili (Invisible Cities). Le Biennali Invisibili embraces fiction and pseudo-reality as a framework for curatorial pursuit, as a series of virtual events, proposing and critiquing the conventional celebration of the design & art community.<br>
+        <br>
+        Le Biennali Invisibili is a project by animali domestici (Alicia Lazzaroni and Antonio Bernacchi), Tijn van de Wijdeven, and Eduardo Cassina. It is curated by Alfons Hug and commissioned by the Goethe-Zentrum Baku.<br>
+        <span style="font-weight: bold;">Alfons Hug</span> is director of Goethe-Zentrum Baku and curator. He has worked extensively in South America, Africa as well as Asia.<br>
+        <br>
+        <span style="font-weight: bold;">Alicia Lazzaroni and Antonio Bernacchi</span> are the co-founders of <a href="https://animalidomestici.eu/" target="_blank" style="text-decoration: underline; text-decoration-color: black;">Animali Domestici</a>, a design practice with an active interest in non anthropocentric coexistence and ecology in its wider sense.
+        They hold a postgraduate master from ETSAM UPM Madrid. After practicing a few years in Singapore, they became instructors and year coordinators in <a href="http://cuinda.com/" target="_blank" style="text-decoration: underline; text-decoration-color: black;">INDA</a>, Bangkok, and are currently Assistant Teaching Professors at <a href="https://aarch.dk/" target="_blank" style="text-decoration: underline; text-decoration-color: black;">Aarhus Architecture School</a> in Denmark.<br>
+        <br>
+        <span style="font-weight: bold;">Eduardo Cassina</span> is an architect and urban sociologist trained in Glasgow, Porto, Amsterdam, Beijing, London and Moscow. In 2014 he co-founded <a href="http://www.metasitu.com/" target="_blank" style="text-decoration: underline; text-decoration-color: black;">METASITU</a>, an urban collective devoted to the exploration of new spatial pedagogies. He currently teaches architecture at <a href="http://cuinda.com/" target="_blank" style="text-decoration: underline; text-decoration-color: black;">INDA</a>, Chulalongkorn University in Bangkok. He co-runs an experimental architecture space, <a href="https://www.instagram.com/monitor.lizard/" target="_blank" style="text-decoration: underline; text-decoration-color: black;">Monitor Lizard</a>.<br>
+        <br>
+        <span style="font-weight: bold;">Tijn van de Wijdeven</span> is an architect and educator experienced in design and research in relation to urban and architectural projects. He currently teaches at <a href="http://cuinda.com/" target="_blank" style="text-decoration: underline; text-decoration-color: black;">INDA</a>, Chulalongkorn University in Bangkok where he was first year coordinator for several years amongst other roles. He also co-runs the experimental architecture space, <a href="https://www.instagram.com/monitor.lizard/" target="_blank" style="text-decoration: underline; text-decoration-color: black;">Monitor Lizard</a>.<br>
+        <br>
+        <span style="text-decoration: underline; text-decoration-color: black;">Invisible Biennials Texts by:</span> Antonio Bernacchi, Eduardo Cassina, Alicia Lazzaroni and Tijn van de Wijdeven<br>
+        <br>
+        <span style="text-decoration: underline; text-decoration-color: black;">Text Contributors:</span><br>
+        <br>
+        <span style="font-weight: bold;">Abhijan Toto</span> is the co-director of the Forest Curriculum and a curator at SAC Gallery Bangkok, based between Bangkok and Seoul. He is the recipient of the 10th Lorenzo Bonaldi Prize for curatorial practice. <a href="http://theforestcurriculum.com/" target="_blank" style="text-decoration: underline;">Theforestcurriculum.com</a><br>
+        <br>
+        <span style="font-weight: bold;">Sofia Pia Belenky</span> is a designer currently based in Milan, Italy. Her work with Space Caviar uses built work, event, exhibition design, research and film as forms of an extended mode of architectural practice. <a href="http://www.spacecaviar.net/" target="_blank" style="text-decoration: underline;">www.spacecaviar.net</a><br>
+        <br>
+        <span style="font-weight: bold;">Georg Seeßlen.</span> studied painting, art history and semiotics in Munich. He is a lecturer and curator of film programs and art exhibitions. He has written books on Film, Art & Politics. He features on the German radio alongside Markus Metz.<br>
+        <br>
+        <span style="font-weight: bold;">Gili Merin</span> is an architect, photographer, and Ph.D. candidate at the AA (London), where she is also a Diploma Unit Master. <a href="http://www.gilimerin.com/" target="_blank" style="text-decoration: underline;">www.gilimerin.com</a><br>
+        <br>
+        <span style="font-weight: bold;">Marco Montiel-Soto</span> Traveller and immigrant, his work explores the intersections between political and poetic territories, traditions, archaeology, myths, death, cosmos and chaos.<br> 
+        <a href="https://marcomontielsoto.com/" target="_blank" style="text-decoration: underline;">www.marcomontielsoto.com</a><br>
+        <br>
+        <span style="font-weight: bold;">Nora Akawi</span> is a Palestinian architect teaching at The Cooper Union. She studies architecture as a project of erasure and exclusion in settler colonialism. <span style="font-weight: bold;">Eduardo Rega</span> is a Canarian architect teaching at UPenn. He studies architectures of social movements that refuse the capitalist world order.  <a href="https://www.architecturesofrefusal.org/" target="_blank" style="text-decoration: underline;">https://www.architecturesofrefusal.org/</a><br>
+        <br>
+        <span style="font-weight: bold;">Araks Sahakyan</span> is a multidisciplinary artist, researcher and translator based in Paris. <a href="https://www.papercarpets.com/" target="_blank" style="text-decoration: underline;">www.papercarpets.com/</a><br>
+        <br>
+        <span style="font-weight: bold;">Tinatin Gurgenidze</span> works between Tbilisi and Berlin dealing with urban topics. She is one of the co-founders of the Tbilisi Architecture Biennial. <a href="http://www.biennial.ge/" target="_blank" style="text-decoration: underline;">www.biennial.ge</a><br>
+        <br>
+        <span style="font-weight: bold;">Merve Bedir</span> is an architect based in Hong Kong. She works at the intersection of the technologies of labour, landscape, mobility, and commons. <a href="https://www.aformalacademy.com/" target="_blank" style="text-decoration: underline;">www.aformalacademy.com/</a>  <a href="http://landandcc.com/" target="_blank" style="text-decoration: underline;">www.landandcc.com/</a><br>
+        <br>
+        <span style="font-weight: bold;">Sabina Shikhlinskaya</span> - artist, independent curator, educator. She explores multimedia practices, creating art works with the priority of social subjects. <a href="http://sabinashikhlinskaya.info/" target="_blank" style="text-decoration: underline;">www.abinashikhlinskaya.info/</a><br>
+        <br>
+        <span style="font-weight: bold;">Shumi Bose</span> is a teacher, curator and editor based in London. She is a senior lecturer in  Architecture at Central Saint Martins, and curator of exhibitions at the Royal Institute of British Architects.<br>
+        <br>
+        <span style="text-decoration: underline;">Web Developer:</span> <span style="font-weight: bold;">Yurii Tymoshenko</span><br>
+        <br>
+        <br>
+        <br>
+        <span style="text-decoration: underline;">Commissioned by</span> : <a href="http://www.goethe-zentrumbaku.az/az/" target="_blank" style="text-decoration: underline;">Goethe-Zentrum Baku</a><br>
+        <br>
+        <br>
+        <span style="font-style: italic;">Le Biennali Invisibili</span> is under a Creative Commons License with Attribution.<br>
+        <br>
+        <br>
+
+
+      </div>  
+      </div>
 
 </div>
 
@@ -284,7 +468,7 @@ style="">
     </div>
 
 
-    <div style="position:fixed; width:15rem; height: 15rem; right:2rem; top:40%; border: solid; background-color: blue; overflow: scroll; z-index: 0; padding-left: 0.5rem;">
+    <div class="Contributors_Frame" style="position:fixed; width:15rem; height: 15rem; right:2rem; top:40%; border: solid; background-color: blue; overflow: scroll; z-index: 0; padding-left: 0.5rem;">
     	<h3>
     		Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
     	</h3>
@@ -315,7 +499,86 @@ style="">
 
 
 
+
 <div id="sketch2" style="display: none;">
+    <div style="visibility: visible;">  
+        <iframe loading=lazy style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/dddd972fe5684c928fff35766cf897ba/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" 
+        
+        frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+<!-- srcdoc="<a href=https://sketchfab.com/models/dddd972fe5684c928fff35766cf897ba/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>"  -->
+
+
+    <div class="lefttext" style="position:fixed; width:25%; height: 50%; left:2rem; top:4rem; border: none; background-color: white; overflow: scroll; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
+      <div style="text-align: justify; text-justify: inter-word; padding: 0 2rem;">
+      <h3>
+        <br>
+        <br>
+        <p style="text-align: center;">Canonice</p>
+Never in all my travels had I ventured as far as the Triennale of Canonice. It was dusk when I landed there. At the entrance of the main venue, the assistant curator who welcomed me with the catalog in his hands, “the Architecture we have always Built”, resembled a professor who had taught me 30 years before and was dead. I was invited to tour the exhibition and, at the same time, to examine some old publications to understand how the show used to be: the same plans and sections in black and white instead of more saturated colours, a hand-carved timber model instead of gently CNC milled, another model to contemplate the coherence and poetry of a space instead of trendy collages. To not disappoint the curators, you must praise the old publications together with the current one, and you must be careful to contain your regret at the absence of any significant change: highlighting in your dialogues the eternal relevance of architectural fundamentals, the indisputable role of architecture drawings, the unquestionable methodologies of architectural design and the unmissable role of architectural references, you need to express a contained but visible excitement for the epidermal deviations from the canon, praising their foresight and the progeny of the canon in all the corners of the kingdom. If Canonice had remained unchanged because this is its own true skin or the mask it is convenient to wear, I don’t know, and nobody in the kingdom dares to guess.<br> 
+<br>
+A young architect was meticulously drawing the imperfection of a concrete wall as if it was an onyx slab from Madagascar, and I thought I recognized him; when I turned, he had disappeared down the corridor, but I realized that he looked like the assistant curator who, already old when I was a child, could no longer be among the living. I turned my gaze aside and I no longer dared look anyone in the face. I thought: "If Canonice is a triennial I am seeing in a dream, where you encounter only the dead, the dream frightens me. If Canonice is a real Triennale, showcasing the work of living people, I need only to continue looking at them and the resemblances will dissolve, alien faces will appear, bearing anguish. In either case, it is best for me not to insist on staring at them."<br>
+<br>
+An elegant architect was scrupulously cleaning a diorama with miniature velvet curtains, to arrange it on a table together with other models of the same kind. He raised his face: he was Aldo Rossi. I thought: "You reach a moment in life when, among the people that inspire your work, the dead outnumber the living. And the mind refuses to accept new paradigms and new expressions: on every new work you start, it tries to print the old forms, to each one it finds the most suitable mask." Perhaps, to him, I also resemble someone who was dead. I had barely arrived at Canonice and I was already one of them, I had gone over to their side, absorbed in that kaleidoscope of line-weight, solid timber, plaster casts. I thought: "Perhaps Canonice is the Triennale where you arrive dying and where each finds again the masters he has known. This means I, too, am dead." And I also thought: "This means the beyond is not necessarily new."<br>
+<br>
+      </h3>
+    </div>
+    </div>
+
+
+    <div class="Contributors_Frame" style="
+    font-family: 'Special Elite', cursive;
+    position:fixed; width:15rem; height: 43vh; right:2rem; top:50%; border: solid; border-color: #0050EC; border-width: 0.5rem; background-color: white; overflow: scroll; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: blue;">
+      <h4 style="bottom: 1rem;">
+      Failed Biennials<br>
+      <br>
+      By recycling the materials we use for the installations or exhibitions is also in some way recycling the past ideas and problems bringing them to light again. In this sense the scarcity of innovation and progressive thinking becomes obvious. Reusing the same concepts, materials and topics does not let us go beyond the margins and this practice somehow blocks the innovative and urgent critical thinking in us.<br> 
+      One exhibition follows the other and over and over again the same routine takes place. The organizing of a “Biennial” like event becomes a usual business for cultural sector, the city, the curator and everybody else involved in it.<br> 
+      One day will come when we will say it is enough when the overload of materials, permanently renewing events, new exhibitions, non-stop new information available for the audience transforms into an intellectual chaos. This tremendous amount of material cannot be perceived anymore as something important one can keep in his brain. We organize exhibitions about the environmental crisis, about our broken planet and at the same time produce so much garbage that we do exactly the same thing we are criticizing.<br> 
+      Enough is enough and the day will arrive when so much information will be converted into a big useless chaos and this practice of organizing Biennials will eventually fail. The question is how long can we live with all these different events offering one installation after another and one exhibition following the other? Does all these afford really bring us something important? Can the Biennials really act as catalysts for change? Who are the remaining caretakers when the “Biennial” is over? What sense does it really make to organize an overload of exhibitions every two years?<br>
+      These questions keep bothering us and the various intellectuals in the architectural and art world start criticizing these kind of events and in many cases call them a waste of time, materials and money.<br>
+      As the years pass and one edition of the Biennial follows the other in different parts of the world this idea of creating an event in such manner slowly becomes absurd. One might say that the concept of the  “ Biennials” as we know it are already fading away. The progressive revival of the concept is urgently needed and anything else in our society “Biennials” should also reflect to the current environmental and urban state we live in.<br>
+      </h4>
+    </div>
+
+    <div id="triangle-corner" onclick="showMainPage()" 
+    style="
+    width:0;
+    height: 0;
+    z-index: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-style: solid;
+    border-width: 0 8rem 8rem 0;
+    border-color: transparent #ff6600 transparent transparent;">
+      <h4 class="rotate" style="position: fixed; letter-spacing: 0.5rem; color: white; cursor: pointer;">&nbsp;&nbsp;&nbsp;&nbsp;start<br>&nbsp;&nbsp;&nbsp;&nbsp;page&nbsp;&nbsp;&nbsp;&nbsp;</h4> 
+    </div>
+
+    <div style="position:fixed; width:20vw; height: 20vw; left:20%; top:50%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #fd6721;">
+      
+      <a href="#" class="JesterBox">
+          <div id="Image 1_PALIMSESTIA"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/2pal/Image 1_PALIMSESTIA.png">
+          </div>
+      </a>
+      <a href="#Image 1_PALIMSESTIA"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/2pal/Image 1_PALIMSESTIA.png">
+      </a>
+    </div>
+
+    <div style="position:fixed; width:10rem; height: 10rem; right:23%; top:15%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #fd6721;">
+      <a href="#" class="JesterBox">
+          <div id="Image 2_PALIMSESTIA"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/2pal/Image 2_PALIMSESTIA.png">
+          </div>
+      </a>
+      <a href="#Image 2_PALIMSESTIA"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/2pal/Image 2_PALIMSESTIA.png">
+      </a>
+    </div>
+</div>
+
+
+
+
+<div id="sketch8" style="display: none;">
     <div style="visibility: visible;">  
         <iframe loading=lazy style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/dddd972fe5684c928fff35766cf897ba/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" 
         
@@ -403,7 +666,7 @@ style="">
   }
 
   function showSketch8(){
-    document.getElementById('sketch2').style.display = "block";
+    document.getElementById('sketch8').style.display = "block";
     document.getElementById('startPage').style.display = "none";
   }
 
@@ -445,6 +708,26 @@ style="">
 	}
 
 
+function openCloseMenu() {
+  // console.log("pryvit");
+  document.getElementById("MenuItems").style.display = (document.getElementById('MenuItems').style.display == 'none') ? 'block' : 'none'
+}
+
+function closeAbout() {
+  document.getElementById('About').style.display = 'none';
+}
+
+function test() {
+  console.log(event.srcElement);
+}
+
+
+
+
+
+
+
+//random movement here:
 var object = document.getElementsByClassName('item');
 
 function getRandomInt(max) {
@@ -472,6 +755,92 @@ setInterval(function(){
    for (var i = 0; i < change.length; i++) {
      change[i].innerHTML = "New text";
    }
+
+
+//stupid way to show/hyde tooltips:
+function show1() {
+  document.getElementById('alt-Bottavia').style.display = 'block';
+}
+function hyde1() {
+  document.getElementById('alt-Bottavia').style.display = 'none';
+}
+
+function show2() {
+  document.getElementById('alt-Canonice').style.display = 'block';
+}
+function hyde2() {
+  document.getElementById('alt-Canonice').style.display = 'none';
+}
+
+function show3() {
+  document.getElementById('alt-Eccessa').style.display = 'block';
+}
+function hyde3() {
+  document.getElementById('alt-Eccessa').style.display = 'none';
+}
+
+function show4() {
+  document.getElementById('alt-Evenia').style.display = 'block';
+}
+function hyde4() {
+  document.getElementById('alt-Evenia').style.display = 'none';
+}
+
+function show5() {
+  document.getElementById('alt-Generica').style.display = 'block';
+}
+function hyde5() {
+  document.getElementById('alt-Generica').style.display = 'none';
+}
+
+function show6() {
+  document.getElementById('alt-Insegna').style.display = 'block';
+}
+function hyde6() {
+  document.getElementById('alt-Insegna').style.display = 'none';
+}
+
+function show7() {
+  document.getElementById('alt-Novichelovekan').style.display = 'block';
+}
+function hyde7() {
+  document.getElementById('alt-Novichelovekan').style.display = 'none';
+}
+
+function show8() {
+  document.getElementById('alt-Palimpsestia').style.display = 'block';
+}
+function hyde8() {
+  document.getElementById('alt-Palimpsestia').style.display = 'none';
+}
+
+function show9() {
+  document.getElementById('alt-Puerilia').style.display = 'block';
+}
+function hyde9() {
+  document.getElementById('alt-Puerilia').style.display = 'none';
+}
+
+function show10() {
+  document.getElementById('alt-Referenda').style.display = 'block';
+}
+function hyde10() {
+  document.getElementById('alt-Referenda').style.display = 'none';
+}
+
+function show11() {
+  document.getElementById('alt-Rexia').style.display = 'block';
+}
+function hyde11() {
+  document.getElementById('alt-Rexia').style.display = 'none';
+}
+
+function show12() {
+  document.getElementById('alt-About').style.display = 'block';
+}
+function hyde12() {
+  document.getElementById('alt-About').style.display = 'none';
+}
 
 
 
