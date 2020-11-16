@@ -50,7 +50,7 @@ h4 {
   and (-webkit-min-device-pixel-ratio: 2)*/
 
 /*@media screen and (max-width: 800px)*/
-    @media (max-width: 900px) 
+    @media screen and (max-width: 900px) 
     {
       html {
         /*background-color: red;
@@ -194,62 +194,62 @@ html {
 
 <div id="MenuItems" style="position: fixed; display: none; z-index: 10; transition: all 3s linear; overflow: scroll; right: 0; top: 0; width: 25%; height: 100%; opacity: 90%; background-color: white; padding-left: 1.5rem; padding-right: 3rem; padding-top: 2.5rem;">
 
-<div style="cursor: pointer;" onclick="showSketch1()">
+<div style="cursor: pointer;" onclick="showSketch1(); closeMenu();">
 <span style="font-weight: bold;">Bottavia<br></span>
 <span style="font-style: italic;">A bot-curated biennial<br></span>
 With Merve Bedir, in conversation with Bager Akbay.<br></div>
 <br>
-<div style="cursor: pointer;" onclick="showSketch2()">
+<div style="cursor: pointer;" onclick="showSketch2(); closeMenu();">
 <span style="font-weight: bold;">Canonice<br></span>
 <span style="font-style: italic;">A conservative triennial<br></span>
 With Sabina Shikhilinsakaya<br></div>
 <br>
-<div style="cursor: pointer;" onclick="showSketch3()">
+<div style="cursor: pointer;" onclick="showSketch3(); closeMenu();">
 <span style="font-weight: bold;">Eccessa<br></span>
 <span style="font-style: italic;">A  for-profit biennial<br></span>
 With Nora Akawi and Eduardo Rega<br></div>
 <br>
-<div style="cursor: pointer;" onclick="showSketch4()">
+<div style="cursor: pointer;" onclick="showSketch4(); closeMenu();">
 <span style="font-weight: bold;">Evenia<br></span>
 <span style="font-style: italic;">A one-day quadrennial<br></span>
 With Sofia Pia Belenky<br></div>
 <br>
-<div style="cursor: pointer;" onclick="showSketch5()">
+<div style="cursor: pointer;" onclick="showSketch5(); closeMenu();">
 <span style="font-weight: bold;">Generica<br></span>
 <span style="font-style: italic;">A biennial that never changes<br></span>
 With Marco Montiel-Soto<br></div>
 <br>
-<div style="cursor: pointer;" onclick="showSketch6()">
+<div style="cursor: pointer;" onclick="showSketch6(); closeMenu();">
 <span style="font-weight: bold;">Insegna<br></span>
 <span style="font-style: italic;">A word-less biennial<br></span>
 With Gili Merin<br></div>
 <br>
-<div style="cursor: pointer;" onclick="showSketch7()">
+<div style="cursor: pointer;" onclick="showSketch7(); closeMenu();">
 <span style="font-weight: bold;">Novichelovekan<br></span>
 <span style="font-style: italic;">A biennial with new faces<br></span>
 With Abhijan Toto<br></div>
 <br>
-<div style="cursor: pointer;" onclick="showSketch8()">
+<div style="cursor: pointer;" onclick="showSketch8(); closeMenu();">
 <span style="font-weight: bold;">Palimpsestia<br></span>
 <span style="font-style: italic;">A biennial that builds on<br></span>
 With Tinatin Gurgenidze<br></div>
 <br>
-<div style="cursor: pointer;" onclick="showSketch9()">
+<div style="cursor: pointer;" onclick="showSketch9(); closeMenu();">
 <span style="font-weight: bold;">Puerilia<br></span>
 <span style="font-style: italic;">A biennial by and for children<br></span>
 With Araks Sahakyan<br></div>
 <br>
-<div style="cursor: pointer;" onclick="showSketch10()">
+<div style="cursor: pointer;" onclick="showSketch10(); closeMenu();">
 <span style="font-weight: bold;">Referenda<br></span>
 <span style="font-style: italic;">A democratic biennial<br></span>
 With Shumi Bose<br></div>
 <br>
-<div style="cursor: pointer;" onclick="showSketch11()">
+<div style="cursor: pointer;" onclick="showSketch11(); closeMenu();">
 <span style="font-weight: bold;">Rexia<br></span>
 <span style="font-style: italic;">A dynastic biennial<br></span>
 With Georg Seesslen<br></div>
 <br>
-<div style="cursor: pointer;" onclick="showAbout(); showMainPage();">
+<div style="cursor: pointer;" onclick="showAbout(); showMainPage(); closeMenu();">
 <span style="font-weight: bold;">About<br></span>
 <span style="font-style: italic;">Le Biennali Invisibili is a project by Animali Domestici (Alicia Lazaronni and Antonio Bernacchi), Tijn van de Wijdeven, and Eduardo Cassina, commissioned by Goethe-Zentrum Baku, and curated by Alfons Hug.<br><br></span></div>
 
@@ -917,55 +917,176 @@ An elegant architect was scrupulously cleaning a diorama with miniature velvet c
     function showSketch1(){
     document.getElementById('sketch1').style.display = "block";
     document.getElementById('startPage').style.display = "none";
+        // document.getElementById('sketch1').style.display = "none";
+    document.getElementById('sketch2').style.display = "none";
+    document.getElementById('sketch3').style.display = "none";
+    document.getElementById('sketch4').style.display = "none";
+    document.getElementById('sketch5').style.display = "none";
+    document.getElementById('sketch6').style.display = "none";
+    document.getElementById('sketch7').style.display = "none";
+    document.getElementById('sketch8').style.display = "none";
+    document.getElementById('sketch9').style.display = "none";
+    document.getElementById('sketch10').style.display = "none";
+    document.getElementById('sketch11').style.display = "none";
   }
 
     function showSketch2(){
     document.getElementById('sketch2').style.display = "block";
     document.getElementById('startPage').style.display = "none";
+        document.getElementById('sketch1').style.display = "none";
+    // document.getElementById('sketch2').style.display = "none";
+    document.getElementById('sketch3').style.display = "none";
+    document.getElementById('sketch4').style.display = "none";
+    document.getElementById('sketch5').style.display = "none";
+    document.getElementById('sketch6').style.display = "none";
+    document.getElementById('sketch7').style.display = "none";
+    document.getElementById('sketch8').style.display = "none";
+    document.getElementById('sketch9').style.display = "none";
+    document.getElementById('sketch10').style.display = "none";
+    document.getElementById('sketch11').style.display = "none";
   }
 
     function showSketch3(){
     document.getElementById('sketch3').style.display = "block";
     document.getElementById('startPage').style.display = "none";
+        document.getElementById('sketch1').style.display = "none";
+    document.getElementById('sketch2').style.display = "none";
+    // document.getElementById('sketch3').style.display = "none";
+    document.getElementById('sketch4').style.display = "none";
+    document.getElementById('sketch5').style.display = "none";
+    document.getElementById('sketch6').style.display = "none";
+    document.getElementById('sketch7').style.display = "none";
+    document.getElementById('sketch8').style.display = "none";
+    document.getElementById('sketch9').style.display = "none";
+    document.getElementById('sketch10').style.display = "none";
+    document.getElementById('sketch11').style.display = "none";
   }
 
     function showSketch4(){
     document.getElementById('sketch4').style.display = "block";
     document.getElementById('startPage').style.display = "none";
+        document.getElementById('sketch1').style.display = "none";
+    document.getElementById('sketch2').style.display = "none";
+    document.getElementById('sketch3').style.display = "none";
+    // document.getElementById('sketch4').style.display = "none";
+    document.getElementById('sketch5').style.display = "none";
+    document.getElementById('sketch6').style.display = "none";
+    document.getElementById('sketch7').style.display = "none";
+    document.getElementById('sketch8').style.display = "none";
+    document.getElementById('sketch9').style.display = "none";
+    document.getElementById('sketch10').style.display = "none";
+    document.getElementById('sketch11').style.display = "none";
   }
 
     function showSketch5(){
     document.getElementById('sketch5').style.display = "block";
     document.getElementById('startPage').style.display = "none";
+        document.getElementById('sketch1').style.display = "none";
+    document.getElementById('sketch2').style.display = "none";
+    document.getElementById('sketch3').style.display = "none";
+    document.getElementById('sketch4').style.display = "none";
+    // document.getElementById('sketch5').style.display = "none";
+    document.getElementById('sketch6').style.display = "none";
+    document.getElementById('sketch7').style.display = "none";
+    document.getElementById('sketch8').style.display = "none";
+    document.getElementById('sketch9').style.display = "none";
+    document.getElementById('sketch10').style.display = "none";
+    document.getElementById('sketch11').style.display = "none";
   }  
 
     function showSketch6(){
     document.getElementById('sketch6').style.display = "block";
+        document.getElementById('sketch1').style.display = "none";
+    document.getElementById('sketch2').style.display = "none";
+    document.getElementById('sketch3').style.display = "none";
+    document.getElementById('sketch4').style.display = "none";
+    document.getElementById('sketch5').style.display = "none";
+    // document.getElementById('sketch6').style.display = "none";
+    document.getElementById('sketch7').style.display = "none";
+    document.getElementById('sketch8').style.display = "none";
+    document.getElementById('sketch9').style.display = "none";
+    document.getElementById('sketch10').style.display = "none";
+    document.getElementById('sketch11').style.display = "none";
     document.getElementById('startPage').style.display = "none";
   }
 
     function showSketch7(){
     document.getElementById('sketch7').style.display = "block";
     document.getElementById('startPage').style.display = "none";
+        document.getElementById('sketch1').style.display = "none";
+    document.getElementById('sketch2').style.display = "none";
+    document.getElementById('sketch3').style.display = "none";
+    document.getElementById('sketch4').style.display = "none";
+    document.getElementById('sketch5').style.display = "none";
+    document.getElementById('sketch6').style.display = "none";
+    // document.getElementById('sketch7').style.display = "none";
+    document.getElementById('sketch8').style.display = "none";
+    document.getElementById('sketch9').style.display = "none";
+    document.getElementById('sketch10').style.display = "none";
+    document.getElementById('sketch11').style.display = "none";
   }
 
     function showSketch8(){
     document.getElementById('sketch8').style.display = "block";
     document.getElementById('startPage').style.display = "none";
+    document.getElementById('sketch1').style.display = "none";
+    document.getElementById('sketch2').style.display = "none";
+    document.getElementById('sketch3').style.display = "none";
+    document.getElementById('sketch4').style.display = "none";
+    document.getElementById('sketch5').style.display = "none";
+    document.getElementById('sketch6').style.display = "none";
+    document.getElementById('sketch7').style.display = "none";
+    // document.getElementById('sketch8').style.display = "none";
+    document.getElementById('sketch9').style.display = "none";
+    document.getElementById('sketch10').style.display = "none";
+    document.getElementById('sketch11').style.display = "none";    
   }
 
     function showSketch9(){
     document.getElementById('sketch9').style.display = "block";
+    document.getElementById('sketch1').style.display = "none";
+    document.getElementById('sketch2').style.display = "none";
+    document.getElementById('sketch3').style.display = "none";
+    document.getElementById('sketch4').style.display = "none";
+    document.getElementById('sketch5').style.display = "none";
+    document.getElementById('sketch6').style.display = "none";
+    document.getElementById('sketch7').style.display = "none";
+    document.getElementById('sketch8').style.display = "none";
+    // document.getElementById('sketch9').style.display = "none";
+    document.getElementById('sketch10').style.display = "none";
+    document.getElementById('sketch11').style.display = "none";    
     document.getElementById('startPage').style.display = "none";
   }
 
     function showSketch10(){
     document.getElementById('sketch10').style.display = "block";
+    document.getElementById('sketch1').style.display = "none";
+    document.getElementById('sketch2').style.display = "none";
+    document.getElementById('sketch3').style.display = "none";
+    document.getElementById('sketch4').style.display = "none";
+    document.getElementById('sketch5').style.display = "none";
+    document.getElementById('sketch6').style.display = "none";
+    document.getElementById('sketch7').style.display = "none";
+    document.getElementById('sketch8').style.display = "none";
+    document.getElementById('sketch9').style.display = "none";
+    // document.getElementById('sketch10').style.display = "none";
+    document.getElementById('sketch11').style.display = "none";
     document.getElementById('startPage').style.display = "none";
   }
 
     function showSketch11(){
     document.getElementById('sketch11').style.display = "block";
+    document.getElementById('sketch1').style.display = "none";
+    document.getElementById('sketch2').style.display = "none";
+    document.getElementById('sketch3').style.display = "none";
+    document.getElementById('sketch4').style.display = "none";
+    document.getElementById('sketch5').style.display = "none";
+    document.getElementById('sketch6').style.display = "none";
+    document.getElementById('sketch7').style.display = "none";
+    document.getElementById('sketch8').style.display = "none";
+    document.getElementById('sketch9').style.display = "none";
+    document.getElementById('sketch10').style.display = "none";
+    // document.getElementById('sketch11').style.display = "none";
     document.getElementById('startPage').style.display = "none";
   }  
 
