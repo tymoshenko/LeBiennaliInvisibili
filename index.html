@@ -4,6 +4,7 @@
 	<title>Le Biennali Invisibili</title>
 	<style type="text/css"></style>
 	<!-- <link href="css_file.css" rel="stylesheet" type="text/css" media="all"> -->
+  <link rel="icon" type="image/png" href="data/favicon-192.png">
   <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -40,6 +41,38 @@ h3 {
 h4 {
   font-size: 0.5rem;
 }
+
+    
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 480px)
+  and (-webkit-min-device-pixel-ratio: 2)
+
+/*@media screen and (max-width: 800px)*/
+    /*@media (max-width: 900px) */
+    {
+      html {
+        /*background-color: red;
+                right: 0;
+        margin-right: 0;*/
+        /*font-size: 15px;*/
+        /*font-size: 2vw;*/
+      }
+
+      #About {
+        right: 1vw !important;
+        margin-right: 5vw !important;
+        left: 10% !important;
+        top: 20vh !important;
+      }
+      #MenuItems {
+        width: 55% !important;
+      }
+    }
+
+
+
 
 
 .JesterBox div {
@@ -216,7 +249,7 @@ With Shumi Bose<br></div>
 <span style="font-style: italic;">A dynastic biennial<br></span>
 With Georg Seesslen<br></div>
 <br>
-<div style="cursor: pointer;">
+<div style="cursor: pointer;" onclick="showAbout()">
 <span style="font-weight: bold;">About<br></span>
 <span style="font-style: italic;">Le Biennali Invisibili is a project by Animali Domestici (Alicia Lazaronni and Antonio Bernacchi), Tijn van de Wijdeven, and Eduardo Cassina, commissioned by Goethe-Zentrum Baku, and curated by Alfons Hug.<br><br></span></div>
 
@@ -276,8 +309,8 @@ With Georg Seesslen<br></div>
     never visited, even Biennials that never existed.”<br>
   </div>
     
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:0; left: 0; transition:all 8s linear;" onmouseover="show1()" onmouseout="hyde1()">
-  <img id="item" src="./data/Objects/bottavia.gif" alt="Bottavia. A bot-curated biennial" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:0; left: 0; transition:all 8s linear;" onmouseover="show1()" onmouseout="hyde1()" onclick="showSketch1()">
+  <img id="item" src="./data/Objects/bottavia.gif" alt="Bottavia. A bot-curated biennial" style="cursor: pointer; width:100%;" >
   <div id="alt-Bottavia" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Bottavia</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A bot-curated biennial</h1>
@@ -285,8 +318,8 @@ With Georg Seesslen<br></div>
 </div>
 
     
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:0; left: 40vw; transition:all 8s linear;" onmouseover="show2()" onmouseout="hyde2()">
-  <img id="item2" src="./data/Objects/canonice.gif" alt="Canonice. A conservative triennial" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:0; left: 40vw; transition:all 8s linear;" onmouseover="show2()" onmouseout="hyde2()"onclick="showSketch1()">
+  <img id="item2" src="./data/Objects/canonice.gif" alt="Canonice. A conservative triennial" style="cursor: pointer; width:100%;" >
   <div id="alt-Canonice" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Canonice</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A conservative triennial</h1>
@@ -294,8 +327,8 @@ With Georg Seesslen<br></div>
 </div>
 
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:0; right: 0; transition:all 8s linear;" onmouseover="show3()" onmouseout="hyde3()">
-  <img id="item3" src="./data/Objects/eccessa.gif" alt="Eccessa. A for-profit biennial" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:0; right: 0; transition:all 8s linear;" onmouseover="show3()" onmouseout="hyde3()"onclick="showSketch1()">
+  <img id="item3" src="./data/Objects/eccessa.gif" alt="Eccessa. A for-profit biennial" style="cursor: pointer; width:100%;">
   <div id="alt-Eccessa" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Eccessa</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A for-profit biennial</h1>
@@ -303,8 +336,8 @@ With Georg Seesslen<br></div>
 </div>
 
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:25vh; left: 0; transition:all 8s linear;" onmouseover="show4()" onmouseout="hyde4()">
-  <img id="item4" src="./data/Objects/evenia.gif" alt="Evenia. A one-day quadrennial" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:25vh; left: 0; transition:all 8s linear;" onmouseover="show4()" onmouseout="hyde4()" onclick="showSketch1()">
+  <img id="item4" src="./data/Objects/evenia.gif" alt="Evenia. A one-day quadrennial" style="cursor: pointer; width:100%;" >
   <div id="alt-Evenia" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Evenia</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A one-day quadrennial</h1>
@@ -312,8 +345,8 @@ With Georg Seesslen<br></div>
 </div>
 
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:25vh; left: 40vw; transition:all 8s linear;" onmouseover="show5()" onmouseout="hyde5()">
-  <img id="item5" src="./data/Objects/generica.gif" alt="Generica. A biennial that never changes" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:25vh; left: 40vw; transition:all 8s linear;" onmouseover="show5()" onmouseout="hyde5()" onclick="showSketch1()">
+  <img id="item5" src="./data/Objects/generica.gif" alt="Generica. A biennial that never changes" style="cursor: pointer; width:100%;" >
   <div id="alt-Generica" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Generica</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A biennial that never changes</h1>
@@ -321,8 +354,8 @@ With Georg Seesslen<br></div>
 </div>
     
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:25vh; right: 0; transition:all 8s linear;" onmouseover="show6()" onmouseout="hyde6()">
-  <img id="item6" src="./data/Objects/insegna.gif" alt="Insegna. A word-less biennial" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:25vh; right: 0; transition:all 8s linear;" onmouseover="show6()" onmouseout="hyde6()" onclick="showSketch1()">
+  <img id="item6" src="./data/Objects/insegna.gif" alt="Insegna. A word-less biennial" style="cursor: pointer; width:100%;">
   <div id="alt-Insegna" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Insegna</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A word-less biennial</h1>
@@ -330,8 +363,8 @@ With Georg Seesslen<br></div>
 </div>
     
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:50vh; left: 0; transition:all 8s linear;" onmouseover="show7()" onmouseout="hyde7()">
-  <img id="item7" src="./data/Objects/novichelovekan.gif" alt="Novichelovekan. A biennial with new faces" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:50vh; left: 0; transition:all 8s linear;" onmouseover="show7()" onmouseout="hyde7()" onclick="showSketch1()">
+  <img id="item7" src="./data/Objects/novichelovekan.gif" alt="Novichelovekan. A biennial with new faces" style="cursor: pointer; width:100%;" >
   <div id="alt-Novichelovekan" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Novichelovekan</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A biennial with new faces</h1>
@@ -339,8 +372,8 @@ With Georg Seesslen<br></div>
 </div>
     
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:50vh; left: 40vw; transition:all 8s linear;" onmouseover="show8()" onmouseout="hyde8()">
-  <img id="item8" src="./data/Objects/palimpsestia.gif" alt="Palimpsestia. A biennial that builds on" style="cursor: pointer; width:100%;" onclick="showSketch8()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:50vh; left: 40vw; transition:all 8s linear;" onmouseover="show8()" onmouseout="hyde8()" onclick="showSketch8()">
+  <img id="item8" src="./data/Objects/palimpsestia.gif" alt="Palimpsestia. A biennial that builds on" style="cursor: pointer; width:100%;" >
   <div id="alt-Palimpsestia" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Palimpsestia</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A biennial that builds on</h1>
@@ -348,8 +381,8 @@ With Georg Seesslen<br></div>
 </div>
     
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:50vh; right: 0; transition:all 8s linear;" onmouseover="show9()" onmouseout="hyde9()">
-  <img id="item9" src="./data/Objects/puerilia.gif" alt="Puerilia. A biennial by and for children" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:50vh; right: 0; transition:all 8s linear;" onmouseover="show9()" onmouseout="hyde9()" onclick="showSketch1()">
+  <img id="item9" src="./data/Objects/puerilia.gif" alt="Puerilia. A biennial by and for children" style="cursor: pointer; width:100%;">
   <div id="alt-Puerilia" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Puerilia</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A biennial by and for children</h1>
@@ -357,8 +390,8 @@ With Georg Seesslen<br></div>
 </div>
    
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:75vh; left: 0; transition:all 8s linear;" onmouseover="show10()" onmouseout="hyde10()">
-  <img id="item10" src="./data/Objects/referenda.gif" alt="Referenda. A democratic biennial" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:75vh; left: 0; transition:all 8s linear;" onmouseover="show10()" onmouseout="hyde10()" onclick="showSketch1()">
+  <img id="item10" src="./data/Objects/referenda.gif" alt="Referenda. A democratic biennial" style="cursor: pointer; width:100%;">
   <div id="alt-Referenda" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Referenda</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A democratic biennial</h1>
@@ -366,8 +399,8 @@ With Georg Seesslen<br></div>
 </div>
    
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:75vh; left: 40vw; transition:all 8s linear;" onmouseover="show11()" onmouseout="hyde11()">
-  <img id="item11" src="./data/Objects/rexia.gif" alt="Rexia. A dynastic biennial" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:75vh; left: 40vw; transition:all 8s linear;" onmouseover="show11()" onmouseout="hyde11()" onclick="showSketch1()">
+  <img id="item11" src="./data/Objects/rexia.gif" alt="Rexia. A dynastic biennial" style="cursor: pointer; width:100%;" >
   <div id="alt-Rexia" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Rexia</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A dynastic biennial</h1>
@@ -375,8 +408,8 @@ With Georg Seesslen<br></div>
 </div>
    
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:75vh; right: 0; transition:all 8s linear;" onmouseover="show12()" onmouseout="hyde12()">
-  <img id="item12" src="./data/Objects/GI.png" alt="About. Le Biennali Invisibili" style="cursor: pointer; width:100%;" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:75vh; right: 0; transition:all 8s linear;" onmouseover="show12()" onmouseout="hyde12()" onclick="showAbout()">
+  <img id="item12" src="./data/Objects/GI.png" alt="About. Le Biennali Invisibili" style="cursor: pointer; width:100%;" >
   <div id="alt-About" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">About</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">Le Biennali Invisibili</h1>
@@ -384,7 +417,7 @@ With Georg Seesslen<br></div>
 </div>
 
 
-      <div id="About" style="position: fixed; display: block; z-index: 8; background-color: white; left: 50%; top: 4rem; bottom: 2rem; right: 5rem; padding-left: 3rem; margin-right: 3rem; padding-bottom: 4rem; box-shadow: -1.5rem 1rem black; text-align: justify; text-justify: inter-word; overflow: scroll;">
+      <div id="About" style="position: fixed; display: none; z-index: 8; background-color: white; left: 50%; top: 4rem; bottom: 2rem; right: 5rem; padding-left: 3rem; margin-right: 3rem; padding-bottom: 4rem; box-shadow: -1.5rem 1rem black; text-align: justify; text-justify: inter-word; overflow: scroll;">
       <div id="cross" onclick="closeAbout()" style="display: block; font-style: italic; font-size: 1.5rem; padding-left: 94%; cursor: pointer;">X</div>  
       <div style="position: absolute; left: 3rem; right: 2rem; padding-bottom:  2rem;">
         <br>
@@ -660,6 +693,11 @@ An elegant architect was scrupulously cleaning a diorama with miniature velvet c
 
 <script type="text/javascript">
 
+  function showAbout(){
+    // document.getElementById('startPage').style.display = "block";
+    document.getElementById('About').style.display = 'block';
+  }
+
   function showSketch1(){
     document.getElementById('sketch1').style.display = "block";
     document.getElementById('startPage').style.display = "none";
@@ -749,13 +787,13 @@ setInterval(function(){
 
 }, 11111);
 
+////???wtf
+   // var change = document.getElementsByClassName("myclass");
 
-   var change = document.getElementsByClassName("myclass");
-
-   for (var i = 0; i < change.length; i++) {
-     change[i].innerHTML = "New text";
-   }
-
+   // for (var i = 0; i < change.length; i++) {
+   //   change[i].innerHTML = "New text";
+   // }
+///wtfend
 
 //stupid way to show/hyde tooltips:
 function show1() {
