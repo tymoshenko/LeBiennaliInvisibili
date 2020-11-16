@@ -44,13 +44,13 @@ h4 {
 
     
 
-@media only screen 
+/*@media only screen 
   and (min-device-width: 320px) 
   and (max-device-width: 480px)
-  and (-webkit-min-device-pixel-ratio: 2)
+  and (-webkit-min-device-pixel-ratio: 2)*/
 
 /*@media screen and (max-width: 800px)*/
-    /*@media (max-width: 900px) */
+    @media (max-width: 900px) 
     {
       html {
         /*background-color: red;
@@ -280,7 +280,7 @@ With Georg Seesslen<br></div>
   <div style="display: flex; justify-content: center; vertical-align: middle; height: 100%;">
   <img src="./data/LeBiennaliInvisibili.jpg" style="position:fixed; width:100%; height:auto; display:inline-flex; vertical-align: middle;">
   </div>
-  <div id="introText" style="font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.45rem; padding-left: 4rem; padding-right: 4rem; position: fixed; display: block; overflow: scroll; height: 95%; padding-top: 4rem;" >
+  <div id="introText" onclick="closeMenu()" style="font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.45rem; padding-left: 4rem; padding-right: 4rem; position: fixed; display: block; overflow: scroll; height: 95%; padding-top: 4rem;" >
     The Mayor does not necessarily believe everything The Ambassador tells her when she describes the
     Biennials visited on her expeditions, but the Mayor does continue listening to the celebrated cultural
     advisor, and former curator, with greater attention and curiosity than she shows any other cultural
@@ -417,7 +417,7 @@ With Georg Seesslen<br></div>
 </div>
 
 
-      <div id="About" style="position: fixed; display: none; z-index: 8; background-color: white; left: 50%; top: 4rem; bottom: 2rem; right: 5rem; padding-left: 3rem; margin-right: 3rem; padding-bottom: 4rem; box-shadow: -1.5rem 1rem black; text-align: justify; text-justify: inter-word; overflow: scroll;">
+      <div id="About" onclick="closeMenu()" style="position: fixed; display: none; z-index: 8; background-color: white; left: 50%; top: 4rem; bottom: 2rem; right: 5rem; padding-left: 3rem; margin-right: 3rem; padding-bottom: 4rem; box-shadow: -1.5rem 1rem black; text-align: justify; text-justify: inter-word; overflow: scroll;">
       <div id="cross" onclick="closeAbout()" style="display: block; font-style: italic; font-size: 1.5rem; padding-left: 94%; cursor: pointer;">X</div>  
       <div style="position: absolute; left: 3rem; right: 2rem; padding-bottom:  2rem;">
         <br>
@@ -1013,6 +1013,10 @@ An elegant architect was scrupulously cleaning a diorama with miniature velvet c
 function openCloseMenu() {
   // console.log("pryvit");
   document.getElementById("MenuItems").style.display = (document.getElementById('MenuItems').style.display == 'none') ? 'block' : 'none'
+}
+
+function closeMenu() {
+  document.getElementById('MenuItems').style.display = 'none'
 }
 
 function closeAbout() {
