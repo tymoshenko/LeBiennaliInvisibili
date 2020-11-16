@@ -194,62 +194,62 @@ html {
 
 <div id="MenuItems" style="position: fixed; display: none; z-index: 10; transition: all 3s linear; overflow: scroll; right: 0; top: 0; width: 25%; height: 100%; opacity: 90%; background-color: white; padding-left: 1.5rem; padding-right: 3rem; padding-top: 2.5rem;">
 
-<div style="cursor: pointer;">
+<div style="cursor: pointer;" onclick="showSketch1()">
 <span style="font-weight: bold;">Bottavia<br></span>
 <span style="font-style: italic;">A bot-curated biennial<br></span>
 With Merve Bedir, in conversation with Bager Akbay.<br></div>
 <br>
-<div style="cursor: pointer;">
+<div style="cursor: pointer;" onclick="showSketch2()">
 <span style="font-weight: bold;">Canonice<br></span>
 <span style="font-style: italic;">A conservative triennial<br></span>
 With Sabina Shikhilinsakaya<br></div>
 <br>
-<div style="cursor: pointer;">
+<div style="cursor: pointer;" onclick="showSketch3()">
 <span style="font-weight: bold;">Eccessa<br></span>
 <span style="font-style: italic;">A  for-profit biennial<br></span>
 With Nora Akawi and Eduardo Rega<br></div>
 <br>
-<div style="cursor: pointer;">
+<div style="cursor: pointer;" onclick="showSketch4()">
 <span style="font-weight: bold;">Evenia<br></span>
 <span style="font-style: italic;">A one-day quadrennial<br></span>
 With Sofia Pia Belenky<br></div>
 <br>
-<div style="cursor: pointer;">
+<div style="cursor: pointer;" onclick="showSketch5()">
 <span style="font-weight: bold;">Generica<br></span>
 <span style="font-style: italic;">A biennial that never changes<br></span>
 With Marco Montiel-Soto<br></div>
 <br>
-<div style="cursor: pointer;">
+<div style="cursor: pointer;" onclick="showSketch6()">
 <span style="font-weight: bold;">Insegna<br></span>
 <span style="font-style: italic;">A word-less biennial<br></span>
 With Gili Merin<br></div>
 <br>
-<div style="cursor: pointer;">
+<div style="cursor: pointer;" onclick="showSketch7()">
 <span style="font-weight: bold;">Novichelovekan<br></span>
 <span style="font-style: italic;">A biennial with new faces<br></span>
 With Abhijan Toto<br></div>
 <br>
-<div style="cursor: pointer;">
+<div style="cursor: pointer;" onclick="showSketch8()">
 <span style="font-weight: bold;">Palimpsestia<br></span>
 <span style="font-style: italic;">A biennial that builds on<br></span>
 With Tinatin Gurgenidze<br></div>
 <br>
-<div style="cursor: pointer;">
+<div style="cursor: pointer;" onclick="showSketch9()">
 <span style="font-weight: bold;">Puerilia<br></span>
 <span style="font-style: italic;">A biennial by and for children<br></span>
 With Araks Sahakyan<br></div>
 <br>
-<div style="cursor: pointer;">
+<div style="cursor: pointer;" onclick="showSketch10()">
 <span style="font-weight: bold;">Referenda<br></span>
 <span style="font-style: italic;">A democratic biennial<br></span>
 With Shumi Bose<br></div>
 <br>
-<div style="cursor: pointer;">
+<div style="cursor: pointer;" onclick="showSketch11()">
 <span style="font-weight: bold;">Rexia<br></span>
 <span style="font-style: italic;">A dynastic biennial<br></span>
 With Georg Seesslen<br></div>
 <br>
-<div style="cursor: pointer;" onclick="showAbout()">
+<div style="cursor: pointer;" onclick="showAbout(); showMainPage();">
 <span style="font-weight: bold;">About<br></span>
 <span style="font-style: italic;">Le Biennali Invisibili is a project by Animali Domestici (Alicia Lazaronni and Antonio Bernacchi), Tijn van de Wijdeven, and Eduardo Cassina, commissioned by Goethe-Zentrum Baku, and curated by Alfons Hug.<br><br></span></div>
 
@@ -318,7 +318,7 @@ With Georg Seesslen<br></div>
 </div>
 
     
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:0; left: 40vw; transition:all 8s linear;" onmouseover="show2()" onmouseout="hyde2()"onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:0; left: 40vw; transition:all 8s linear;" onmouseover="show2()" onmouseout="hyde2()"onclick="showSketch2()">
   <img id="item2" src="./data/Objects/canonice.gif" alt="Canonice. A conservative triennial" style="cursor: pointer; width:100%;" >
   <div id="alt-Canonice" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Canonice</h1>
@@ -327,7 +327,7 @@ With Georg Seesslen<br></div>
 </div>
 
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:0; right: 0; transition:all 8s linear;" onmouseover="show3()" onmouseout="hyde3()"onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:0; right: 0; transition:all 8s linear;" onmouseover="show3()" onmouseout="hyde3()"onclick="showSketch3()">
   <img id="item3" src="./data/Objects/eccessa.gif" alt="Eccessa. A for-profit biennial" style="cursor: pointer; width:100%;">
   <div id="alt-Eccessa" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Eccessa</h1>
@@ -336,7 +336,7 @@ With Georg Seesslen<br></div>
 </div>
 
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:25vh; left: 0; transition:all 8s linear;" onmouseover="show4()" onmouseout="hyde4()" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:25vh; left: 0; transition:all 8s linear;" onmouseover="show4()" onmouseout="hyde4()" onclick="showSketch4()">
   <img id="item4" src="./data/Objects/evenia.gif" alt="Evenia. A one-day quadrennial" style="cursor: pointer; width:100%;" >
   <div id="alt-Evenia" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Evenia</h1>
@@ -345,7 +345,7 @@ With Georg Seesslen<br></div>
 </div>
 
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:25vh; left: 40vw; transition:all 8s linear;" onmouseover="show5()" onmouseout="hyde5()" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:25vh; left: 40vw; transition:all 8s linear;" onmouseover="show5()" onmouseout="hyde5()" onclick="showSketch5()">
   <img id="item5" src="./data/Objects/generica.gif" alt="Generica. A biennial that never changes" style="cursor: pointer; width:100%;" >
   <div id="alt-Generica" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Generica</h1>
@@ -354,7 +354,7 @@ With Georg Seesslen<br></div>
 </div>
     
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:25vh; right: 0; transition:all 8s linear;" onmouseover="show6()" onmouseout="hyde6()" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:25vh; right: 0; transition:all 8s linear;" onmouseover="show6()" onmouseout="hyde6()" onclick="showSketch6()">
   <img id="item6" src="./data/Objects/insegna.gif" alt="Insegna. A word-less biennial" style="cursor: pointer; width:100%;">
   <div id="alt-Insegna" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Insegna</h1>
@@ -363,7 +363,7 @@ With Georg Seesslen<br></div>
 </div>
     
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:50vh; left: 0; transition:all 8s linear;" onmouseover="show7()" onmouseout="hyde7()" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:50vh; left: 0; transition:all 8s linear;" onmouseover="show7()" onmouseout="hyde7()" onclick="showSketch7()">
   <img id="item7" src="./data/Objects/novichelovekan.gif" alt="Novichelovekan. A biennial with new faces" style="cursor: pointer; width:100%;" >
   <div id="alt-Novichelovekan" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Novichelovekan</h1>
@@ -381,7 +381,7 @@ With Georg Seesslen<br></div>
 </div>
     
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:50vh; right: 0; transition:all 8s linear;" onmouseover="show9()" onmouseout="hyde9()" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:50vh; right: 0; transition:all 8s linear;" onmouseover="show9()" onmouseout="hyde9()" onclick="showSketch9()">
   <img id="item9" src="./data/Objects/puerilia.gif" alt="Puerilia. A biennial by and for children" style="cursor: pointer; width:100%;">
   <div id="alt-Puerilia" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Puerilia</h1>
@@ -390,7 +390,7 @@ With Georg Seesslen<br></div>
 </div>
    
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:75vh; left: 0; transition:all 8s linear;" onmouseover="show10()" onmouseout="hyde10()" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:75vh; left: 0; transition:all 8s linear;" onmouseover="show10()" onmouseout="hyde10()" onclick="showSketch10()">
   <img id="item10" src="./data/Objects/referenda.gif" alt="Referenda. A democratic biennial" style="cursor: pointer; width:100%;">
   <div id="alt-Referenda" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Referenda</h1>
@@ -399,7 +399,7 @@ With Georg Seesslen<br></div>
 </div>
    
 
-<div class="item" style="width:20%; cursor: pointer; position:absolute; top:75vh; left: 40vw; transition:all 8s linear;" onmouseover="show11()" onmouseout="hyde11()" onclick="showSketch1()">
+<div class="item" style="width:20%; cursor: pointer; position:absolute; top:75vh; left: 40vw; transition:all 8s linear;" onmouseover="show11()" onmouseout="hyde11()" onclick="showSketch11()">
   <img id="item11" src="./data/Objects/rexia.gif" alt="Rexia. A dynastic biennial" style="cursor: pointer; width:100%;" >
   <div id="alt-Rexia" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Rexia</h1>
@@ -484,7 +484,7 @@ With Georg Seesslen<br></div>
 
 
 
-<div id="sketch1" style="display: none;">
+<div id="sketch00" style="display: none;">
     <div style="visibility: visible;">	
         <iframe loading=lazy style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/39c7f847a46f47cc84356e5ad5cbf521/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" 
 
@@ -531,13 +531,37 @@ With Georg Seesslen<br></div>
 </div>
 
 
+<div id="sketch1" style="display: none;">
+    <div style="visibility: visible;">  
+    <iframe style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/507bec3605124a16ba6ac937842f76fb/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+
+
+<!-- srcdoc="<a href=https://sketchfab.com/models/dddd972fe5684c928fff35766cf897ba/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>"  -->
+
+  <div id="triangle-corner" onclick="openCloseMenu()" 
+    style="width: 0;
+    height: 0;
+    z-index: 14;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-style: solid;
+    border-width: 0 8rem 8rem 0;
+    border-color: transparent black transparent transparent;">
+      <h2 class="rotate" style="position:fixed; letter-spacing:0.5rem; color:white; font-family:'EB Garamond', serif; font-style: italic; font-size:2rem; text-align: center;">&nbsp;&nbsp;&nbsp;menu&nbsp;&nbsp;&nbsp;</h2>
+  </div>  
+</div>
+
 
 
 <div id="sketch2" style="display: none;">
     <div style="visibility: visible;">  
-        <iframe loading=lazy style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/dddd972fe5684c928fff35766cf897ba/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" 
-        
-        frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+        <div class="sketchfab-embed-wrapper">
+    <iframe style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/722fdaf93a0441c2b34fae6332802653/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
     </div>
 <!-- srcdoc="<a href=https://sketchfab.com/models/dddd972fe5684c928fff35766cf897ba/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>"  -->
 
@@ -574,19 +598,19 @@ An elegant architect was scrupulously cleaning a diorama with miniature velvet c
       </h4>
     </div>
 
-    <div id="triangle-corner" onclick="showMainPage()" 
-    style="
-    width:0;
+  <div id="triangle-corner" onclick="openCloseMenu()" 
+    style="width: 0;
     height: 0;
-    z-index: 0;
+    z-index: 14;
+    cursor: pointer;
     position: fixed;
     right: 0;
     top: 0;
     border-style: solid;
     border-width: 0 8rem 8rem 0;
-    border-color: transparent #ff6600 transparent transparent;">
-      <h4 class="rotate" style="position: fixed; letter-spacing: 0.5rem; color: white; cursor: pointer;">&nbsp;&nbsp;&nbsp;&nbsp;start<br>&nbsp;&nbsp;&nbsp;&nbsp;page&nbsp;&nbsp;&nbsp;&nbsp;</h4> 
-    </div>
+    border-color: transparent black transparent transparent;">
+      <h2 class="rotate" style="position:fixed; letter-spacing:0.5rem; color:white; font-family:'EB Garamond', serif; font-style: italic; font-size:2rem; text-align: center;">&nbsp;&nbsp;&nbsp;menu&nbsp;&nbsp;&nbsp;</h2>
+  </div>  
 
     <div style="position:fixed; width:20vw; height: 20vw; left:20%; top:50%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #fd6721;">
       
@@ -609,14 +633,134 @@ An elegant architect was scrupulously cleaning a diorama with miniature velvet c
 </div>
 
 
+<div id="sketch3" style="display: none;">
+    <div style="visibility: visible;">  
+    <iframe style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/908cbaa5b2a44e1aab0c51fd08434766/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+
+<!-- srcdoc="<a href=https://sketchfab.com/models/dddd972fe5684c928fff35766cf897ba/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>"  -->
+
+  <div id="triangle-corner" onclick="openCloseMenu()" 
+    style="width: 0;
+    height: 0;
+    z-index: 14;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-style: solid;
+    border-width: 0 8rem 8rem 0;
+    border-color: transparent black transparent transparent;">
+      <h2 class="rotate" style="position:fixed; letter-spacing:0.5rem; color:white; font-family:'EB Garamond', serif; font-style: italic; font-size:2rem; text-align: center;">&nbsp;&nbsp;&nbsp;menu&nbsp;&nbsp;&nbsp;</h2>
+  </div>  
+</div>
+
+
+<div id="sketch4" style="display: none;">
+    <div style="visibility: visible;">  
+    <iframe style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/3414516caa024ec2a5fdd22693e8fc01/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+
+<!-- srcdoc="<a href=https://sketchfab.com/models/dddd972fe5684c928fff35766cf897ba/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>"  -->
+
+  <div id="triangle-corner" onclick="openCloseMenu()" 
+    style="width: 0;
+    height: 0;
+    z-index: 14;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-style: solid;
+    border-width: 0 8rem 8rem 0;
+    border-color: transparent black transparent transparent;">
+      <h2 class="rotate" style="position:fixed; letter-spacing:0.5rem; color:white; font-family:'EB Garamond', serif; font-style: italic; font-size:2rem; text-align: center;">&nbsp;&nbsp;&nbsp;menu&nbsp;&nbsp;&nbsp;</h2>
+  </div>  
+</div>
+
+
+
+<div id="sketch5" style="display: none;">
+    <div style="visibility: visible;">  
+    <iframe style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/3dd1c71405044e27969a6963cdbeb08d/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+
+<!-- srcdoc="<a href=https://sketchfab.com/models/dddd972fe5684c928fff35766cf897ba/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>"  -->
+
+  <div id="triangle-corner" onclick="openCloseMenu()" 
+    style="width: 0;
+    height: 0;
+    z-index: 14;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-style: solid;
+    border-width: 0 8rem 8rem 0;
+    border-color: transparent black transparent transparent;">
+      <h2 class="rotate" style="position:fixed; letter-spacing:0.5rem; color:white; font-family:'EB Garamond', serif; font-style: italic; font-size:2rem; text-align: center;">&nbsp;&nbsp;&nbsp;menu&nbsp;&nbsp;&nbsp;</h2>
+  </div>  
+</div>
+
+
+
+
+<div id="sketch6" style="display: none;">
+    <div style="visibility: visible;">  
+
+    <iframe style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/86ff78c8a41c49f8a6b52966b34b923b/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+<!-- srcdoc="<a href=https://sketchfab.com/models/dddd972fe5684c928fff35766cf897ba/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>"  -->
+
+  <div id="triangle-corner" onclick="openCloseMenu()" 
+    style="width: 0;
+    height: 0;
+    z-index: 14;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-style: solid;
+    border-width: 0 8rem 8rem 0;
+    border-color: transparent black transparent transparent;">
+      <h2 class="rotate" style="position:fixed; letter-spacing:0.5rem; color:white; font-family:'EB Garamond', serif; font-style: italic; font-size:2rem; text-align: center;">&nbsp;&nbsp;&nbsp;menu&nbsp;&nbsp;&nbsp;</h2>
+  </div>  
+</div>
+
+
+
+<div id="sketch7" style="display: none;">
+    <div style="visibility: visible;">  
+
+    <iframe style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/embed?autostart=1&amp;camera=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+</div>
+
+<!-- srcdoc="<a href=https://sketchfab.com/models/dddd972fe5684c928fff35766cf897ba/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>"  -->
+
+  <div id="triangle-corner" onclick="openCloseMenu()" 
+    style="width: 0;
+    height: 0;
+    z-index: 14;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-style: solid;
+    border-width: 0 8rem 8rem 0;
+    border-color: transparent black transparent transparent;">
+      <h2 class="rotate" style="position:fixed; letter-spacing:0.5rem; color:white; font-family:'EB Garamond', serif; font-style: italic; font-size:2rem; text-align: center;">&nbsp;&nbsp;&nbsp;menu&nbsp;&nbsp;&nbsp;</h2>
+  </div>  
+
+</div>
 
 
 <div id="sketch8" style="display: none;">
     <div style="visibility: visible;">  
-        <iframe loading=lazy style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/dddd972fe5684c928fff35766cf897ba/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" 
+        <iframe loading=lazy style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/d7b7b56cf9084f8fbae2166cf0c1c4da/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" 
         
         frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     </div>
+
 <!-- srcdoc="<a href=https://sketchfab.com/models/dddd972fe5684c928fff35766cf897ba/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>"  -->
 
 
@@ -654,19 +798,19 @@ An elegant architect was scrupulously cleaning a diorama with miniature velvet c
       </h4>
     </div>
 
-    <div id="triangle-corner" onclick="showMainPage()" 
-    style="
-    width:0;
+    <div id="triangle-corner" onclick="openCloseMenu()" 
+    style="width: 0;
     height: 0;
-    z-index: 0;
+    z-index: 14;
+    cursor: pointer;
     position: fixed;
     right: 0;
     top: 0;
     border-style: solid;
     border-width: 0 8rem 8rem 0;
-    border-color: transparent #ff6600 transparent transparent;">
-      <h4 class="rotate" style="position: fixed; letter-spacing: 0.5rem; color: white; cursor: pointer;">&nbsp;&nbsp;&nbsp;&nbsp;start<br>&nbsp;&nbsp;&nbsp;&nbsp;page&nbsp;&nbsp;&nbsp;&nbsp;</h4> 
-    </div>
+    border-color: transparent black transparent transparent;">
+      <h2 class="rotate" style="position:fixed; letter-spacing:0.5rem; color:white; font-family:'EB Garamond', serif; font-style: italic; font-size:2rem; text-align: center;">&nbsp;&nbsp;&nbsp;menu&nbsp;&nbsp;&nbsp;</h2>
+    </div>  
 
     <div style="position:fixed; width:20vw; height: 20vw; left:20%; top:50%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #fd6721;">
       
@@ -689,42 +833,162 @@ An elegant architect was scrupulously cleaning a diorama with miniature velvet c
 </div>
 
 
+<div id="sketch9" style="display: none;">
+    <div style="visibility: visible;">  
+    <iframe style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/947d6238a0fe45ddbcbf86422cefc6d9/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+
+<!-- srcdoc="<a href=https://sketchfab.com/models/dddd972fe5684c928fff35766cf897ba/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>"  -->
+
+  <div id="triangle-corner" onclick="openCloseMenu()" 
+    style="width: 0;
+    height: 0;
+    z-index: 14;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-style: solid;
+    border-width: 0 8rem 8rem 0;
+    border-color: transparent black transparent transparent;">
+      <h2 class="rotate" style="position:fixed; letter-spacing:0.5rem; color:white; font-family:'EB Garamond', serif; font-style: italic; font-size:2rem; text-align: center;">&nbsp;&nbsp;&nbsp;menu&nbsp;&nbsp;&nbsp;</h2>
+  </div>  
+</div>
+
+
+<div id="sketch10" style="display: none;">
+    <div style="visibility: visible;">  
+    <iframe style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/fa442c6a71534ecb8a590d41369c1509/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+
+<!-- srcdoc="<a href=https://sketchfab.com/models/dddd972fe5684c928fff35766cf897ba/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>"  -->
+
+  <div id="triangle-corner" onclick="openCloseMenu()" 
+    style="width: 0;
+    height: 0;
+    z-index: 14;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-style: solid;
+    border-width: 0 8rem 8rem 0;
+    border-color: transparent black transparent transparent;">
+      <h2 class="rotate" style="position:fixed; letter-spacing:0.5rem; color:white; font-family:'EB Garamond', serif; font-style: italic; font-size:2rem; text-align: center;">&nbsp;&nbsp;&nbsp;menu&nbsp;&nbsp;&nbsp;</h2>
+  </div>  
+</div>
+
+
+
+
+<div id="sketch11" style="display: none;">
+    <div style="visibility: visible;">  
+    <iframe style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/447c848774524f669d41c672105f04df/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+    </div>
+
+<!-- srcdoc="<a href=https://sketchfab.com/models/dddd972fe5684c928fff35766cf897ba/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>"  -->
+
+  <div id="triangle-corner" onclick="openCloseMenu()" 
+    style="width: 0;
+    height: 0;
+    z-index: 14;
+    cursor: pointer;
+    position: fixed;
+    right: 0;
+    top: 0;
+    border-style: solid;
+    border-width: 0 8rem 8rem 0;
+    border-color: transparent black transparent transparent;">
+      <h2 class="rotate" style="position:fixed; letter-spacing:0.5rem; color:white; font-family:'EB Garamond', serif; font-style: italic; font-size:2rem; text-align: center;">&nbsp;&nbsp;&nbsp;menu&nbsp;&nbsp;&nbsp;</h2>
+  </div>  
+</div>
+
+
+
 
 
 <script type="text/javascript">
 
-  function showAbout(){
+    function showAbout(){
     // document.getElementById('startPage').style.display = "block";
     document.getElementById('About').style.display = 'block';
   }
 
-  function showSketch1(){
+    function showSketch1(){
     document.getElementById('sketch1').style.display = "block";
     document.getElementById('startPage').style.display = "none";
   }
 
-  function showSketch8(){
+    function showSketch2(){
+    document.getElementById('sketch2').style.display = "block";
+    document.getElementById('startPage').style.display = "none";
+  }
+
+    function showSketch3(){
+    document.getElementById('sketch3').style.display = "block";
+    document.getElementById('startPage').style.display = "none";
+  }
+
+    function showSketch4(){
+    document.getElementById('sketch4').style.display = "block";
+    document.getElementById('startPage').style.display = "none";
+  }
+
+    function showSketch5(){
+    document.getElementById('sketch5').style.display = "block";
+    document.getElementById('startPage').style.display = "none";
+  }  
+
+    function showSketch6(){
+    document.getElementById('sketch6').style.display = "block";
+    document.getElementById('startPage').style.display = "none";
+  }
+
+    function showSketch7(){
+    document.getElementById('sketch7').style.display = "block";
+    document.getElementById('startPage').style.display = "none";
+  }
+
+    function showSketch8(){
     document.getElementById('sketch8').style.display = "block";
     document.getElementById('startPage').style.display = "none";
   }
 
+    function showSketch9(){
+    document.getElementById('sketch9').style.display = "block";
+    document.getElementById('startPage').style.display = "none";
+  }
+
+    function showSketch10(){
+    document.getElementById('sketch10').style.display = "block";
+    document.getElementById('startPage').style.display = "none";
+  }
+
+    function showSketch11(){
+    document.getElementById('sketch11').style.display = "block";
+    document.getElementById('startPage').style.display = "none";
+  }  
 
   function showMainPage(){
     document.getElementById('sketch1').style.display = "none";
     document.getElementById('sketch2').style.display = "none";
+    document.getElementById('sketch3').style.display = "none";
+    document.getElementById('sketch4').style.display = "none";
+    document.getElementById('sketch5').style.display = "none";
+    document.getElementById('sketch6').style.display = "none";
+    document.getElementById('sketch7').style.display = "none";
+    document.getElementById('sketch8').style.display = "none";
+    document.getElementById('sketch9').style.display = "none";
+    document.getElementById('sketch10').style.display = "none";
+    document.getElementById('sketch11').style.display = "none";
     document.getElementById('startPage').style.display = "block";
 
-// //// stopping ifames:
-// var myScope = document;
-// //if there is an iframe inside maybe embedded multimedia video/audio, we should reload so it stops playing
-// var iframes = myScope.getElementsByTagName("iframe");
-// if (iframes != null) {
-//     for (var i = 0; i < iframes.length; i++) {
-//         iframes[i].src = iframes[i].src; //causes a reload so it stops playing, music, video, etc.
-//     }
-// }
+  }
 
-}
+
+
+
+
 
 	
 	function leftTextZindexUp(){
@@ -781,9 +1045,6 @@ setInterval(function(){
      object[i].style.top = getRandomInt(window.innerHeight-50) + 'px';
      object[i].style.left = getRandomInt(window.innerWidth-50) + 'px';
    }
-
-  // object.style.top = x + 'px';
-  // object.style.left = y + 'px';
 
 }, 11111);
 
