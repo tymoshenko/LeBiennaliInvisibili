@@ -280,7 +280,7 @@ With Georg Seesslen<br></div>
   <div style="display: flex; justify-content: center; vertical-align: middle; height: 100%;">
   <img src="./data/LeBiennaliInvisibili.jpg" style="position:fixed; width:100%; height:auto; display:inline-flex; vertical-align: middle;">
   </div>
-  <div id="introText" onclick="closeMenu()" style="font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.45rem; padding-left: 4rem; padding-right: 4rem; position: fixed; display: block; overflow: scroll; height: 95%; padding-top: 4rem;" >
+  <div id="introText" onclick="closeMenu(); introTextSelectedin();" onmouseover="" onmouseout="" style=" cursor: default; font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.45rem; padding-left: 4rem; padding-right: 4rem; position: fixed; display: block; overflow: scroll; height: 95%; padding-top: 4rem;" >
     The Mayor does not necessarily believe everything The Ambassador tells her when she describes the
     Biennials visited on her expeditions, but the Mayor does continue listening to the celebrated cultural
     advisor, and former curator, with greater attention and curiosity than she shows any other cultural
@@ -417,9 +417,9 @@ With Georg Seesslen<br></div>
 </div>
 
 
-      <div id="About" onclick="closeMenu()" style="position: fixed; display: none; z-index: 8; background-color: white; left: 50%; top: 4rem; bottom: 2rem; right: 5rem; padding-left: 3rem; margin-right: 3rem; padding-bottom: 4rem; box-shadow: -1.5rem 1rem black; text-align: justify; text-justify: inter-word; overflow: scroll;">
+      <div id="About" onclick="closeMenu()" style="position: fixed; display: none; z-index: 8; background-color: white; left: 50%; top: 4rem; bottom: 2rem; right: 5rem; padding-left: 3rem; margin-right: 3rem; padding-bottom: 4rem; box-shadow: -1.5rem 1rem black; text-align: justify; text-justify: inter-word;">
       <div id="cross" onclick="closeAbout()" style="display: block; font-style: italic; font-size: 1.5rem; padding-left: 94%; cursor: pointer;">X</div>  
-      <div style="position: absolute; left: 3rem; right: 2rem; padding-bottom:  2rem;">
+      <div style="position: absolute; left: 3rem; right: 2rem; bottom: 4rem; top: 4rem; overflow: scroll;">
         <br>
         Not all biennials are the same. Neither will they return to being what they once were. However, the format of showcasing new work, triggering discussions, and letting new canons emerge, as a time-based event that takes place once every two years at the same location, has become the pilgrimage for the culture industries in the new millennium. Biennials - or biennales, a bastardization of the italian original term that has slipped into as many different languages as locations - not only have the power to forge discourse, but also transient communities united by gatherings every two or three years, and cities that are momentarily transformed and forever associated with those festivals of human culture.<br>
         <br>
@@ -1107,7 +1107,17 @@ An elegant architect was scrupulously cleaning a diorama with miniature velvet c
   }
 
 
+function introTextSelectedin() {  
+  // document.getElementById('introText').style.zIndex = '1'
 
+    document.getElementById("introText").style.zIndex = (document.getElementById('introText').style.zIndex == '0') ? '1' : '0'
+
+}
+
+function introTextSelectedout() {  
+  document.getElementById('introText').style.zIndex = '0'
+
+}
 
 
 
