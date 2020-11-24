@@ -497,8 +497,9 @@ With Georg Seesslen<br></div>
 
 <div id="sketch1" style="display: none;">
     <div style="visibility: visible;">  
-    <iframe style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/507bec3605124a16ba6ac937842f76fb/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" 
-    srcdoc="<a href=https://sketchfab.com/models/507bec3605124a16ba6ac937842f76fb/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>" 
+    <iframe id="frm1" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/507bec3605124a16ba6ac937842f76fb/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" 
+    srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://sketchfab.com/models/507bec3605124a16ba6ac937842f76fb/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> 
+      <img src='./data/1bot/BOTTAVIA_R01.jpg'> <span>▶</span></a>" 
     frameborder="0" allow="autoplay; fullscreen; vr" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     </div>
 
@@ -592,10 +593,7 @@ Bager: It is about how we define the leader, and the algorithm/ the bot. The lea
 
     <div style="position:fixed; width:20vw; height: 20vw; left:25%; bottom: 5%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #4ef9fb;">
       
-      <a href="#" class="JesterBox">
-          <div id="CLOSEUP_BOTTAVIA_01_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/1bot/CLOSEUP_BOTTAVIA_01_R00.jpg">
-          </div>
-      </a>
+
       <a href="#CLOSEUP_BOTTAVIA_01_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/1bot/CLOSEUP_BOTTAVIA_01_R00.jpg">
       </a>
     </div>
@@ -603,6 +601,10 @@ Bager: It is about how we define the leader, and the algorithm/ the bot. The lea
     <div style="position:fixed; width:12rem; height: 12rem; right:35%; top:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #4ef9fb;">
       <a href="#" class="JesterBox">
           <div id="CLOSEUP_BOTTAVIA_02_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/1bot/CLOSEUP_BOTTAVIA_02_R00.jpg">
+          </div>
+      </a>
+            <a href="#" class="JesterBox">
+          <div id="CLOSEUP_BOTTAVIA_01_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain; z-index: 100;" src="./data/1bot/CLOSEUP_BOTTAVIA_01_R00.jpg">
           </div>
       </a>
       <a href="#CLOSEUP_BOTTAVIA_02_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/1bot/CLOSEUP_BOTTAVIA_02_R00.jpg">
@@ -1748,6 +1750,9 @@ When the Rexia-mission started, taking 100 000 works of art to post-human eterna
     document.getElementById('sketch9').style.display = "none";
     document.getElementById('sketch10').style.display = "none";
     document.getElementById('sketch11').style.display = "none";
+    var sf = document.getElementById("frm1");
+    // sf.click();
+    console.log(sf);
   }
 
     function showSketch2(){
