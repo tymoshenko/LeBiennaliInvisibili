@@ -497,7 +497,7 @@ With Georg Seesslen<br></div>
 
 <div id="sketch1" style="display: none;">
     <div style="visibility: visible;">  
-    <iframe  style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/507bec3605124a16ba6ac937842f76fb/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" 
+    <iframe id="1bot" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/507bec3605124a16ba6ac937842f76fb/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" 
     srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://sketchfab.com/models/507bec3605124a16ba6ac937842f76fb/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> 
       <img src='./data/1bot/BOTTAVIA_R01.jpg' id='frm1'> <span>▶</span></a>" 
     frameborder="0" allow="autoplay; fullscreen; vr;" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
@@ -1750,8 +1750,10 @@ When the Rexia-mission started, taking 100 000 works of art to post-human eterna
     document.getElementById('sketch9').style.display = "none";
     document.getElementById('sketch10').style.display = "none";
     document.getElementById('sketch11').style.display = "none";
-    var clc = document.getElementById("frm1");
-    clc.click();
+    // var clc = document.getElementById("frm1");
+    // clc.click();
+    document.getElementById("1bot").removeAttribute("srcdoc");
+    // console.log(document.getElementById('1bot'));
     location.href = "#Bottavia";
   }
 
