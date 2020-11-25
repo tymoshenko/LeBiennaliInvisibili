@@ -200,6 +200,8 @@ html {
 </head>
 <body>
 
+<!-- <body onload="onLoad()"></body> -->
+
 <div id="MenuItems" style="position: fixed; display: none; z-index: 10; transition: all 3s linear; overflow: scroll; right: 0; top: 0; width: 25%; height: 100%; opacity: 90%; background-color: white; padding-left: 1.5rem; padding-right: 3rem; padding-top: 2.5rem;">
 
 <div style="cursor: pointer;" onclick="showSketch1(); closeMenu();">
@@ -521,7 +523,7 @@ With Georg Seesslen<br></div>
   </div> 
 
 
-    <div class="lefttext" id="lt" style="position:fixed; width:23rem; height: 28rem; left:5%; top:15%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
+    <div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:5%; top:15%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
       <div style="position: absolute; top: 2rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 2rem;">
       <h3>
         <p style="text-align: center;">Bottavia</p>
@@ -539,49 +541,49 @@ An AI geek was questioned about the mysterious bond between two objects so dissi
 
 
     <div class="Contributors_Frame" style="
-    font-family: 'Special Elite', cursive;
+    font-family: 'Arial', cursive;
     position:fixed; width:20rem; height: 20rem; right:5%; top:30%; border: solid; border-color: #a5d1a9; border-width: 0; background-color: #201d1d; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #ffffff; background-size: cover;">
       <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem;">
       <h4>      
-Conversation between Merve Bedir and Bager Akbay<br>
-<br>
-Merve Bedir is an architect based in Hong Kong. She works at the intersection of the technologies of labour, landscape, mobility, and commons. <a href="https://www.aformalacademy.com/">https://www.aformalacademy.com/</a> & <a href="http://landandcc.com/"> http://landandcc.com/ </a><br>
-Bager Akbay is an artist-as-researcher based in Istanbul. <br>
-<br>
-Merve Bedir: I research the <a href="https://automated-landscapes.hetnieuweinstituut.nl/en/https%3A/automated-landscapes.hetnieuweinstituut.nl/research/automated-landscapes-pearl-river-delta">automation of labor</a> in the factories of Pearl River Delta region, as well as an unrealized 2018 Hong Kong Biennale exhibition proposal called "Collective Intelligence," where we wanted to research the coalescing forms of intelligence among peoples and nonhumans. For this conversation with you as a joint contribution to the Invisible Biennale exhibition, my interests were your former works "Deniz Yılmaz" (bot poet) and "Shepherd" (bot curator). Shepherd, especially, as a metaphor for the curator fascinates me. Shepherd is the one who cares and is responsible for the herd.<br>
-<br>
-Bager Akbay: The shepherd looks after the herd, but also the one who leads it. Prophets were almost always shepherds before becoming, some politicians describe their former work as being shepherds, in Ancient Greece philosophers were not allowed to engage in any profession but could only do shepherding. Curating is as such a hierarchical position. The curator might be creating your identity while caring for you, or it might be creating space for you to flourish.<br>
-<br>
-Merve: In the factory, there are three roles, the blue collar, the white collar, and the boss. In our research we found that human labour is still preferred to robots, while bots used for operation replace the human middle manager (white collar labour) in the workplace.<br>
-<br>
-Bager: In fact, it is labour that changes form. The blue collar becomes the robot, the white collar becomes the operation bot. I'm curious about the form and nature of the boss, the leader (in our case, the curator). A cooperative works on three kinds of charters, initiating, operation, and decommissioning. If you include the other two charters, the operation charter could change towards leadership. Here, the leader is the contract, the operation, the code. If the codes are open, if the human language of the protocols are clear/ can be identified, and if this language can be decided by the people, that's a good exhibition, or a real society.<br>
-<br>
-Merve: It's the value systems that define the codes, isn't it? On the one hand the value systems define the characteristics of the curator, and on the other, the curator (singular or collective) defines the value of an art work, how important/significant that work is, and also how much it’s worth.<br>
-<br>
-Bager: Curator is like a cell's membrane, it takes the input from its participants and reflects the output back to them, or to outside. Similarly, leaders reflect the characteristics of their societies. In "Shepherd" my idea was to leave all decision making to the bot curator, as the cell's membrane. I started forms for different jobs regarding an exhibition in a Human Resources website, people applied to it for the different positions in the exhibition, such as defining a concept sentence for the exhibition, a workflow, commissions, translations, and so on. There was an open call, artists applied, and the process was completely organized according to the open code of the bot.<br>
-<br>
-My point is that humans are adaptation machines. If you put a human in a society it will take the form of the society. The form of society is political, which is shaped by laws and the cultural codes. If we change the rules of the law, the society inside will change. A company works with its own operational codes. It can act with different values in different parts of the code/algorithm, for instance it could be more communist in human resources, while being liberal in distributing profit. We need to see that these codes are political. If we can analyze what is good or bad in these codes, what works better in which way, the differences of the governance models, etc. then we can also see what mode requires what quality, what problem requires what control mechanisms, and so on. These codes and modes need to be open and developed based on consensus.<br>
-<br>
-Merve: In the laws of the cooperatives (or companies), we still don't/won't have the initiation and decommissioning as bots, though. "Shepherd" is an inspiration in that sense, that this is a possibility in governance.<br>
-<br>
-Bager: Governance is a self-conscious mechanism/system, a matter of cybernetics. We can understand the laws of a system only by being self-conscious, the robots can work without being self-conscious, which is a problem, but the bots can, to a certain extent, which is interesting. In "Shepherd," the applicants, who declared they can curate the exhibition, cross-voted among themselves about who should really do it. At every step there was such a self-control process for qualification and consensus. The exhibition as a process and outcome was so natural and so smooth that no one realized anything. This is striking because this is also how things happen in the real world.<br>
-<br>
-Merve: Well, Constant suggested that in future all blue-collar work will be done by robots and humans will become architects. But, I feel you think the opposite, as humans should/will actually continue blue-collar work, while codes/algorithms become leaders.<br>
-<br>
-Bager: Which mode do you think is closer to human nature? Think of a mayor, how can they govern one million people, right? It just doesn't make sense. I'm thinking we should be doing more blue-collar work, and then transparent, open-code algorithms (rules, laws) could lead.<br>
-<br>
-Merve: But historically, the leader has always been outside the law.<br>
-<br>
-Bager: Yes, that's people not leaving the decision to the existing law, but creating exceptions. That's why governments love crises, because this gives them the possibility of suspending the law, and continuing their sovereignty. Think about <a href="https://en.wikipedia.org/wiki/The_DAO_(organization)">The DAO</a> in France, with the recent crisis they had, if they let it to the algorithm, The DAO should have shut down, but they changed the algorithm and continued. When the leader is the algorithm, there are no exceptions and no bad leaders. If the code is open, the leader will be open and transformed, too. We criticize our leaders but we do the exact same things in our lives.<br>
-<br>
-Merve: Same goes for curating.<br>
-<br>
-Bager: Exactly. Essentially, people should discuss and decide on the code, and the code should be organizing how to continuously discuss. The curator is this code. Then, art is doing what you see, and what you want to see. This attitude is not included in the scope of other disciplines anymore. That's why I'm interested in art. This is why I am working on <a href="https://mahlas.network/">Mahlas now</a>.<br>
-<br>
-Merve: I want to go back to the question of consciousness for a last note. Before, we talked about the self-consciousness of an algorithm and society. This really makes me think of the 2019 Hong Kong movement. What happened in Hong Kong was this self-consciousness of a movement, and utilizing open code software as tools to help the movement of this self-consciousness. We know this worked because the same consciousness also has led to a success of managing the pandemic in the city. To witness the possibility of a leaderless governance in this example is mind blowing.<br>
-<br>
-Bager: It is about how we define the leader, and the algorithm/ the bot. The leader and the algorithm are nothing but contracts. They are rules and regulations. Who we are, is who our workers, managers, curators, or leaders are. As I said before, what we need to make sure is to keep the source code open and transparent, discuss how it's run. Also we need to diversify the tools, and the decision making mechanisms based on issues. The algorithm you use for one issue may not be suitable for another. There cannot be one formula, one answer to every question.<br>
-<br>
+          <span style="font-family: 'Garamond';">Conversation between Merve Bedir and Bager Akbay<br>
+          <br>
+          <span style="font-style: italic;">Merve Bedir is an architect based in Hong Kong. She works at the intersection of the technologies of labour, landscape, mobility, and commons. <a style="text-decoration: none; color:#ffffff;" target="_blank" href="https://www.aformalacademy.com/">https://www.aformalacademy.com/</a> & <a style="text-decoration: none; color:#ffffff;" target="_blank"  href="http://landandcc.com/"> http://landandcc.com/ </a><br>
+          Bager Akbay is an artist-as-researcher based in Istanbul.<br></span></span>
+          <br>
+          <span style="color: #2ba741">Merve Bedir:</span> I research the <a style="text-decoration: none; color:#ffffff;" target="_blank"  href="https://automated-landscapes.hetnieuweinstituut.nl/en/https%3A/automated-landscapes.hetnieuweinstituut.nl/research/automated-landscapes-pearl-river-delta">automation of labor</a> in the factories of Pearl River Delta region, as well as an unrealized 2018 Hong Kong Biennale exhibition proposal called "Collective Intelligence," where we wanted to research the coalescing forms of intelligence among peoples and nonhumans. For this conversation with you as a joint contribution to the Invisible Biennale exhibition, my interests were your former works "Deniz Yılmaz" (bot poet) and "Shepherd" (bot curator). Shepherd, especially, as a metaphor for the curator fascinates me. Shepherd is the one who cares and is responsible for the herd.<br>
+          <br>
+          <span style="color: #2ba741">Bager Akbay:</span> The shepherd looks after the herd, but also the one who leads it. Prophets were almost always shepherds before becoming, some politicians describe their former work as being shepherds, in Ancient Greece philosophers were not allowed to engage in any profession but could only do shepherding. Curating is as such a hierarchical position. The curator might be creating your identity while caring for you, or it might be creating space for you to flourish.<br>
+          <br>
+          <span style="color: #2ba741">Merve:</span> In the factory, there are three roles, the blue collar, the white collar, and the boss. In our research we found that human labour is still preferred to robots, while bots used for operation replace the human middle manager (white collar labour) in the workplace.<br>
+          <br>
+          <span style="color: #2ba741">Bager:</span> In fact, it is labour that changes form. The blue collar becomes the robot, the white collar becomes the operation bot. I'm curious about the form and nature of the boss, the leader (in our case, the curator). A cooperative works on three kinds of charters, initiating, operation, and decommissioning. If you include the other two charters, the operation charter could change towards leadership. Here, the leader is the contract, the operation, the code. If the codes are open, if the human language of the protocols are clear/ can be identified, and if this language can be decided by the people, that's a good exhibition, or a real society.<br>
+          <br>
+          <span style="color: #2ba741">Merve:</span> It's the value systems that define the codes, isn't it? On the one hand the value systems define the characteristics of the curator, and on the other, the curator (singular or collective) defines the value of an art work, how important/significant that work is, and also how much it’s worth.<br>
+          <br>
+          <span style="color: #2ba741">Bager:</span> Curator is like a cell's membrane, it takes the input from its participants and reflects the output back to them, or to outside. Similarly, leaders reflect the characteristics of their societies. In "Shepherd" my idea was to leave all decision making to the bot curator, as the cell's membrane. I started forms for different jobs regarding an exhibition in a Human Resources website, people applied to it for the different positions in the exhibition, such as defining a concept sentence for the exhibition, a workflow, commissions, translations, and so on. There was an open call, artists applied, and the process was completely organized according to the open code of the bot.<br>
+          <br>
+          My point is that humans are adaptation machines. If you put a human in a society it will take the form of the society. The form of society is political, which is shaped by laws and the cultural codes. If we change the rules of the law, the society inside will change. A company works with its own operational codes. It can act with different values in different parts of the code/algorithm, for instance it could be more communist in human resources, while being liberal in distributing profit. We need to see that these codes are political. If we can analyze what is good or bad in these codes, what works better in which way, the differences of the governance models, etc. then we can also see what mode requires what quality, what problem requires what control mechanisms, and so on. These codes and modes need to be open and developed based on consensus.<br>
+          <br>
+          <span style="color: #2ba741">Merve:</span> In the laws of the cooperatives (or companies), we still don't/won't have the initiation and decommissioning as bots, though. "Shepherd" is an inspiration in that sense, that this is a possibility in governance.<br>
+          <br>
+          <span style="color: #2ba741">Bager:</span> Governance is a self-conscious mechanism/system, a matter of cybernetics. We can understand the laws of a system only by being self-conscious, the robots can work without being self-conscious, which is a problem, but the bots can, to a certain extent, which is interesting. In "Shepherd," the applicants, who declared they can curate the exhibition, cross-voted among themselves about who should really do it. At every step there was such a self-control process for qualification and consensus. The exhibition as a process and outcome was so natural and so smooth that no one realized anything. This is striking because this is also how things happen in the real world.<br>
+          <br>
+          <span style="color: #2ba741">Merve:</span> Well, Constant suggested that in future all blue-collar work will be done by robots and humans will become architects. But, I feel you think the opposite, as humans should/will actually continue blue-collar work, while codes/algorithms become leaders.<br>
+          <br>
+          <span style="color: #2ba741">Bager:</span> Which mode do you think is closer to human nature? Think of a mayor, how can they govern one million people, right? It just doesn't make sense. I'm thinking we should be doing more blue-collar work, and then transparent, open-code algorithms (rules, laws) could lead.<br>
+          <br>
+          <span style="color: #2ba741">Merve:</span> But historically, the leader has always been outside the law.<br>
+          <br>
+          <span style="color: #2ba741">Bager:</span> Yes, that's people not leaving the decision to the existing law, but creating exceptions. That's why governments love crises, because this gives them the possibility of suspending the law, and continuing their sovereignty. Think about <a style="text-decoration: none; color:#ffffff;" target="_blank" href="https://en.wikipedia.org/wiki/The_DAO_(organization)">The DAO</a> in France, with the recent crisis they had, if they let it to the algorithm, The DAO should have shut down, but they changed the algorithm and continued. When the leader is the algorithm, there are no exceptions and no bad leaders. If the code is open, the leader will be open and transformed, too. We criticize our leaders but we do the exact same things in our lives.<br>
+          <br>
+          <span style="color: #2ba741">Merve:</span> Same goes for curating.<br>
+          <br>
+          <span style="color: #2ba741">Bager:</span> Exactly. Essentially, people should discuss and decide on the code, and the code should be organizing how to continuously discuss. The curator is this code. Then, art is doing what you see, and what you want to see. This attitude is not included in the scope of other disciplines anymore. That's why I'm interested in art. This is why I am working on <a style="text-decoration: none; color:#ffffff;" target="_blank" href="https://mahlas.network/">Mahlas now</a>.<br>
+          <br>
+          <span style="color: #2ba741">Merve:</span> I want to go back to the question of consciousness for a last note. Before, we talked about the self-consciousness of an algorithm and society. This really makes me think of the 2019 Hong Kong movement. What happened in Hong Kong was this self-consciousness of a movement, and utilizing open code software as tools to help the movement of this self-consciousness. We know this worked because the same consciousness also has led to a success of managing the pandemic in the city. To witness the possibility of a leaderless governance in this example is mind blowing.<br>
+          <br>
+          <span style="color: #2ba741">Bager:</span> It is about how we define the leader, and the algorithm/ the bot. The leader and the algorithm are nothing but contracts. They are rules and regulations. Who we are, is who our workers, managers, curators, or leaders are. As I said before, what we need to make sure is to keep the source code open and transparent, discuss how it's run. Also we need to diversify the tools, and the decision making mechanisms based on issues. The algorithm you use for one issue may not be suitable for another. There cannot be one formula, one answer to every question.<br>
+          <br>
 
 
       </h4>
@@ -592,24 +594,34 @@ Bager: It is about how we define the leader, and the algorithm/ the bot. The lea
 
 
     <div style="position:fixed; width:20vw; height: 20vw; left:25%; bottom: 5%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #4ef9fb;">
-      
+      <a href="#BOTTAVIA_R01"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/1bot/BOTTAVIA_R01.jpg"></a>
+    </div>
 
+
+    <div style="position:fixed; width:12vw; height: 12vw; left:55%; bottom: 5%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -0.7rem 0.7rem #4ef9fb;">
       <a href="#CLOSEUP_BOTTAVIA_01_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/1bot/CLOSEUP_BOTTAVIA_01_R00.jpg">
       </a>
     </div>
 
-    <div style="position:fixed; width:12rem; height: 12rem; right:35%; top:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #4ef9fb;">
-      <a href="#" class="JesterBox">
-          <div id="CLOSEUP_BOTTAVIA_02_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/1bot/CLOSEUP_BOTTAVIA_02_R00.jpg">
-          </div>
-      </a>
-            <a href="#" class="JesterBox">
-          <div id="CLOSEUP_BOTTAVIA_01_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain; z-index: 100;" src="./data/1bot/CLOSEUP_BOTTAVIA_01_R00.jpg">
-          </div>
-      </a>
+
+    <div style="position:fixed; width:12vw; height: 12vw; right:35%; top:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #4ef9fb;">
       <a href="#CLOSEUP_BOTTAVIA_02_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/1bot/CLOSEUP_BOTTAVIA_02_R00.jpg">
       </a>
     </div>
+
+      <a href="#" class="JesterBox">
+          <div id="CLOSEUP_BOTTAVIA_01_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/1bot/CLOSEUP_BOTTAVIA_01_R00.jpg">
+          </div>
+      </a>
+      <a href="#" class="JesterBox">
+          <div id="BOTTAVIA_R01"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain; z-index: 100;" src="./data/1bot/BOTTAVIA_R01.jpg">
+          </div>
+      </a>
+      <a href="#" class="JesterBox">
+          <div id="CLOSEUP_BOTTAVIA_02_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain; z-index: 100;" src="./data/1bot/CLOSEUP_BOTTAVIA_02_R00.jpg">
+          </div>
+      </a>
+    
 
 
 
@@ -637,18 +649,16 @@ Bager: It is about how we define the leader, and the algorithm/ the bot. The lea
 
 
     
-    <div class="lefttext" style="position:fixed; width:25%; height: 60%; left:5%; bottom: 5%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
-      <div style="position: absolute; top: 1rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 2rem;">
+    <div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:5%; bottom: 5%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
+      <div style="position: absolute; top: 2rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 2rem;">
       <h3>
-        <br>
-        <br>
         <p style="text-align: center;">Canonice</p>
-<br>
-Never in all my travels had I ventured as far as the Triennale of Canonice. It was dusk when I landed there. At the entrance of the main venue, the assistant curator who welcomed me with the catalog in his hands, “the Architecture we have always Built”, resembled a professor who had taught me 30 years before and was dead. I was invited to tour the exhibition and, at the same time, to examine some old publications to understand how the show used to be: the same plans and sections in black and white instead of more saturated colours, a hand-carved timber model instead of gently CNC milled, another model to contemplate the coherence and poetry of a space instead of trendy collages. To not disappoint the curators, you must praise the old publications together with the current one, and you must be careful to contain your regret at the absence of any significant change: highlighting in your dialogues the eternal relevance of architectural fundamentals, the indisputable role of architecture drawings, the unquestionable methodologies of architectural design and the unmissable role of architectural references, you need to express a contained but visible excitement for the epidermal deviations from the canon, praising their foresight and the progeny of the canon in all the corners of the kingdom. If Canonice had remained unchanged because this is its own true skin or the mask it is convenient to wear, I don’t know, and nobody in the kingdom dares to guess.<br> 
-<br>
-A young architect was meticulously drawing the imperfection of a concrete wall as if it was an onyx slab from Madagascar, and I thought I recognized him; when I turned, he had disappeared down the corridor, but I realized that he looked like the assistant curator who, already old when I was a child, could no longer be among the living. I turned my gaze aside and I no longer dared look anyone in the face. I thought: "If Canonice is a triennial I am seeing in a dream, where you encounter only the dead, the dream frightens me. If Canonice is a real Triennale, showcasing the work of living people, I need only to continue looking at them and the resemblances will dissolve, alien faces will appear, bearing anguish. In either case, it is best for me not to insist on staring at them." <br>
-<br>
-An elegant architect was scrupulously cleaning a diorama with miniature velvet curtains, to arrange it on a table together with other models of the same kind. He raised his face: he was Aldo Rossi. I thought: "You reach a moment in life when, among the people that inspire your work, the dead outnumber the living. And the mind refuses to accept new paradigms and new expressions: on every new work you start, it tries to print the old forms, to each one it finds the most suitable mask." Perhaps, to him, I also resemble someone who was dead. I had barely arrived at Canonice and I was already one of them, I had gone over to their side, absorbed in that kaleidoscope of line-weight, solid timber, plaster casts. I thought: "Perhaps Canonice is the Triennale where you arrive dying and where each finds again the masters he has known. This means I, too, am dead." And I also thought: "This means the beyond is not necessarily new."<br>
+            <br>
+            Never in all my travels had I ventured as far as the Triennale of Canonice. It was dusk when I landed there. At the entrance of the main venue, the assistant curator who welcomed me with the catalog in his hands, “the Architecture we have always Built”, resembled a professor who had taught me 30 years before and was dead. I was invited to tour the exhibition and, at the same time, to examine some old publications to understand how the show used to be: the same plans and sections in black and white instead of more saturated colours, a hand-carved timber model instead of gently CNC milled, another model to contemplate the coherence and poetry of a space instead of trendy collages. To not disappoint the curators, you must praise the old publications together with the current one, and you must be careful to contain your regret at the absence of any significant change: highlighting in your dialogues the eternal relevance of architectural fundamentals, the indisputable role of architecture drawings, the unquestionable methodologies of architectural design and the unmissable role of architectural references, you need to express a contained but visible excitement for the epidermal deviations from the canon, praising their foresight and the progeny of the canon in all the corners of the kingdom. If Canonice had remained unchanged because this is its own true skin or the mask it is convenient to wear, I don’t know, and nobody in the kingdom dares to guess.<br> 
+            <br>
+            A young architect was meticulously drawing the imperfection of a concrete wall as if it was an onyx slab from Madagascar, and I thought I recognized him; when I turned, he had disappeared down the corridor, but I realized that he looked like the assistant curator who, already old when I was a child, could no longer be among the living. I turned my gaze aside and I no longer dared look anyone in the face. I thought: "If Canonice is a triennial I am seeing in a dream, where you encounter only the dead, the dream frightens me. If Canonice is a real Triennale, showcasing the work of living people, I need only to continue looking at them and the resemblances will dissolve, alien faces will appear, bearing anguish. In either case, it is best for me not to insist on staring at them." <br>
+            <br>
+            An elegant architect was scrupulously cleaning a diorama with miniature velvet curtains, to arrange it on a table together with other models of the same kind. He raised his face: he was Aldo Rossi. I thought: "You reach a moment in life when, among the people that inspire your work, the dead outnumber the living. And the mind refuses to accept new paradigms and new expressions: on every new work you start, it tries to print the old forms, to each one it finds the most suitable mask." Perhaps, to him, I also resemble someone who was dead. I had barely arrived at Canonice and I was already one of them, I had gone over to their side, absorbed in that kaleidoscope of line-weight, solid timber, plaster casts. I thought: "Perhaps Canonice is the Triennale where you arrive dying and where each finds again the masters he has known. This means I, too, am dead." And I also thought: "This means the beyond is not necessarily new."<br>
         <br>
       </h3>
     </div>
@@ -660,68 +670,70 @@ An elegant architect was scrupulously cleaning a diorama with miniature velvet c
 
 
     <div class="Contributors_Frame" style="
-    font-family: 'Special Elite', cursive;
-    position:fixed; width:15rem; height: 50vh; right:5%; top:20%; border: solid; border-color: #a5d1a9; border-width: 0; background-color: white; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #151617; background-size: cover; background-image: url(./data/2can/Contributor_Background_CANONICE.jpg);">
-      <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem;">
+    font-family: Calibri,Candara,Segoe,Segoe UI,Optima,Arial,sans-serif;;
+    position:fixed; width:21rem; height: 30rem; right:5%; top:20%; border: solid; border-color: #a5d1a9; border-width: 0; background-color: white; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #151617; background-size: cover; background-image: url(./data/2can/Contributor_Background_CANONICE.jpg);">
+      <div style="position: absolute; overflow: scroll; top: 2rem; bottom: 2rem; right: 2rem; left: 2rem; color:#803025; background-color:#d7d2c8; text-align: justify; text-justify: inter-word; padding: 0.8rem 2rem 0.8rem 2rem;">
       <h4>
 
 
-Sabina Shikhlinskaya - artist, independent curator, educator. She explores multimedia practices, creating art works with the priority of social subjects. <a href="http://sabinashikhlinskaya.info/">http://sabinashikhlinskaya.info/</a><br>
-The Wall<br>
-<br>
-Neophobia is the fear of anything new. In its milder form, it can manifest as the unwillingness to break from routine.<br>
-<br>
-“Accepted and approved by those who were before us, and devoted to us in the inadmissibility of any deviation, innovation, or abolition in their content ...<br>
-No one will be allowed to change the above rules, or accept instead of the proposed rules others, drawn up by certain people who have dared to trade the truth. "<br>
-<br>
-2nd Canon of the V-VI Ecumenical Council<br>
-<br>
-<br>
-<br>
-Today, many agree that the biennales have become obsolete, even though currently there is no other format comparable in its prominence. Recently, every corner of the world has wanted to place itself on the map of modern art tourism by way of participation in the Biennale. It was vitally important for every artist to be included in the group of participants, despite the awareness of the hypocrisy of the corporate-managerial elite, which runs the contemporary artistic system, and its political correctness, which limits individual freedom of creative expression.<br>
-<br>
-In the era of universal automation, sovereign Internet, trade wars, and other signs of the times, the price for international megaprojects has become too high for organizers increasingly doubting the need to pay for their own critique.
-The biennales used to be a compromise and are even more so now, during the recession of the biennale boom, although it is still they who define the progressive social and aesthetic agenda in contemporary world culture.<br>
-<br>
-------------------------------<br>
-<br>
-A modern man, freed from the shackles before the individualistic society, which both limited and provided him with security and peace, did not acquire freedom in terms of realization of his personality. In most cases, a person is not yet mature enough to be completely independent and objective. The cultural and social crisis of our days is reflected directly in the meaning of freedom for a modern person, as well as on the problem of interconnection and interaction between psychological and sociological factors of social development.<br>
-<br>
-The new history was conditioned by efforts aimed at acquiring freedom from the political, economic, and spiritual shackles that bound a person aimed at victory over the forces of totalitarianism. Despite numerous defeats, freedom usually prevailed. History has confirmed that a person can control himself, make decisions by himself, think, and feel as he deems right.<br>
-<br>
-It is paradoxical that although freedom brings a person independence and rationality of his own existence, it simultaneously isolates him, awakening in him a feeling of powerlessness and anxiety. This isolation is unbearable, and a person is faced with a choice: to either get rid of freedom with the help of a new dependence, new submission, or grow to the full realization of positive freedom based on the uniqueness and individuality of each.<br>
-<br>
-If we consider the problem of a person and his freedom and lack of freedom and imagine that space is freedom, while the constraint of space is non-freedom, then the image of a wall that ascends in its functional basis to an absolute forbiddance is precisely what represents a system of prohibitions in the social structure. The horizon, however, can be viewed as an image of experience - contours, and outlines that are not inherent in objects in reality but traced in them by our perception, brought into the world by our finite presence. Any experience, in its most important feature, reveals the property of finitude, which means that experience always has boundaries. Since these boundaries are not laid down once and for all but are shifting, changeable, they form horizons.<br>
-<br>
-Thus, the experience that humanity has is always on this side of the horizons, while they continue to shift. The world is something that precedes all experience, a miracle, and a mystery that instills concern in the existence of man and makes him seek salvation in the existing order of things.<br>
-<br>
-СТЕНА<br>
-<br>
-<br>
-Neophobia is the fear of anything new. In its milder form, it can manifest as the unwillingness to break from routine
-Неофобия — боязнь чего-либо нового. В более мягкой форме это может проявляться в нежелании отказываться от рутины 
-ru.qaz.wiki/wiki/Neophobia<br>
-<br>
-<br>
-«Принятые и утвержденные бывшими прежде нас, и нам преданные в недопустимости всякого отступления, нововведения или упразднения в их содержании… <br>
-Никому не будет позволено вышеозначенные правила изменять или принимать вместо предложенных правил иные, составленные некими людьми, дерзнувшими торгашествовать истиной» <br>
-2-ой канон V-VI Вселенского Собора<br>
-<br>
-<br>
-<br>
-Сегодня многие согласны с тем, что биеннале изжили себя, хотя при этом никакого иного сопоставимого по значимости формата на данный момент не существует. Недавно каждый уголок мира хотел обозначить себя на карте современного арт-туризма посредством биеннале. Для каждого художника жизненно важным было оказаться в обойме участников, несмотря на осознание лицемерия корпоративно-менеджерской̆ элиты, заправляющей̆ современной̆ художественной̆ системой̆ и ее политическую корректность, ограничивающую индивидуальную свободу творческого самовыражения.<br>
-В эпоху всеобщей автономизации, суверенных интернетов, торговых войн и прочих примет времени, цена за интернациональные мега проекты стала слишком высокой для организаторов, все чаще сомневающихся в необходимости оплаты собственной критики.
-Биеннале и раньше были компромиссом, а теперь во времена спада биеннального бума тем более, хотя по- прежнему именно они заявляют прогрессивную социальную и эстетическую повестку в современной мировой культуре.  <br>
-<br>
-------------------------------<br>
-<br>
-<br>
-<br>
-Современный человек, освобожденный от оков до индивидуалистического общества, которое одновременно и ограничивало его, и обеспечивало ему безопасность и покой, не приобрел свободы в смысле реализации его личности. Человек в большинстве случаев еще недостаточно созрел, чтобы быть совершенно независимым и объективным. Культурный и социальный кризис наших дней отражается непосредственно на значении свободы для современного человека, а также на проблеме взаимосвязи и взаимодействия между психологическими и социологическими факторами общественного развития.<br>
-Новую историю обусловили усилия, направленные на завоевание свободы от политических, экономических и духовных оков, которые связывали человека, направленного к победе над силами тоталитаризма. Несмотря на многочисленные поражения, свобода в целом побеждала. История подтвердила, что человек способен управлять собой, сам принимать решения, думать и чувствовать так, как ему кажется верным. <br>
-Парадоксально то, что хотя свобода приносит человеку независимость и рациональность его существования, она в то же время изолирует его, пробуждая в нем чувство бессилия и тревоги. Эта изоляция непереносима, и человек оказывается перед выбором: либо избавиться от свободы с помощью новой зависимости, нового подчинения, либо дорасти до полной реализации позитивной свободы, основанной на неповторимости и индивидуальности каждого. <br>
-Если рассматривать проблему человека и его свободы и несвободы и представить, что пространство – это свобода, а запрет на пространство – это несвобода, то образ стены, восходящей в своей функциональной основе к абсолютному запрету, и представляет собой систему запретов в общественном устройстве. Горизонт же можно рассматривать как образ опыта - контуры и очертания, не присущие предметам реально, но прочерчиваемые в них нашим восприятием, вносимым в мир нашим конечным присутствием. Любой опыт, в качестве важнейшей своей черты обнаруживает свойство конечности, что означает, что опыт всегда имеет границы. Поскольку эти границы не положены раз и навсегда, но подвижны, изменчивы, они образуют горизонты. Имеющийся у человечества опыт, оказывается тем самым, всегда по эту сторону горизонтов, при этом они непрерывно сдвигаются. Мир же — это то, что предшествует всякому опыту, чудо и загадка, вселяющие беспокойство в существование человека и заставляющие его искать спасения в существующем порядке вещей.<br>
-<br>
+          <span style="font-style: italic; font-family: Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif; "><span style="font-weight: bold;">Sabina Shikhlinskaya</span> - artist, independent curator, educator. She explores multimedia practices, creating art works with the priority of social subjects. <a style="text-decoration: none; color:#803025;" target="_blank"   href="http://sabinashikhlinskaya.info/">http://sabinashikhlinskaya.info/</a></span>
+          <br>
+          <br>
+          The Wall<br>
+          <br>
+          Neophobia is the fear of anything new. In its milder form, it can manifest as the unwillingness to break from routine.<br>
+          <br>
+          “Accepted and approved by those who were before us, and devoted to us in the inadmissibility of any deviation, innovation, or abolition in their content ...<br>
+          No one will be allowed to change the above rules, or accept instead of the proposed rules others, drawn up by certain people who have dared to trade the truth. "<br>
+          <br>
+          2nd Canon of the V-VI Ecumenical Council<br>
+          <br>
+          <br>
+          <br>
+          Today, many agree that the biennales have become obsolete, even though currently there is no other format comparable in its prominence. Recently, every corner of the world has wanted to place itself on the map of modern art tourism by way of participation in the Biennale. It was vitally important for every artist to be included in the group of participants, despite the awareness of the hypocrisy of the corporate-managerial elite, which runs the contemporary artistic system, and its political correctness, which limits individual freedom of creative expression.<br>
+          <br>
+          In the era of universal automation, sovereign Internet, trade wars, and other signs of the times, the price for international megaprojects has become too high for organizers increasingly doubting the need to pay for their own critique.
+          The biennales used to be a compromise and are even more so now, during the recession of the biennale boom, although it is still they who define the progressive social and aesthetic agenda in contemporary world culture.<br>
+          <br>
+          ------------------------------<br>
+          <br>
+          A modern man, freed from the shackles before the individualistic society, which both limited and provided him with security and peace, did not acquire freedom in terms of realization of his personality. In most cases, a person is not yet mature enough to be completely independent and objective. The cultural and social crisis of our days is reflected directly in the meaning of freedom for a modern person, as well as on the problem of interconnection and interaction between psychological and sociological factors of social development.<br>
+          <br>
+          The new history was conditioned by efforts aimed at acquiring freedom from the political, economic, and spiritual shackles that bound a person aimed at victory over the forces of totalitarianism. Despite numerous defeats, freedom usually prevailed. History has confirmed that a person can control himself, make decisions by himself, think, and feel as he deems right.<br>
+          <br>
+          It is paradoxical that although freedom brings a person independence and rationality of his own existence, it simultaneously isolates him, awakening in him a feeling of powerlessness and anxiety. This isolation is unbearable, and a person is faced with a choice: to either get rid of freedom with the help of a new dependence, new submission, or grow to the full realization of positive freedom based on the uniqueness and individuality of each.<br>
+          <br>
+          If we consider the problem of a person and his freedom and lack of freedom and imagine that space is freedom, while the constraint of space is non-freedom, then the image of a wall that ascends in its functional basis to an absolute forbiddance is precisely what represents a system of prohibitions in the social structure. The horizon, however, can be viewed as an image of experience - contours, and outlines that are not inherent in objects in reality but traced in them by our perception, brought into the world by our finite presence. Any experience, in its most important feature, reveals the property of finitude, which means that experience always has boundaries. Since these boundaries are not laid down once and for all but are shifting, changeable, they form horizons.<br>
+          <br>
+          Thus, the experience that humanity has is always on this side of the horizons, while they continue to shift. The world is something that precedes all experience, a miracle, and a mystery that instills concern in the existence of man and makes him seek salvation in the existing order of things.<br>
+          <br>
+          СТЕНА<br>
+          <br>
+          <br>
+          Neophobia is the fear of anything new. In its milder form, it can manifest as the unwillingness to break from routine
+          Неофобия — боязнь чего-либо нового. В более мягкой форме это может проявляться в нежелании отказываться от рутины 
+          ru.qaz.wiki/wiki/Neophobia<br>
+          <br>
+          <br>
+          «Принятые и утвержденные бывшими прежде нас, и нам преданные в недопустимости всякого отступления, нововведения или упразднения в их содержании… <br>
+          Никому не будет позволено вышеозначенные правила изменять или принимать вместо предложенных правил иные, составленные некими людьми, дерзнувшими торгашествовать истиной» <br>
+          2-ой канон V-VI Вселенского Собора<br>
+          <br>
+          <br>
+          <br>
+          Сегодня многие согласны с тем, что биеннале изжили себя, хотя при этом никакого иного сопоставимого по значимости формата на данный момент не существует. Недавно каждый уголок мира хотел обозначить себя на карте современного арт-туризма посредством биеннале. Для каждого художника жизненно важным было оказаться в обойме участников, несмотря на осознание лицемерия корпоративно-менеджерской̆ элиты, заправляющей̆ современной̆ художественной̆ системой̆ и ее политическую корректность, ограничивающую индивидуальную свободу творческого самовыражения.<br>
+          В эпоху всеобщей автономизации, суверенных интернетов, торговых войн и прочих примет времени, цена за интернациональные мега проекты стала слишком высокой для организаторов, все чаще сомневающихся в необходимости оплаты собственной критики.
+          Биеннале и раньше были компромиссом, а теперь во времена спада биеннального бума тем более, хотя по- прежнему именно они заявляют прогрессивную социальную и эстетическую повестку в современной мировой культуре.  <br>
+          <br>
+          ------------------------------<br>
+          <br>
+          <br>
+          <br>
+          Современный человек, освобожденный от оков до индивидуалистического общества, которое одновременно и ограничивало его, и обеспечивало ему безопасность и покой, не приобрел свободы в смысле реализации его личности. Человек в большинстве случаев еще недостаточно созрел, чтобы быть совершенно независимым и объективным. Культурный и социальный кризис наших дней отражается непосредственно на значении свободы для современного человека, а также на проблеме взаимосвязи и взаимодействия между психологическими и социологическими факторами общественного развития.<br>
+          Новую историю обусловили усилия, направленные на завоевание свободы от политических, экономических и духовных оков, которые связывали человека, направленного к победе над силами тоталитаризма. Несмотря на многочисленные поражения, свобода в целом побеждала. История подтвердила, что человек способен управлять собой, сам принимать решения, думать и чувствовать так, как ему кажется верным. <br>
+          Парадоксально то, что хотя свобода приносит человеку независимость и рациональность его существования, она в то же время изолирует его, пробуждая в нем чувство бессилия и тревоги. Эта изоляция непереносима, и человек оказывается перед выбором: либо избавиться от свободы с помощью новой зависимости, нового подчинения, либо дорасти до полной реализации позитивной свободы, основанной на неповторимости и индивидуальности каждого. <br>
+          Если рассматривать проблему человека и его свободы и несвободы и представить, что пространство – это свобода, а запрет на пространство – это несвобода, то образ стены, восходящей в своей функциональной основе к абсолютному запрету, и представляет собой систему запретов в общественном устройстве. Горизонт же можно рассматривать как образ опыта - контуры и очертания, не присущие предметам реально, но прочерчиваемые в них нашим восприятием, вносимым в мир нашим конечным присутствием. Любой опыт, в качестве важнейшей своей черты обнаруживает свойство конечности, что означает, что опыт всегда имеет границы. Поскольку эти границы не положены раз и навсегда, но подвижны, изменчивы, они образуют горизонты. Имеющийся у человечества опыт, оказывается тем самым, всегда по эту сторону горизонтов, при этом они непрерывно сдвигаются. Мир же — это то, что предшествует всякому опыту, чудо и загадка, вселяющие беспокойство в существование человека и заставляющие его искать спасения в существующем порядке вещей.<br>
+          <br>
 
 
       </h4>
@@ -745,25 +757,39 @@ ru.qaz.wiki/wiki/Neophobia<br>
       <h2 class="rotate" style="position:fixed; letter-spacing:0.5rem; color:white; font-family:'EB Garamond', serif; font-style: italic; font-size:2rem; text-align: center;">&nbsp;&nbsp;&nbsp;menu&nbsp;&nbsp;&nbsp;</h2>
   </div>  
 
+
     <div style="position:fixed; width:20vw; height: 20vw; left:30%; top:5%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #a9f9ce;">
-      
-      <a href="#" class="JesterBox">
-          <div id="CLOSEUP_CANONICE_01_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/2can/CLOSEUP_CANONICE_01_R00.jpg">
-          </div>
+      <a href="#CANONICE_R01"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/2can/CANONICE_R01.jpg">
       </a>
+    </div>
+
+    <div style="position:fixed; width:12vw; height: 12vw; left:8%; top:8%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #a9f9ce;">
       <a href="#CLOSEUP_CANONICE_01_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/2can/CLOSEUP_CANONICE_01_R00.jpg">
       </a>
     </div>
 
-    <div style="position:fixed; width:10rem; height: 10rem; left:8%; top:8%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #a9f9ce;">
+    <div style="position:fixed; width:12vw; height: 12vw; left:35%; top:55%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #a9f9ce;">
+      <a href="#CLOSEUP_CANONICE_02_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/2can/CLOSEUP_CANONICE_02_R00.jpg">
+      </a>
+    </div>    
+
+
+      <a href="#" class="JesterBox">
+          <div id="CANONICE_R01"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/2can/CANONICE_R01.jpg">
+          </div>
+      </a>
+
+      <a href="#" class="JesterBox">
+          <div id="CLOSEUP_CANONICE_01_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/2can/CLOSEUP_CANONICE_01_R00.jpg">
+          </div>
+      </a>
+
       <a href="#" class="JesterBox">
           <div id="CLOSEUP_CANONICE_02_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/2can/CLOSEUP_CANONICE_02_R00.jpg">
           </div>
       </a>
-      <a href="#CLOSEUP_CANONICE_02_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/2can/CLOSEUP_CANONICE_02_R00.jpg">
-      </a>
-    </div>
 </div>
+
 
 
 
@@ -794,11 +820,9 @@ ru.qaz.wiki/wiki/Neophobia<br>
   </div>
 
 
-<div class="lefttext" style="position:fixed; width:25%; height: 60%; left:5%; top:20%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
-      <div style="position: absolute; top: 1rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 2rem;">
+<div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:45%; bottom: 10%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
+      <div style="position: absolute; top: 2rem; bottom: 4rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
       <h3>
-        <br>
-        <br>
         <p style="text-align: center;">Eccessa</p>
 <br>
 There are many ways of describing the Biennial of Eccessa: you can say that four gilded masts rise from the glazed facade flanking seven arches with gracefully saluting doormen that connect the halls whose marble floors feed four arcades which cross the Biennial, dividing it into nine spaces, each with three hundred pavilions and seven hundred projects. And bearing in mind that the attentive entrepreneurs of each pavilion cooperate with their counterparts of other quarters and their managers exchange the assets that each investor aims to secure - sculptures, paintings, installations, prototypes, or anything else - you can then work from these facts until you trace everyone who made some profit out of the Biennial in the past, present, and future, its organizers, contributors, collaborators or even a simple layman.<br>
@@ -814,14 +838,26 @@ But with all this, I would not be telling you the Biennial's true essence; for w
 
 
     <div class="Contributors_Frame" style="
-    font-family: 'Special Elite', cursive;
-    position:fixed; width:15rem; height: 50vh; right:5%; top:20%; border: solid; border-color: #a5d1a9; border-width: 0; background-color: white; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #151617; background-size: cover; background-image: url(./data/3ecc/Contributor_Background_ECCESSA.jpg);">
-      <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem;">
-      <h4>
+    font-style: italic; font-family: Bodoni MT,Didot,Didot LT STD,Hoefler Text,Garamond,Times New Roman,serif;
+    position:fixed; width:16rem; height: 20rem; left: 2.5%; top:10%; border: solid; border-color: #a5d1a9; border-width: 0; background-color: white; z-index: 0; padding: 0.8rem 0.4rem 0.8rem 0.4rem; color: #151617; background-size: cover; background-image: url(./data/3ecc/Contributor_Background_ECCESSA.jpg);">
+      <div style="position: absolute; overflow: scroll; top: 0.8rem; bottom: 0.8rem; right: 1rem; left: 1rem; background-color: rgba(255, 255, 255, 0.5); text-justify: inter-word;">
+      <h4 style="padding-left: 0.4rem; padding-right: 0.4rem;">
+      Nora Akawi is a Palestinian architect teaching at The Cooper Union. She studies architecture as a project of erasure and exclusion in settler colonialism. Eduardo Rega is a Canarian architect teaching at UPenn. He studies architectures of social movements that refuse the capitalist world order. <a style="text-decoration: none; color: #151617;" target="_blank" href="https://www.architecturesofrefusal.org/"> https://www.architecturesofrefusal.org/</a>
+      <br>
+      <br>
+<!-- <img style="width: 100%" src="./data/3ecc/Contributor_Text_ECCESSA_1.jpg">
+<img style="width: 100%" src="./data/3ecc/Contributor_Text_ECCESSA_2.jpg"> -->
 
-Nora Akawi is a Palestinian architect teaching at The Cooper Union. She studies architecture as a project of erasure and exclusion in settler colonialism. Eduardo Rega is a Canarian architect teaching at UPenn. He studies architectures of social movements that refuse the capitalist world order. <a href="https://www.architecturesofrefusal.org/"> https://www.architecturesofrefusal.org/</a>
 
-
+    <div style="width:100%;">
+      <a href="#Contributor_Text_ECCESSA_1"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/3ecc/Contributor_Text_ECCESSA_1.jpg">
+      </a>
+    </div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div style="width:100%;">
+      <a href="#Contributor_Text_ECCESSA_2"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/3ecc/Contributor_Text_ECCESSA_2.jpg">
+      </a>
+    </div>
 
       </h4>
       </div>
@@ -829,24 +865,51 @@ Nora Akawi is a Palestinian architect teaching at The Cooper Union. She studies 
 
 
 
-<div style="position:fixed; width:20vw; height: 20vw; left:30%; top:5%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #4ab4d4;">
-      
-      <a href="#" class="JesterBox">
-          <div id="CLOSEUP_ECCESSA_01_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/3ecc/CLOSEUP_ECCESSA_01_R00.jpg">
-          </div>
+    <div style="position:fixed; width:22vw; height: 22vw; left:24%; bottom:5%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #4ab4d4;">
+      <a href="#ECCESSA_R01"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/3ecc/ECCESSA_R01.jpg">
       </a>
+    </div>
+
+    <div style="position:fixed; width:12vw; height: 12vw; left:40%; top:5%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #4ab4d4;">
       <a href="#CLOSEUP_ECCESSA_01_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/3ecc/CLOSEUP_ECCESSA_01_R00.jpg">
       </a>
     </div>
 
-    <div style="position:fixed; width:10rem; height: 10rem; left:8%; top:8%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #4ab4d4;">
+    <div style="position:fixed; width:12vw; height: 12vw; right:20%; top:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #4ab4d4;">
+      <a href="#CLOSEUP_ECCESSA_02_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/3ecc/CLOSEUP_ECCESSA_02_R00.jpg">
+      </a>
+    </div>    
+
+
+      <a href="#" class="JesterBox">
+          <div id="ECCESSA_R01"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/3ecc/ECCESSA_R01.jpg">
+          </div>
+      </a>
+
       <a href="#" class="JesterBox">
           <div id="CLOSEUP_ECCESSA_02_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/3ecc/CLOSEUP_ECCESSA_02_R00.jpg">
           </div>
+      </a>    
+
+      <a href="#" class="JesterBox">
+          <div id="CLOSEUP_ECCESSA_01_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/3ecc/CLOSEUP_ECCESSA_01_R00.jpg">
+          </div>
       </a>
-      <a href="#CLOSEUP_ECCESSA_02_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/3ecc/CLOSEUP_ECCESSA_02_R00.jpg">
+
+
+
+
+
+
+      <a href="#" class="JesterBox">
+          <div id="Contributor_Text_ECCESSA_1"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/3ecc/Contributor_Text_ECCESSA_1.jpg">
+          </div>
       </a>
-    </div>
+
+      <a href="#" class="JesterBox">
+          <div id="Contributor_Text_ECCESSA_2"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/3ecc/Contributor_Text_ECCESSA_2.jpg">
+          </div>
+      </a>      
 
 
 </div>
@@ -1731,6 +1794,13 @@ When the Rexia-mission started, taking 100 000 works of art to post-human eterna
 
 <script type="text/javascript">
 
+  function onLoad(){
+    // location.href = "#main";
+    // history.pushState();
+    // alert('ok');
+  }
+
+
     function showAbout(){
     // document.getElementById('startPage').style.display = "block";
     document.getElementById('About').style.display = 'block';
@@ -1754,7 +1824,9 @@ When the Rexia-mission started, taking 100 000 works of art to post-human eterna
     // clc.click();
     document.getElementById("1bot").removeAttribute("srcdoc");
     // console.log(document.getElementById('1bot'));
-    location.href = "#Bottavia";
+    
+    // location.href = "#Bottavia";
+    // history.pushState();
   }
 
     function showSketch2(){
@@ -1772,7 +1844,7 @@ When the Rexia-mission started, taking 100 000 works of art to post-human eterna
     document.getElementById('sketch10').style.display = "none";
     document.getElementById('sketch11').style.display = "none";
     document.getElementById("2can").removeAttribute("srcdoc");
-    location.href = "#2"
+   
   }
 
     function showSketch3(){
@@ -2024,7 +2096,7 @@ function test() {
 
 //random movement here:
 var object = document.getElementsByClassName('itemm');
-console.log(object);
+// console.log(object);
 
 function getRandomInt(max) {
   return Math.floor(Math.random() * Math.floor(max));
