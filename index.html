@@ -204,7 +204,20 @@ html {
     src: url('./data/8pal/myraidpro-regular.otf') format("opentype");
 }
 
+@font-face {
+    font-family: FuturaPT-Light;
+    src: url('./data/10ref/FuturaPT-Light.ttf') format("truetype");
+}
 
+@font-face {
+    font-family: Didot-Regular;
+    src: url('./data/11rex/Didot-Regular.ttf') format("truetype");
+}
+
+@font-face {
+    font-family: Hack-Regular;
+    src: url('./data/1bot/Hack-Regular.ttf') format("truetype");
+}
 
 </style>
 </head>
@@ -298,7 +311,7 @@ With Georg Seesslen<br></div>
   <!-- line-height: 150%; letter-spacing: 0.2rem; -->
   <!-- './data/LeBiennaliInvisibili.png' -->
 <!--   <div style="display: flex; justify-content: center; vertical-align: middle; height: 100%;">
-  <img src="./data/LeBiennaliInvisibili.jpg" style="position:fixed; width:100%; height:auto; display:inline-flex; vertical-align: middle;">
+  <img loading='lazy' src="./data/LeBiennaliInvisibili.jpg" style="position:fixed; width:100%; height:auto; display:inline-flex; vertical-align: middle;">
   </div> -->
 
   <div id="introText" onclick="closeMenu(); introTextSelectedin();" onmouseover="" onmouseout="" style=" cursor: default; font-family: 'EB Garamond', serif; font-style: italic; font-size: 1.45rem; padding-left: 4rem; padding-right: 4rem; position: fixed; display: block; overflow: scroll; height: 95%; padding-top: 4rem;" >
@@ -331,7 +344,7 @@ With Georg Seesslen<br></div>
   </div>
     
 <div class="itemm" style="width:12rem; cursor: pointer; position:absolute; top:0; left: 1rem; transition:all 8s linear;" onmouseover="show1()" onmouseout="hyde1()" onclick="showSketch1()">
-  <img id="item" src="./data/Objects/bottavia.gif" alt="Bottavia. A bot-curated biennial" style="cursor: pointer; width:100%;" >
+  <img loading='lazy' id="item" src="./data/Objects/bottavia.gif" alt="Bottavia. A bot-curated biennial" style="cursor: pointer; width:100%;" >
   <div id="alt-Bottavia" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Bottavia</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A bot-curated biennial</h1>
@@ -340,7 +353,7 @@ With Georg Seesslen<br></div>
 
     
 <div class="itemm" style="width:12rem; cursor: pointer; position:absolute; top:0; left: 42vw; transition:all 8s linear;" onmouseover="show2()" onmouseout="hyde2()"onclick="showSketch2()">
-  <img id="item2" src="./data/Objects/canonice.gif" alt="Canonice. A conservative triennial" style="cursor: pointer; width:100%;" >
+  <img loading='lazy' id="item2" src="./data/Objects/canonice.gif" alt="Canonice. A conservative triennial" style="cursor: pointer; width:100%;" >
   <div id="alt-Canonice" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Canonice</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A conservative triennial</h1>
@@ -349,7 +362,7 @@ With Georg Seesslen<br></div>
 
 
 <div class="itemm" style="width:12rem; cursor: pointer; position:absolute; top:0; right: 1rem; transition:all 8s linear;" onmouseover="show3()" onmouseout="hyde3()"onclick="showSketch3()">
-  <img id="item3" src="./data/Objects/eccessa.gif" alt="Eccessa. A for-profit biennial" style="cursor: pointer; width:100%;">
+  <img loading='lazy' id="item3" src="./data/Objects/eccessa.gif" alt="Eccessa. A for-profit biennial" style="cursor: pointer; width:100%;">
   <div id="alt-Eccessa" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Eccessa</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A for-profit biennial</h1>
@@ -358,7 +371,7 @@ With Georg Seesslen<br></div>
 
 
 <div class="itemm" style="width:12rem; cursor: pointer; position:absolute; top:25vh; left: 1rem; transition:all 8s linear;" onmouseover="show4()" onmouseout="hyde4()" onclick="showSketch4()">
-  <img id="item4" src="./data/Objects/evenia.gif" alt="Evenia. A one-day quadrennial" style="cursor: pointer; width:100%;" >
+  <img loading='lazy' id="item4" src="./data/Objects/evenia.gif" alt="Evenia. A one-day quadrennial" style="cursor: pointer; width:100%;" >
   <div id="alt-Evenia" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Evenia</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A one-day quadrennial</h1>
@@ -367,7 +380,7 @@ With Georg Seesslen<br></div>
 
 
 <div class="itemm" style="width:12rem; cursor: pointer; position:absolute; top:25vh; left: 42vw; transition:all 8s linear;" onmouseover="show5()" onmouseout="hyde5()" onclick="showSketch5()">
-  <img id="item5" src="./data/Objects/generica.gif" alt="Generica. A biennial that never changes" style="cursor: pointer; width:100%;" >
+  <img loading='lazy' id="item5" src="./data/Objects/generica.gif" alt="Generica. A biennial that never changes" style="cursor: pointer; width:100%;" >
   <div id="alt-Generica" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Generica</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A biennial that never changes</h1>
@@ -376,7 +389,7 @@ With Georg Seesslen<br></div>
     
 
 <div class="itemm" style="width:12rem; cursor: pointer; position:absolute; top:25vh; right: 1rem; transition:all 8s linear;" onmouseover="show6()" onmouseout="hyde6()" onclick="showSketch6()">
-  <img id="item6" src="./data/Objects/insegna.gif" alt="Insegna. A word-less biennial" style="cursor: pointer; width:100%;">
+  <img loading='lazy' id="item6" src="./data/Objects/insegna.gif" alt="Insegna. A word-less biennial" style="cursor: pointer; width:100%;">
   <div id="alt-Insegna" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Insegna</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A word-less biennial</h1>
@@ -385,7 +398,7 @@ With Georg Seesslen<br></div>
     
 
 <div class="itemm" style="width:12rem; cursor: pointer; position:absolute; top:50vh; left: 1rem; transition:all 8s linear;" onmouseover="show7()" onmouseout="hyde7()" onclick="showSketch7()">
-  <img id="item7" src="./data/Objects/novichelovekan.gif" alt="Novichelovekan. A biennial with new faces" style="cursor: pointer; width:100%;" >
+  <img loading='lazy' id="item7" src="./data/Objects/novichelovekan.gif" alt="Novichelovekan. A biennial with new faces" style="cursor: pointer; width:100%;" >
   <div id="alt-Novichelovekan" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Novichelovekan</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A biennial with new faces</h1>
@@ -394,7 +407,7 @@ With Georg Seesslen<br></div>
     
 
 <div class="itemm" style="width:12rem; cursor: pointer; position:absolute; top:50vh; left: 42vw; transition:all 8s linear;" onmouseover="show8()" onmouseout="hyde8()" onclick="showSketch8()">
-  <img id="item8" src="./data/Objects/palimpsestia.gif" alt="Palimpsestia. A biennial that builds on" style="cursor: pointer; width:100%;" >
+  <img loading='lazy' id="item8" src="./data/Objects/palimpsestia.gif" alt="Palimpsestia. A biennial that builds on" style="cursor: pointer; width:100%;" >
   <div id="alt-Palimpsestia" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Palimpsestia</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A biennial that builds on</h1>
@@ -403,7 +416,7 @@ With Georg Seesslen<br></div>
     
 
 <div class="itemm" style="width:12rem; cursor: pointer; position:absolute; top:50vh; right: 1rem; transition:all 8s linear;" onmouseover="show9()" onmouseout="hyde9()" onclick="showSketch9()">
-  <img id="item9" src="./data/Objects/puerilia.gif" alt="Puerilia. A biennial by and for children" style="cursor: pointer; width:100%;">
+  <img loading='lazy' id="item9" src="./data/Objects/puerilia.gif" alt="Puerilia. A biennial by and for children" style="cursor: pointer; width:100%;">
   <div id="alt-Puerilia" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Puerilia</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A biennial by and for children</h1>
@@ -412,7 +425,7 @@ With Georg Seesslen<br></div>
    
 
 <div class="itemm" style="width:12rem; cursor: pointer; position:absolute; top:75vh; left: 1rem; transition:all 8s linear;" onmouseover="show10()" onmouseout="hyde10()" onclick="showSketch10()">
-  <img id="item10" src="./data/Objects/referenda.gif" alt="Referenda. A democratic biennial" style="cursor: pointer; width:100%;">
+  <img loading='lazy' id="item10" src="./data/Objects/referenda.gif" alt="Referenda. A democratic biennial" style="cursor: pointer; width:100%;">
   <div id="alt-Referenda" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Referenda</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A democratic biennial</h1>
@@ -421,7 +434,7 @@ With Georg Seesslen<br></div>
    
 
 <div class="itemm" style="width:12rem; cursor: pointer; position:absolute; top:75vh; left: 42vw; transition:all 8s linear;" onmouseover="show11()" onmouseout="hyde11()" onclick="showSketch11()">
-  <img id="item11" src="./data/Objects/rexia.gif" alt="Rexia. A dynastic biennial" style="cursor: pointer; width:100%;" >
+  <img loading='lazy' id="item11" src="./data/Objects/rexia.gif" alt="Rexia. A dynastic biennial" style="cursor: pointer; width:100%;" >
   <div id="alt-Rexia" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">Rexia</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">A dynastic biennial</h1>
@@ -430,7 +443,7 @@ With Georg Seesslen<br></div>
    
 
 <div class="itemm" style="width:12rem; cursor: pointer; position:absolute; top:75vh; right: 1rem; transition:all 8s linear;" onmouseover="show12()" onmouseout="hyde12()" onclick="showAbout()">
-  <img id="item12" src="./data/Objects/GI.png" alt="About. Le Biennali Invisibili" style="cursor: pointer; width:100%;" >
+  <img loading='lazy' id="item12" src="./data/Objects/GI.png" alt="About. Le Biennali Invisibili" style="cursor: pointer; width:100%;" >
   <div id="alt-About" style="z-index: 8; position: fixed; display: none;">
     <h1 style="font-size: 2rem; background-color: white; font-style: italic; text-align: center; margin-top: -10rem; z-index: 8;">About</h1>
     <h1 style="background-color: white; font-style: italic; text-align: center; margin-top: -1rem; z-index: 8;">Le Biennali Invisibili</h1>
@@ -511,7 +524,7 @@ With Georg Seesslen<br></div>
     <div style="visibility: visible;">  
     <iframe id="1bot" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/507bec3605124a16ba6ac937842f76fb/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" 
     srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://sketchfab.com/models/507bec3605124a16ba6ac937842f76fb/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> 
-      <img src='./data/1bot/BOTTAVIA_R01.jpg' id='frm1'> <span>▶</span></a>" 
+      <img loading='lazy' src='./data/1bot/BOTTAVIA_R01.jpg' id='frm1'> <span>▶</span></a>" 
     frameborder="0" allow="autoplay; fullscreen; vr;" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
     </div>
 
@@ -537,27 +550,27 @@ With Georg Seesslen<br></div>
       <div style="position: absolute; top: 2rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
       <h3>
         <p style="text-align: center;">Bottavia</p>
-<br>         
-In Bottavia, which includes contributions both from north and south, with installations, photography, models, artifacts, and so on, there is a script through which you can sense how the Biennial takes form. At first sight, nothing seems to resemble Bottavia’s Biennial less than the machinery that runs the script itself, racks of CPUs and wires whose patterns are repeated along straight and circular lines, interwoven with brilliantly coloured spires, in a repetition that can be followed throughout the whole system. But if you pause and examine its open code carefully, you become convinced that each operation performed by the script has its own objective in the almost infinite process of pre-selection of the artists, from literary anywhere, and all the things contained in the Biennial are related to some hidden affinity, arranged according to their somehow “true” relationship, which escapes your eye distracted by the bustle, the throngs, the shoving. <br>
-<br>
-All of Bottavia’s confusion, the memes’ proliferation, the TikTok videos, the countless webpages is what is evident in the incomplete perspective you grasp; but the script proves that there is a point from which the Biennial shows its true proportions, the “neural” scheme implicit in its every, tiniest detail. It is easy to get lost in Bottavia’s contents: but when you concentrate and stare at the program’s giant leaflet, you recognize the installation you were seeking in a crimson or indigo or magenta thread which, in a wide loop, brings you to the purple enclosure that is your real destination. Every contributor of Bottavia compares the scripts' immobile order with his perspective of the art scene, an anguish of his own, and each can find, concealed among the arabesques, an answer, the story of his life, the twists of fate. <br>
-<br>
-An AI geek was questioned about the mysterious bond between two objects so dissimilar as the structure of the script and its curatorial concept. One of the two objects -he replied- has the form the big data gave to the internet itself in which the worlds embody their virtual counterparts; the other is an approximate reflection, like any automatic creation. For some time the augurs had been sure that the script's harmonious machine learning routines were of a new generation that the world had yet to understand. The geek was interpreted in this sense, arousing no controversy. But you could, similarly, come to the opposite conclusion: that a truly unbiased map of the universe is the Biennial of Bottavia, just as it is, a stain that spreads out shapelessly, with crooked links, contents that crumble one upon the other amid clouds of data, streams, screams in the darkness.<br>
-<br>
+          <br>         
+          In Bottavia, which includes contributions both from north and south, with installations, photography, models, artifacts, and so on, there is a script through which you can sense how the Biennial takes form. At first sight, nothing seems to resemble Bottavia’s Biennial less than the machinery that runs the script itself, racks of CPUs and wires whose patterns are repeated along straight and circular lines, interwoven with brilliantly coloured spires, in a repetition that can be followed throughout the whole system. But if you pause and examine its open code carefully, you become convinced that each operation performed by the script has its own objective in the almost infinite process of pre-selection of the artists, from literary anywhere, and all the things contained in the Biennial are related to some hidden affinity, arranged according to their somehow “true” relationship, which escapes your eye distracted by the bustle, the throngs, the shoving. <br>
+          <br>
+          All of Bottavia’s confusion, the memes’ proliferation, the TikTok videos, the countless webpages is what is evident in the incomplete perspective you grasp; but the script proves that there is a point from which the Biennial shows its true proportions, the “neural” scheme implicit in its every, tiniest detail. It is easy to get lost in Bottavia’s contents: but when you concentrate and stare at the program’s giant leaflet, you recognize the installation you were seeking in a crimson or indigo or magenta thread which, in a wide loop, brings you to the purple enclosure that is your real destination. Every contributor of Bottavia compares the scripts' immobile order with his perspective of the art scene, an anguish of his own, and each can find, concealed among the arabesques, an answer, the story of his life, the twists of fate. <br>
+          <br>
+          An AI geek was questioned about the mysterious bond between two objects so dissimilar as the structure of the script and its curatorial concept. One of the two objects -he replied- has the form the big data gave to the internet itself in which the worlds embody their virtual counterparts; the other is an approximate reflection, like any automatic creation. For some time the augurs had been sure that the script's harmonious machine learning routines were of a new generation that the world had yet to understand. The geek was interpreted in this sense, arousing no controversy. But you could, similarly, come to the opposite conclusion: that a truly unbiased map of the universe is the Biennial of Bottavia, just as it is, a stain that spreads out shapelessly, with crooked links, contents that crumble one upon the other amid clouds of data, streams, screams in the darkness.<br>
+          <br>
         <br>
       </h3>
     </div>
     </div>
 
 
-    <div class="Contributors_Frame" style="
-    font-family: 'Arial', cursive;
-    position:fixed; width:20rem; height: 20rem; right:5%; top:30%; border: solid; border-color: #a5d1a9; border-width: 0; background-color: #201d1d; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #ffffff; background-size: cover;">
+    <div class="Contributors_Frame" onmouseover="contributors_FrameUp()" onmouseout="contributors_FrameDown()" style="font-family:Hack-Regular;position:fixed; width:20rem; height: 20rem; right:5%; top:30%; background-color: #201d1d; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #ffffff; background-size: cover;">
       <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem;">
       <h4>      
-          <span style="font-family: 'Garamond';">Conversation between Merve Bedir and Bager Akbay<br>
+          
+          Conversation between Merve Bedir and Bager Akbay<br>
           <br>
-          <span style="font-style: italic;">Merve Bedir is an architect based in Hong Kong. She works at the intersection of the technologies of labour, landscape, mobility, and commons. <a style="text-decoration: none; color:#ffffff;" target="_blank" href="https://www.aformalacademy.com/">https://www.aformalacademy.com/</a> & <a style="text-decoration: none; color:#ffffff;" target="_blank"  href="http://landandcc.com/"> http://landandcc.com/ </a><br>
+          <span style="font-family: 'EB Garamond', serif; font-style: italic;"><span style="font-weight: bold;">
+          Merve Bedir is an architect based in Hong Kong. She works at the intersection of the technologies of labour, landscape, mobility, and commons. <a style="text-decoration: none; color:#ffffff;" target="_blank" href="https://www.aformalacademy.com/">https://www.aformalacademy.com/</a> & <a style="text-decoration: none; color:#ffffff;" target="_blank"  href="http://landandcc.com/"> http://landandcc.com/ </a><br>
           Bager Akbay is an artist-as-researcher based in Istanbul.<br></span></span>
           <br>
           <span style="color: #2ba741">Merve Bedir:</span> I research the <a style="text-decoration: none; color:#ffffff;" target="_blank"  href="https://automated-landscapes.hetnieuweinstituut.nl/en/https%3A/automated-landscapes.hetnieuweinstituut.nl/research/automated-landscapes-pearl-river-delta">automation of labor</a> in the factories of Pearl River Delta region, as well as an unrealized 2018 Hong Kong Biennale exhibition proposal called "Collective Intelligence," where we wanted to research the coalescing forms of intelligence among peoples and nonhumans. For this conversation with you as a joint contribution to the Invisible Biennale exhibition, my interests were your former works "Deniz Yılmaz" (bot poet) and "Shepherd" (bot curator). Shepherd, especially, as a metaphor for the curator fascinates me. Shepherd is the one who cares and is responsible for the herd.<br>
@@ -604,31 +617,31 @@ An AI geek was questioned about the mysterious bond between two objects so dissi
 
 
     <div style="position:fixed; width:20vw; height: 20vw; left:25%; bottom: 5%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #4ef9fb;">
-      <a href="#BOTTAVIA_R01"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/1bot/BOTTAVIA_R01.jpg"></a>
+      <a href="#BOTTAVIA_R01"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/1bot/BOTTAVIA_R01.jpg"></a>
     </div>
 
 
     <div style="position:fixed; width:12vw; height: 12vw; left:55%; bottom: 5%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -0.7rem 0.7rem #4ef9fb;">
-      <a href="#CLOSEUP_BOTTAVIA_01_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/1bot/CLOSEUP_BOTTAVIA_01_R00.jpg">
+      <a href="#CLOSEUP_BOTTAVIA_01_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/1bot/CLOSEUP_BOTTAVIA_01_R00.jpg">
       </a>
     </div>
 
 
     <div style="position:fixed; width:12vw; height: 12vw; right:35%; top:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #4ef9fb;">
-      <a href="#CLOSEUP_BOTTAVIA_02_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/1bot/CLOSEUP_BOTTAVIA_02_R00.jpg">
+      <a href="#CLOSEUP_BOTTAVIA_02_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/1bot/CLOSEUP_BOTTAVIA_02_R00.jpg">
       </a>
     </div>
 
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_BOTTAVIA_01_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/1bot/CLOSEUP_BOTTAVIA_01_R00.jpg">
+          <div id="CLOSEUP_BOTTAVIA_01_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/1bot/CLOSEUP_BOTTAVIA_01_R00.jpg">
           </div>
       </a>
       <a href="#" class="JesterBox">
-          <div id="BOTTAVIA_R01"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain; z-index: 100;" src="./data/1bot/BOTTAVIA_R01.jpg">
+          <div id="BOTTAVIA_R01"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain; z-index: 100;" src="./data/1bot/BOTTAVIA_R01.jpg">
           </div>
       </a>
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_BOTTAVIA_02_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain; z-index: 100;" src="./data/1bot/CLOSEUP_BOTTAVIA_02_R00.jpg">
+          <div id="CLOSEUP_BOTTAVIA_02_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain; z-index: 100;" src="./data/1bot/CLOSEUP_BOTTAVIA_02_R00.jpg">
           </div>
       </a>
     
@@ -769,33 +782,33 @@ An AI geek was questioned about the mysterious bond between two objects so dissi
 
 
     <div style="position:fixed; width:20vw; height: 20vw; left:30%; top:5%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #a9f9ce;">
-      <a href="#CANONICE_R01"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/2can/CANONICE_R01.jpg">
+      <a href="#CANONICE_R01"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/2can/CANONICE_R01.jpg">
       </a>
     </div>
 
     <div style="position:fixed; width:12vw; height: 12vw; left:8%; top:8%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #a9f9ce;">
-      <a href="#CLOSEUP_CANONICE_01_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/2can/CLOSEUP_CANONICE_01_R00.jpg">
+      <a href="#CLOSEUP_CANONICE_01_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/2can/CLOSEUP_CANONICE_01_R00.jpg">
       </a>
     </div>
 
     <div style="position:fixed; width:12vw; height: 12vw; left:35%; top:55%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #a9f9ce;">
-      <a href="#CLOSEUP_CANONICE_02_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/2can/CLOSEUP_CANONICE_02_R00.jpg">
+      <a href="#CLOSEUP_CANONICE_02_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/2can/CLOSEUP_CANONICE_02_R00.jpg">
       </a>
     </div>    
 
 
       <a href="#" class="JesterBox">
-          <div id="CANONICE_R01"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/2can/CANONICE_R01.jpg">
+          <div id="CANONICE_R01"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/2can/CANONICE_R01.jpg">
           </div>
       </a>
 
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_CANONICE_01_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/2can/CLOSEUP_CANONICE_01_R00.jpg">
+          <div id="CLOSEUP_CANONICE_01_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/2can/CLOSEUP_CANONICE_01_R00.jpg">
           </div>
       </a>
 
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_CANONICE_02_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/2can/CLOSEUP_CANONICE_02_R00.jpg">
+          <div id="CLOSEUP_CANONICE_02_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/2can/CLOSEUP_CANONICE_02_R00.jpg">
           </div>
       </a>
 </div>
@@ -855,17 +868,17 @@ But with all this, I would not be telling you the Biennial's true essence; for w
       Nora Akawi is a Palestinian architect teaching at The Cooper Union. She studies architecture as a project of erasure and exclusion in settler colonialism. Eduardo Rega is a Canarian architect teaching at UPenn. He studies architectures of social movements that refuse the capitalist world order. <a style="text-decoration: none; color: #151617;" target="_blank" href="https://www.architecturesofrefusal.org/"> https://www.architecturesofrefusal.org/</a>
       <br>
       <br>
-<!-- <img style="width: 100%" src="./data/3ecc/Contributor_Text_ECCESSA_1.jpg">
-<img style="width: 100%" src="./data/3ecc/Contributor_Text_ECCESSA_2.jpg"> -->
+<!-- <img loading='lazy' style="width: 100%" src="./data/3ecc/Contributor_Text_ECCESSA_1.jpg">
+<img loading='lazy' style="width: 100%" src="./data/3ecc/Contributor_Text_ECCESSA_2.jpg"> -->
 
 
     <div style="width:100%;">
-      <a href="#Contributor_Text_ECCESSA_1"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/3ecc/Contributor_Text_ECCESSA_1.jpg">
+      <a href="#Contributor_Text_ECCESSA_1"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/3ecc/Contributor_Text_ECCESSA_1.jpg">
       </a>
     </div>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <div style="width:100%;">
-      <a href="#Contributor_Text_ECCESSA_2"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/3ecc/Contributor_Text_ECCESSA_2.jpg">
+      <a href="#Contributor_Text_ECCESSA_2"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/3ecc/Contributor_Text_ECCESSA_2.jpg">
       </a>
     </div>
 
@@ -876,33 +889,33 @@ But with all this, I would not be telling you the Biennial's true essence; for w
 
 
     <div style="position:fixed; width:22vw; height: 22vw; left:24%; bottom:5%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #4ab4d4;">
-      <a href="#ECCESSA_R01"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/3ecc/ECCESSA_R01.jpg">
+      <a href="#ECCESSA_R01"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/3ecc/ECCESSA_R01.jpg">
       </a>
     </div>
 
     <div style="position:fixed; width:12vw; height: 12vw; left:40%; top:5%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #4ab4d4;">
-      <a href="#CLOSEUP_ECCESSA_01_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/3ecc/CLOSEUP_ECCESSA_01_R00.jpg">
+      <a href="#CLOSEUP_ECCESSA_01_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/3ecc/CLOSEUP_ECCESSA_01_R00.jpg">
       </a>
     </div>
 
     <div style="position:fixed; width:12vw; height: 12vw; right:20%; top:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #4ab4d4;">
-      <a href="#CLOSEUP_ECCESSA_02_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/3ecc/CLOSEUP_ECCESSA_02_R00.jpg">
+      <a href="#CLOSEUP_ECCESSA_02_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/3ecc/CLOSEUP_ECCESSA_02_R00.jpg">
       </a>
     </div>    
 
 
       <a href="#" class="JesterBox">
-          <div id="ECCESSA_R01"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/3ecc/ECCESSA_R01.jpg">
+          <div id="ECCESSA_R01"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/3ecc/ECCESSA_R01.jpg">
           </div>
       </a>
 
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_ECCESSA_02_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/3ecc/CLOSEUP_ECCESSA_02_R00.jpg">
+          <div id="CLOSEUP_ECCESSA_02_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/3ecc/CLOSEUP_ECCESSA_02_R00.jpg">
           </div>
       </a>    
 
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_ECCESSA_01_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/3ecc/CLOSEUP_ECCESSA_01_R00.jpg">
+          <div id="CLOSEUP_ECCESSA_01_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/3ecc/CLOSEUP_ECCESSA_01_R00.jpg">
           </div>
       </a>
 
@@ -912,12 +925,12 @@ But with all this, I would not be telling you the Biennial's true essence; for w
 
 
       <a href="#" class="JesterBox">
-          <div id="Contributor_Text_ECCESSA_1"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/3ecc/Contributor_Text_ECCESSA_1.jpg">
+          <div id="Contributor_Text_ECCESSA_1"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/3ecc/Contributor_Text_ECCESSA_1.jpg">
           </div>
       </a>
 
       <a href="#" class="JesterBox">
-          <div id="Contributor_Text_ECCESSA_2"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/3ecc/Contributor_Text_ECCESSA_2.jpg">
+          <div id="Contributor_Text_ECCESSA_2"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/3ecc/Contributor_Text_ECCESSA_2.jpg">
           </div>
       </a>      
 
@@ -997,7 +1010,7 @@ But with all this, I would not be telling you the Biennial's true essence; for w
           Possibility of an Island was a school founded during quarantine 2020 in Tuscany, Italy. Directed by Sofia Pia Belenky, Margherita Marri, and Luigi Savio. With faculty: (Ab)Normal, Captcha, Space Caviar, Forgotten Architecture, Fosbury Architecture, Parasite 2.0, and PLSTCT in collaboration with AA Visiting School.<br>
           <br>
               <div style="width:100%;">
-                <a href="#Contributor_Image_Evenia"><img style="position:absolute; width:94%; object-fit: cover;" src="./data/4eve/Contributor_Image_Evenia.jpeg">
+                <a href="#Contributor_Image_Evenia"><img loading='lazy' style="position:absolute; width:94%; object-fit: cover;" src="./data/4eve/Contributor_Image_Evenia.jpeg">
                 </a>
               </div>
           <br>
@@ -1010,38 +1023,38 @@ But with all this, I would not be telling you the Biennial's true essence; for w
 
 
     <div style="position:fixed; width:20vw; height: 20vw; left:25%; bottom:10%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #f169b6;">
-      <a href="#EVENIA_R02"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/4eve/EVENIA_R02.jpg">
+      <a href="#EVENIA_R02"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/4eve/EVENIA_R02.jpg">
       </a>
     </div>
 
     <div style="position:fixed; width:12vw; height: 12vw; right:30%; top:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #f169b6;">
-      <a href="#CLOSEUP_EVENIA_01_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/4eve/CLOSEUP_EVENIA_01_R00.jpg">
+      <a href="#CLOSEUP_EVENIA_01_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/4eve/CLOSEUP_EVENIA_01_R00.jpg">
       </a>
     </div>
 
     <div style="position:fixed; width:12vw; height: 12vw; right:30%; bottom:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #f169b6;">
-      <a href="#CLOSEUP_EVENIA_02_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/4eve/CLOSEUP_EVENIA_02_R00.jpg">
+      <a href="#CLOSEUP_EVENIA_02_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/4eve/CLOSEUP_EVENIA_02_R00.jpg">
       </a>
     </div>    
 
 
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_EVENIA_01_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/4eve/CLOSEUP_EVENIA_01_R00.jpg">
+          <div id="CLOSEUP_EVENIA_01_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/4eve/CLOSEUP_EVENIA_01_R00.jpg">
           </div>
       </a>
 
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_EVENIA_02_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/4eve/CLOSEUP_EVENIA_02_R00.jpg">
+          <div id="CLOSEUP_EVENIA_02_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/4eve/CLOSEUP_EVENIA_02_R00.jpg">
           </div>
       </a>
 
       <a href="#" class="JesterBox">
-          <div id="EVENIA_R02"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/4eve/EVENIA_R02.jpg">
+          <div id="EVENIA_R02"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/4eve/EVENIA_R02.jpg">
           </div>
       </a>
 
       <a href="#" class="JesterBox">
-          <div id="Contributor_Image_Evenia"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/4eve/Contributor_Image_Evenia.jpeg">
+          <div id="Contributor_Image_Evenia"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/4eve/Contributor_Image_Evenia.jpeg">
           </div>
       </a>      
 
@@ -1101,7 +1114,7 @@ But with all this, I would not be telling you the Biennial's true essence; for w
       <div style="color:#201d1d; position:absolute; overflow:scroll; top:1rem; bottom: 1rem; right: 1rem; left: 1rem;">
       <h4>
               <div style="width:100%;">
-                <a href="#Caribs_Marco_Generica"><img style="position:absolute; width:100%; object-fit: cover;" src="./data/5gen/Caribs_Marco_Generica.jpg">
+                <a href="#Caribs_Marco_Generica"><img loading='lazy' style="position:absolute; width:100%; object-fit: cover;" src="./data/5gen/Caribs_Marco_Generica.jpg">
                 </a>
               </div>
           <br><br><br><br><br><br><br><br><br><br>
@@ -1136,38 +1149,38 @@ But with all this, I would not be telling you the Biennial's true essence; for w
 
 
     <div style="position:fixed; width:20vw; height: 20vw; left:25%; top:5%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #696b67;">
-      <a href="#GENERICA_R01"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/5gen/GENERICA_R01.jpg">
+      <a href="#GENERICA_R01"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/5gen/GENERICA_R01.jpg">
       </a>
     </div>
 
     <div style="position:fixed; width:14vw; height: 14vw; right:36%; bottom:40%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #696b67;">
-      <a href="#CLOSEUP_GENERICA_02_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/5gen/CLOSEUP_GENERICA_02_R00.jpg">
+      <a href="#CLOSEUP_GENERICA_02_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/5gen/CLOSEUP_GENERICA_02_R00.jpg">
       </a>
     </div>
 
     <div style="position:fixed; width:14vw; height: 14vw; right:32%; bottom:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #696b67;">
-      <a href="#CLOSEUP_GENERICA_01_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/5gen/CLOSEUP_GENERICA_01_R00.jpg">
+      <a href="#CLOSEUP_GENERICA_01_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/5gen/CLOSEUP_GENERICA_01_R00.jpg">
       </a>
     </div>    
 
 
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_GENERICA_01_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/5gen/CLOSEUP_GENERICA_01_R00.jpg">
+          <div id="CLOSEUP_GENERICA_01_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/5gen/CLOSEUP_GENERICA_01_R00.jpg">
           </div>
       </a>
 
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_GENERICA_02_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/5gen/CLOSEUP_GENERICA_02_R00.jpg">
+          <div id="CLOSEUP_GENERICA_02_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/5gen/CLOSEUP_GENERICA_02_R00.jpg">
           </div>
       </a>
 
       <a href="#" class="JesterBox">
-          <div id="GENERICA_R01"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/5gen/GENERICA_R01.jpg">
+          <div id="GENERICA_R01"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/5gen/GENERICA_R01.jpg">
           </div>
       </a>
 
       <a href="#" class="JesterBox">
-          <div id="Caribs_Marco_Generica"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/5gen/Caribs_Marco_Generica.jpg">
+          <div id="Caribs_Marco_Generica"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/5gen/Caribs_Marco_Generica.jpg">
           </div>
       </a>      
 
@@ -1248,7 +1261,7 @@ But with all this, I would not be telling you the Biennial's true essence; for w
           <br>
 
               <div style="width:100%;">
-                <a href="#Gili4062-R1-07-8-copy"><img style="position:absolute; width:94%; object-fit: cover;" src="./data/6ins/Gili4062-R1-07-8-copy.jpg">
+                <a href="#Gili4062-R1-07-8-copy"><img loading='lazy' style="position:absolute; width:94%; object-fit: cover;" src="./data/6ins/Gili4062-R1-07-8-copy.jpg">
                 </a>
               </div>          
 
@@ -1256,7 +1269,7 @@ But with all this, I would not be telling you the Biennial's true essence; for w
           The Stations of the Cross ( the Via Crucis, or Via Dolorosa) is one of the most common rituals in the Catholic Church. It is formed of a sequence of numbered stations that represent the Passion: the sentencing, crucifixion, and entombment of Jesus Christ. In this peripatetic mode of devotion, the ​station is instrumental as it sets the rhythm of a ritual through an unraveling narrative deployed within a church, a religious complex, a sacred landscape, or the urban. <br>
           <br>
               <div style="width:100%;">
-                <a href="#00-copy"><img style="position:absolute; width:94%; object-fit: cover;" src="./data/6ins/00-copy.jpg">
+                <a href="#00-copy"><img loading='lazy' style="position:absolute; width:94%; object-fit: cover;" src="./data/6ins/00-copy.jpg">
                 </a>
               </div>             
 
@@ -1264,7 +1277,7 @@ But with all this, I would not be telling you the Biennial's true essence; for w
           Each canonical station contains a representation of the Christological event, staged like a scene in a play, whose individual scenes are easier to grasp than the totality of the event. The mode of representation varies from paintings, bass-reliefs, or, as in the case of the Sacred Mountains of northern Italy— colorful life-sized tableaux vivants created with theatrical realism. This tangible representation was popular in its intensity and clarity; distant from being subtle or stoic, it catered to all audiences. <br>
           <br>
               <div style="width:100%;">
-                <a href="#09-copy"><img style="position:absolute; width:94%; object-fit: cover;" src="./data/6ins/09-copy.jpg">
+                <a href="#09-copy"><img loading='lazy' style="position:absolute; width:94%; object-fit: cover;" src="./data/6ins/09-copy.jpg">
                 </a>
               </div>             
            
@@ -1272,7 +1285,7 @@ But with all this, I would not be telling you the Biennial's true essence; for w
           The Station is a paradox: it marks a stop in order to perpetuate movement. And yet it is crucial: as a violent event full of tragedy and drama, a reenactment of the Passion must be controlled by choreographing the narrative through a serial progression of emotions. From original sin to personal salvation, the stations must be erected with a physical interval apart, and yet they must be available to follow as a complete devotional sequence. <br>
           <br>
               <div style="width:100%;">
-                <a href="#Saluzzo-two-photos-bw"><img style="position:absolute; width:94%; object-fit: cover;" src="./data/6ins/Saluzzo-two-photos-bw.jpg">
+                <a href="#Saluzzo-two-photos-bw"><img loading='lazy' style="position:absolute; width:94%; object-fit: cover;" src="./data/6ins/Saluzzo-two-photos-bw.jpg">
                 </a>
               </div>
              
@@ -1280,7 +1293,7 @@ But with all this, I would not be telling you the Biennial's true essence; for w
           The secluded mountain-top, where staged scenes took place inside sequenced chapels, was imprinted on the minds of the pilgrims. In time, repetition, and ritual, the images would be constructed in the minds - on the basis of memories of things seen. The legibility of narrative and clarity of order allowed its transportation to other places ( with typological variations), even to those surrounding a pilgrim’s own home. <br>
           <br>
               <div style="width:100%;">
-                <a href="#06-copy-BW"><img style="position:absolute; width:94%; object-fit: cover;" src="./data/6ins/06-copy-BW.jpg">
+                <a href="#06-copy-BW"><img loading='lazy' style="position:absolute; width:94%; object-fit: cover;" src="./data/6ins/06-copy-BW.jpg">
                 </a>
               </div>          
 
@@ -1288,7 +1301,7 @@ But with all this, I would not be telling you the Biennial's true essence; for w
           While the didactic content of the Stations was imprinted into spatial memories, the Via Crucis lost its representational value, becoming more about the linearity of the path than the anecdotal destination. This serialization and optimization of the Way of the Cross resulted in the complete codification of Christ’s public execution. It thus restrained and disciplined not only of representations and movement, but also religious behavior and pious imagination. <br>
           <br>
               <div style="width:100%;">
-                <a href="#11-copyBW"><img style="position:absolute; width:94%; object-fit: cover;" src="./data/6ins/11-copyBW.jpg">
+                <a href="#11-copyBW"><img loading='lazy' style="position:absolute; width:94%; object-fit: cover;" src="./data/6ins/11-copyBW.jpg">
                 </a>
               </div>                    
 
@@ -1303,64 +1316,64 @@ But with all this, I would not be telling you the Biennial's true essence; for w
 
     <div style="position:fixed; width:20vw; height: 20vw; left:5%; top:10%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #6c2269;">
       
-      <a href="#INSEGNA_R02"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/6ins/INSEGNA_R02.jpg">
+      <a href="#INSEGNA_R02"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/6ins/INSEGNA_R02.jpg">
       </a>
     </div>
 
     <div style="position:fixed; width:12vw; height: 12vw; right:10%; top:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #6c2269;">
-      <a href="#CLOSEUP_INSEGNA_01_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/6ins/CLOSEUP_INSEGNA_01_R00.jpg">
+      <a href="#CLOSEUP_INSEGNA_01_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/6ins/CLOSEUP_INSEGNA_01_R00.jpg">
       </a>
     </div>
 
     <div style="position:fixed; width:12vw; height: 12vw; left:10%; bottom:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #6c2269;">
-      <a href="#CLOSEUP_INSEGNA_02_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/6ins/CLOSEUP_INSEGNA_02_R00.jpg">
+      <a href="#CLOSEUP_INSEGNA_02_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/6ins/CLOSEUP_INSEGNA_02_R00.jpg">
       </a>
     </div>    
 
 
 
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_INSEGNA_01_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/CLOSEUP_INSEGNA_01_R00.jpg">
+          <div id="CLOSEUP_INSEGNA_01_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/CLOSEUP_INSEGNA_01_R00.jpg">
           </div>
       </a>
 
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_INSEGNA_02_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/CLOSEUP_INSEGNA_02_R00.jpg">
+          <div id="CLOSEUP_INSEGNA_02_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/CLOSEUP_INSEGNA_02_R00.jpg">
           </div>
       </a>      
 
       <a href="#" class="JesterBox">
-          <div id="INSEGNA_R02"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/INSEGNA_R02.jpg">
+          <div id="INSEGNA_R02"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/INSEGNA_R02.jpg">
           </div>
       </a>        
 
       <a href="#" class="JesterBox">
-          <div id="Gili4062-R1-07-8-copy"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/Gili4062-R1-07-8-copy.jpg">
+          <div id="Gili4062-R1-07-8-copy"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/Gili4062-R1-07-8-copy.jpg">
           </div>
       </a> 
 
       <a href="#" class="JesterBox">
-          <div id="00-copy"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/00-copy.jpg">
+          <div id="00-copy"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/00-copy.jpg">
           </div>
       </a> 
 
       <a href="#" class="JesterBox">
-          <div id="09-copy"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/09-copy.jpg">
+          <div id="09-copy"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/09-copy.jpg">
           </div>
       </a>               
 
       <a href="#" class="JesterBox">
-          <div id="Saluzzo-two-photos-bw"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/Saluzzo-two-photos-bw.jpg">
+          <div id="Saluzzo-two-photos-bw"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/Saluzzo-two-photos-bw.jpg">
           </div>
       </a>     
 
       <a href="#" class="JesterBox">
-          <div id="06-copy-BW"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/06-copy-BW.jpg">
+          <div id="06-copy-BW"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/06-copy-BW.jpg">
           </div>
       </a>   
 
       <a href="#" class="JesterBox">
-          <div id="11-copyBW"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/11-copyBW.jpg">
+          <div id="11-copyBW"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/6ins/11-copyBW.jpg">
           </div>
       </a>                                            
 
@@ -1441,12 +1454,12 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
           They are intended to present critical interventions into its modes of production and capture of cultural capital, and its transformation into financial capital. Entangled within this are the processes of imperialist consumption of cultural production from countries in the global south by those in the global north, responding in particular to the situation of biennalization in Bangkok, where the corporate-sponsored Bangkok Art Biennale, the artist-run Bangkok Biennial and other initiatives projected as biennials vie for space in the context of a divided political landscape. In this context, we ask who the biennial is for, and to whom it belongs, and how one might develop modes of critiquing its hegemonization of visibility/visuality.<br>
           <br>
               <div style="width:100%;">
-                <a href="#Contributor-Image-1_NOVICHELOVEKAN"><img style="position:absolute; width:94%; object-fit: cover;" src="./data/7nov/Contributor-Image-1_NOVICHELOVEKAN.jpeg">
+                <a href="#Contributor-Image-1_NOVICHELOVEKAN"><img loading='lazy' style="position:absolute; width:94%; object-fit: cover;" src="./data/7nov/Contributor-Image-1_NOVICHELOVEKAN.jpeg">
                 </a>
               </div>     
           <br><br><br><br><br><br><br><br><br>
               <div style="width:100%;">
-                <a href="#Contributor-Image-3_NOVICHELOVEKAN"><img style="position:absolute; width:94%; object-fit: cover;" src="./data/7nov/Contributor-Image-3_NOVICHELOVEKAN.jpeg">
+                <a href="#Contributor-Image-3_NOVICHELOVEKAN"><img loading='lazy' style="position:absolute; width:94%; object-fit: cover;" src="./data/7nov/Contributor-Image-3_NOVICHELOVEKAN.jpeg">
                 </a>
               </div>
           <br><br><br><br><br><br><br><br><br><br>
@@ -1457,43 +1470,43 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
 
 
     <div style="position:fixed; width:20vw; height: 20vw; left:5%; bottom:10%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #fee531;">
-      <a href="#NOVECHELOVEKAN_R01"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/7nov/NOVECHELOVEKAN_R01.jpg">
+      <a href="#NOVECHELOVEKAN_R01"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/7nov/NOVECHELOVEKAN_R01.jpg">
       </a>
     </div>
 
     <div style="position:fixed; width:12vw; height: 12vw; left:10%; top:20%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #fee531;">
-      <a href="#CLOSEUP_NOVI_01_R01"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/7nov/CLOSEUP_NOVI_01_R01.jpg">
+      <a href="#CLOSEUP_NOVI_01_R01"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/7nov/CLOSEUP_NOVI_01_R01.jpg">
       </a>
     </div>
 
     <div style="position:fixed; width:12vw; height: 12vw; left:30%; top:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #fee531;">
-      <a href="#CLOSEUP_NOVI_02_R01"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/7nov/CLOSEUP_NOVI_02_R01.jpg">
+      <a href="#CLOSEUP_NOVI_02_R01"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/7nov/CLOSEUP_NOVI_02_R01.jpg">
       </a>
     </div>
 
 
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_NOVI_01_R01"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/7nov/CLOSEUP_NOVI_01_R01.jpg">
+          <div id="CLOSEUP_NOVI_01_R01"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/7nov/CLOSEUP_NOVI_01_R01.jpg">
           </div>
       </a>
 
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_NOVI_02_R01"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/7nov/CLOSEUP_NOVI_02_R01.jpg">
+          <div id="CLOSEUP_NOVI_02_R01"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/7nov/CLOSEUP_NOVI_02_R01.jpg">
           </div>
       </a>
 
       <a href="#" class="JesterBox">
-          <div id="NOVECHELOVEKAN_R01"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/7nov/NOVECHELOVEKAN_R01.jpg">
+          <div id="NOVECHELOVEKAN_R01"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/7nov/NOVECHELOVEKAN_R01.jpg">
           </div>
       </a>      
 
       <a href="#" class="JesterBox">
-          <div id="Contributor-Image-3_NOVICHELOVEKAN"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/7nov/Contributor-Image-3_NOVICHELOVEKAN.jpeg">
+          <div id="Contributor-Image-3_NOVICHELOVEKAN"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/7nov/Contributor-Image-3_NOVICHELOVEKAN.jpeg">
           </div>
       </a>            
 
       <a href="#" class="JesterBox">
-          <div id="Contributor-Image-1_NOVICHELOVEKAN"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/7nov/Contributor-Image-1_NOVICHELOVEKAN.jpeg">
+          <div id="Contributor-Image-1_NOVICHELOVEKAN"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/7nov/Contributor-Image-1_NOVICHELOVEKAN.jpeg">
           </div>
       </a>            
 </div>
@@ -1576,33 +1589,33 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
     </div>  
 
     <div style="position:fixed; width:20vw; height: 20vw; left:40%; bottom:5%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #AA9BC6;">
-      <a href="#PALIMPSESTIA_R01"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/8pal/PALIMPSESTIA_R01.jpg">
+      <a href="#PALIMPSESTIA_R01"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/8pal/PALIMPSESTIA_R01.jpg">
       </a>
     </div>
 
     <div style="position:fixed; width:12vw; height: 12vw; left:32%; top:25%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #AA9bc6;">
-      <a href="#CLOSEUP_PALIMPSESTIA_01_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/8pal/CLOSEUP_PALIMPSESTIA_01_R00.jpg">
+      <a href="#CLOSEUP_PALIMPSESTIA_01_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/8pal/CLOSEUP_PALIMPSESTIA_01_R00.jpg">
       </a>
     </div>
 
     <div style="position:fixed; width:12vw; height: 12vw; right:20%; bottom:5%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #AA9bc6;">
-      <a href="#CLOSEUP_PALIMPSESTIA_02_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/8pal/CLOSEUP_PALIMPSESTIA_02_R00.jpg">
+      <a href="#CLOSEUP_PALIMPSESTIA_02_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/8pal/CLOSEUP_PALIMPSESTIA_02_R00.jpg">
       </a>
     </div>
 
 
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_PALIMPSESTIA_01_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/8pal/CLOSEUP_PALIMPSESTIA_01_R00.jpg">
+          <div id="CLOSEUP_PALIMPSESTIA_01_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/8pal/CLOSEUP_PALIMPSESTIA_01_R00.jpg">
           </div>
       </a>
 
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_PALIMPSESTIA_02_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/8pal/CLOSEUP_PALIMPSESTIA_02_R00.jpg">
+          <div id="CLOSEUP_PALIMPSESTIA_02_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/8pal/CLOSEUP_PALIMPSESTIA_02_R00.jpg">
           </div>
       </a>
 
       <a href="#" class="JesterBox">
-          <div id="PALIMPSESTIA_R01"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/8pal/PALIMPSESTIA_R01.jpg">
+          <div id="PALIMPSESTIA_R01"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/8pal/PALIMPSESTIA_R01.jpg">
           </div>
       </a>            
 </div>
@@ -1691,12 +1704,12 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
         Turning six is ​​an important event in one’s life. From the age of six, the child starts school, enters into the ranks and statistics of "passes" and "fails", into the dictatorship of adult desires. The child begins to repress his own pleasures. The child begins to obey this other repressed child, which is the adult. However, what is the right of the adult to take away the imagination of a child? As if that adult knew about the invention of butterflies, as if he knew about the way to talk to a ladybug, about sending messages with paper airplanes, about creating earrings with a couple of cherries... As if that adult knew that it is not necessary for the mechanics to move a car, as if that adult knew that religions or ideologies are not indispensable to answer to universes mysteries and know what is wrong or what is right, because the child has its own way to understand the world and just by the gesture of removing the petals of a flower will get an answer to all the questions.<br>
         <br>
               <div style="width:100%;">
-                <a href="#Contributor-Image_PUERILIA_Araks-Sahakyan---Birthday-photo_Courtesy-of-the-artist"><img style="position:absolute; width:93%; object-fit: cover;" src="./data/9puer/Contributor-Image_PUERILIA_Araks-Sahakyan---Birthday-photo_Courtesy-of-the-artist.jpg">
+                <a href="#Contributor-Image_PUERILIA_Araks-Sahakyan---Birthday-photo_Courtesy-of-the-artist"><img loading='lazy' style="position:absolute; width:93%; object-fit: cover;" src="./data/9puer/Contributor-Image_PUERILIA_Araks-Sahakyan---Birthday-photo_Courtesy-of-the-artist.jpg">
                 </a>
               </div>
         <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
               <div style="width:100%;">
-                <a href="#Contributor-Image_PUERILIA_Araks-Sahakyan---Fragmentation-Birthday_Courtesy-of-the-artist"><img style="position:absolute; width:93%; object-fit: cover;" src="./data/9puer/Contributor-Image_PUERILIA_Araks-Sahakyan---Fragmentation-Birthday_Courtesy-of-the-artist.JPG">
+                <a href="#Contributor-Image_PUERILIA_Araks-Sahakyan---Fragmentation-Birthday_Courtesy-of-the-artist"><img loading='lazy' style="position:absolute; width:93%; object-fit: cover;" src="./data/9puer/Contributor-Image_PUERILIA_Araks-Sahakyan---Fragmentation-Birthday_Courtesy-of-the-artist.JPG">
                 </a>
               </div>
         <br><br><br><br><br><br><br><br><br>
@@ -1705,43 +1718,43 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
     </div>
 
     <div style="position:fixed; width:20vw; height: 20vw; right:30%; top:10%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #F2342b;">
-      <a href="#PUERILIA_R01"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/9puer/PUERILIA_R01.jpg">
+      <a href="#PUERILIA_R01"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/9puer/PUERILIA_R01.jpg">
       </a>
     </div>
 
     <div style="position:fixed; width:12vw; height: 12vw; left:28%; bottom:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #f2342b;">
-      <a href="#CLOSEUP_PUERILIA_01_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/9puer/CLOSEUP_PUERILIA_01_R00.jpg">
+      <a href="#CLOSEUP_PUERILIA_01_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/9puer/CLOSEUP_PUERILIA_01_R00.jpg">
       </a>
     </div>
 
     <div style="position:fixed; width:12vw; height: 12vw; left:10%; bottom:5%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #f2342b;">
-      <a href="#CLOSEUP_PUERILIA_02_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/9puer/CLOSEUP_PUERILIA_02_R00.jpg">
+      <a href="#CLOSEUP_PUERILIA_02_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/9puer/CLOSEUP_PUERILIA_02_R00.jpg">
       </a>
     </div>    
 
 
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_PUERILIA_01_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/9puer/CLOSEUP_PUERILIA_01_R00.jpg">
+          <div id="CLOSEUP_PUERILIA_01_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/9puer/CLOSEUP_PUERILIA_01_R00.jpg">
           </div>
       </a>
 
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_PUERILIA_02_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/9puer/CLOSEUP_PUERILIA_02_R00.jpg">
+          <div id="CLOSEUP_PUERILIA_02_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/9puer/CLOSEUP_PUERILIA_02_R00.jpg">
           </div>
       </a>
 
       <a href="#" class="JesterBox">
-          <div id="PUERILIA_R01"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/9puer/PUERILIA_R01.jpg">
+          <div id="PUERILIA_R01"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/9puer/PUERILIA_R01.jpg">
           </div>
       </a>      
 
       <a href="#" class="JesterBox">
-          <div id="Contributor-Image_PUERILIA_Araks-Sahakyan---Fragmentation-Birthday_Courtesy-of-the-artist"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/9puer/Contributor-Image_PUERILIA_Araks-Sahakyan---Fragmentation-Birthday_Courtesy-of-the-artist.JPG">
+          <div id="Contributor-Image_PUERILIA_Araks-Sahakyan---Fragmentation-Birthday_Courtesy-of-the-artist"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/9puer/Contributor-Image_PUERILIA_Araks-Sahakyan---Fragmentation-Birthday_Courtesy-of-the-artist.JPG">
           </div>
       </a>            
 
       <a href="#" class="JesterBox">
-          <div id="Contributor-Image_PUERILIA_Araks-Sahakyan---Birthday-photo_Courtesy-of-the-artist"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/9puer/Contributor-Image_PUERILIA_Araks-Sahakyan---Birthday-photo_Courtesy-of-the-artist.jpg">
+          <div id="Contributor-Image_PUERILIA_Araks-Sahakyan---Birthday-photo_Courtesy-of-the-artist"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/9puer/Contributor-Image_PUERILIA_Araks-Sahakyan---Birthday-photo_Courtesy-of-the-artist.jpg">
           </div>
       </a>    
 </div>
@@ -1784,13 +1797,13 @@ srcdoc="<a href=https://sketchfab.com/models/fa442c6a71534ecb8a590d41369c1509/em
       <div style="position: absolute; top: 2rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
       <h3>
         <p style="text-align: center;">Referenda</p>
-<br>         
-The man who is traveling and does not yet know the Biennial awaiting him along his route wonders what the installation will be like, the selected artworks, the curatorial concept, the catalogs, the merchandise. In every kermesse of the empire, the structure to design such events is clear and everybody has its own role, the curator, the assistants, the staff, the artists, the visitors. As soon as the stranger arrives at the unknown event, his eye can penetrate the hierarchy of who is managing and who is displaying, and he immediately distinguishes which works are more beloved and praised, which men are more influential, which topics are more relevant.<br>
-<br>
-This is not true of Referenda. Every person involved in this Biennial can, in turn, decide on every single matter, may it be the works to be exhibited, the cleaning protocols, the graphic design, the lecture series, the food selection at the cafeteria, the price of the ticket. Without a pyramid and a representative model, everyone is in charge of everything. I reached Referenda a morning of spring, eight months before the opening, during the voting process. I was unable to distinguish the typical features I was used to: circular tables were scattered in a large room where several consultations were happening side by side, supported by different media. The ‘Referenda Digital Platform’ was hosting the final selection of artists, a remote meeting was held to decide on the installation layout, a physical discussion just ended on the colour scheme of the visual identity, several polls were due the same day, to decide on catering, publications, and open source policies of the entire event, a matter that everybody considers essential.<br>
-<br>
-I turned myself into a Referendario, so are called the people involved in the event, he was raising his hand, making an “L” shape between his thumb and index finger. “What are you doing?” I asked. “I’m talking with the Referenda Pidgin” he explained, “a shortcut body language to effectively communicate shades in opinions, in the process of decision making”. His other hand was holding a smartphone, managing several polls at the same time, the decisions he kept distinct in his media, in his mind mingled. I wondered: if decisions of all those aspects are done by all, Referenda is the Biennial of indivisible existence. But why, then, this Biennial is what it is? What line separates the who from the what, the rumble of wheels from the howl of wolves?<br>
-<br>
+          <br>         
+          The man who is traveling and does not yet know the Biennial awaiting him along his route wonders what the installation will be like, the selected artworks, the curatorial concept, the catalogs, the merchandise. In every kermesse of the empire, the structure to design such events is clear and everybody has its own role, the curator, the assistants, the staff, the artists, the visitors. As soon as the stranger arrives at the unknown event, his eye can penetrate the hierarchy of who is managing and who is displaying, and he immediately distinguishes which works are more beloved and praised, which men are more influential, which topics are more relevant.<br>
+          <br>
+          This is not true of Referenda. Every person involved in this Biennial can, in turn, decide on every single matter, may it be the works to be exhibited, the cleaning protocols, the graphic design, the lecture series, the food selection at the cafeteria, the price of the ticket. Without a pyramid and a representative model, everyone is in charge of everything. I reached Referenda a morning of spring, eight months before the opening, during the voting process. I was unable to distinguish the typical features I was used to: circular tables were scattered in a large room where several consultations were happening side by side, supported by different media. The ‘Referenda Digital Platform’ was hosting the final selection of artists, a remote meeting was held to decide on the installation layout, a physical discussion just ended on the colour scheme of the visual identity, several polls were due the same day, to decide on catering, publications, and open source policies of the entire event, a matter that everybody considers essential.<br>
+          <br>
+          I turned myself into a Referendario, so are called the people involved in the event, he was raising his hand, making an “L” shape between his thumb and index finger. “What are you doing?” I asked. “I’m talking with the Referenda Pidgin” he explained, “a shortcut body language to effectively communicate shades in opinions, in the process of decision making”. His other hand was holding a smartphone, managing several polls at the same time, the decisions he kept distinct in his media, in his mind mingled. I wondered: if decisions of all those aspects are done by all, Referenda is the Biennial of indivisible existence. But why, then, this Biennial is what it is? What line separates the who from the what, the rumble of wheels from the howl of wolves?<br>
+          <br>
 
         <br>
       </h3>
@@ -1798,35 +1811,38 @@ I turned myself into a Referendario, so are called the people involved in the ev
     </div>
 
 
-    <div class="Contributors_Frame" style="
-    font-family: 'Special Elite', cursive;
-    position:fixed; width:15rem; height: 50vh; left:5%; bottom:5%; border: solid; border-color: #a5d1a9; border-width: 0; background-color: white; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #151617; background-size: cover; background-image: url(./data/10ref/Contributor_Background_DEMOCRATICA.jpg);">
-      <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem;">
+    <div class="Contributors_Frame" onmouseover="contributors_FrameUp()" onmouseout="contributors_FrameDown()" style="
+    font-family: 'Futura', FuturaPT-Light;
+    position:fixed; width:16rem; height: 22rem; left:5%; bottom:5%; background-color: white; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #201d1d; background-size: cover; background-image: url(./data/10ref/Contributor_Background_DEMOCRATICA.jpg);">
+      <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem; background-color: rgba(255,255,255,0.5); padding-left: 0.5rem; padding-right: 0.5rem;">
       <h4>
-Shumi Bose is a teacher, curator, and editor based
-on London. She is a senior lecturer in architecture at
-Central Saint Martins and curator of exhibitions at
-the Royal Institute of British Architects.
-Referenda<br>
-<br>
-This will be Shumi’s text when it is
-finished. This will be Shumi’s text when
-it is finished. This will be Shumi’s text
-when it is finished. This will be Shumi’s
-
-text when it is finished. This will be Shu-
-mi’s text when it is finished. This will be
-
-Shumi’s text when it is finished. This will
-be Shumi’s text when it is finished. This
-will be Shumi’s text when it is finished.
-This will be Shumi’s text when it is
-finished. This will be Shumi’s text when
-it is finished. This will be Shumi’s text
-when it is finished. This will be Shumi’s
-
-text when it is finished. This will be Shu-
-mi’s text when it is finished.
+        <span style="font-family: 'EB Garamond', serif; font-style: italic;"><span style="font-weight: bold;">
+          Shumi Bose</span> is a teacher, curator, and editor based
+          on London. She is a senior lecturer in architecture at
+          Central Saint Martins and curator of exhibitions at
+          the Royal Institute of British Architects.<br></span>
+          <br>
+          Referenda<br>
+          <br>
+          This will be Shumi’s text when it is
+          finished. This will be Shumi’s text when
+          it is finished. This will be Shumi’s text
+          when it is finished. This will be Shumi’s<br>
+          <br>
+          text when it is finished. This will be Shu-
+          mi’s text when it is finished. This will be<br>
+          <br>
+          Shumi’s text when it is finished. This will
+          be Shumi’s text when it is finished. This
+          will be Shumi’s text when it is finished.
+          This will be Shumi’s text when it is
+          finished. This will be Shumi’s text when
+          it is finished. This will be Shumi’s text
+          when it is finished. This will be Shumi’s<br>
+          <br>
+          text when it is finished. This will be Shu-
+          mi’s text when it is finished.<br>
+          <br>
       </h4>
       </div>
     </div>
@@ -1834,25 +1850,35 @@ mi’s text when it is finished.
 
 
     <div style="position:fixed; width:20vw; height: 20vw; right:10%; bottom: 5%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #7d3270;">
-      
-      <a href="#" class="JesterBox">
-          <div id="CLOSEUP_REFERENDA_01_R00.jpg"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/10ref/CLOSEUP_REFERENDA_01_R00.jpg">
-          </div>
-      </a>
-      <a href="#CLOSEUP_REFERENDA_01_R00.jpg"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/10ref/CLOSEUP_REFERENDA_01_R00.jpg">
+      <a href="#REFERENDA_R01"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/10ref/REFERENDA_R01.jpg">
       </a>
     </div>
 
-    <div style="position:fixed; width:12rem; height: 12rem; left:25%; top:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #7d3270;">
-      <a href="#" class="JesterBox">
-          <div id="CLOSEUP_REFERENDA_02_R00.jpg"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/10ref/CLOSEUP_REFERENDA_02_R00.jpg">
-          </div>
+    <div style="position:fixed; width:14vw; height: 14vw; right:4%; top:18%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #7d3270;">
+      <a href="#CLOSEUP_REFERENDA_01_R00.jpg"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/10ref/CLOSEUP_REFERENDA_01_R00.jpg">
       </a>
-      <a href="#CLOSEUP_REFERENDA_02_R00.jpg"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/10ref/CLOSEUP_REFERENDA_02_R00.jpg">
+    </div>
+
+    <div style="position:fixed; width:14vw; height: 14vw; left:23%; top:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #7d3270;">
+      <a href="#CLOSEUP_REFERENDA_02_R00.jpg"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/10ref/CLOSEUP_REFERENDA_02_R00.jpg">
       </a>
     </div>
 
 
+      <a href="#" class="JesterBox">
+          <div id="CLOSEUP_REFERENDA_01_R00.jpg"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/10ref/CLOSEUP_REFERENDA_01_R00.jpg">
+          </div>
+      </a>
+
+      <a href="#" class="JesterBox">
+          <div id="CLOSEUP_REFERENDA_02_R00.jpg"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/10ref/CLOSEUP_REFERENDA_02_R00.jpg">
+          </div>
+      </a>
+
+      <a href="#" class="JesterBox">
+          <div id="REFERENDA_R01"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/10ref/REFERENDA_R01.jpg">
+          </div>
+      </a>      
 </div>
 
 
@@ -1893,17 +1919,17 @@ srcdoc="<a href=https://sketchfab.com/models/447c848774524f669d41c672105f04df/em
       <div style="position: absolute; top: 2rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
       <h3>
         <p style="text-align: center;">Rexia</p>
-<br>
-No artistic gathering has a more obscure inception story than that of the Biennial of Rexia, the most ancient of cultural events known to humans. It is no surprise that its origins remain a mystery to many. Everyone concurs that its first edition was nine hundred thirty-two years ago, for there is enough evidence for that claim, but what attendees often seem to forget is that it commenced as a religious pilgrimage event, where artisans from the region of Nackchi, where Rexia took place, would flock to flaunt, flash and emblazon their latest creations and crafts smothered in devotional fervor about God, or the Prophet’s life. Over the centuries, as winds -and their names- changed, earthquakes shivered the Earth, and civilizations rose and fell, Rexia had naturally evolved into an agnostic artistic event, desacralized and emancipated from any religious trace.<br>
-<br>
-If a facet that has remained untouched throughout time was to be mentioned, scholars would agree that such an immutable element would be the election ceremony of its main, and sole, curator; a figure directly appointed by the curator of the previous edition. This promulgation, known as Denuntiatio Ad Regime, the auspices of which have been known to travelers and locals, cognoscenti and illiterates, occurs, since time immemorial, the day after the aperture of the Biennial. In front of all attendees, among all the fervency and zeal, the current curator solemnly proclaims the name of the curator for the next edition. The secrecy around the promulgation, as well as the anticipation, have historically triggered tremendously emotional scenes in the audience, often followed by a profound murmuration of gossip and commentary, muffed by clapping, cheer, and, at times, gasps.<br>
-<br>
-The position of Chief Curator of Rexia, the pinnacle of absolute curatorial virtues, is coveted by curators from all cardinals points, eager to enter the cannons of History of Art. In its four hundred sixty-six editions, the position has only been rejected on one occurrence. The unabridged power characterizing the role of Chief Curator of Rexia, a position like no other, where appointees do not have to answer to anyone but their ambitions, where budgets know no limits, and infrastructure is of the highest quality known, often turns events into largely dramatic, yet often disjointed, monuments to their custodian’s egos. For this reason, no critic has ever considered Rexia an influential event. <br>
-<br>
-Yet, if I must speak to you about its importance, it is not its repercussion, but on its archive, that one must consider. Rexia has a library whose contents have been intensely studied by scholars, collectors, and artists, containing all physical, and, more recently, digital, documentation of every single precedent edition. Ancient parchments and scrolls coexist with unsold catalogs, samples of posters, lost tote bags, and exhibition brochures with curatorial statements, all of which are archived in the most rigorous chronological order. This tremendous archive has matured into a pilgrimage destination known to all in the art world, the visit of which remains a rite of passage that everyone who calls themself artist, curator, or historian, must, at least once in their lifetime, complete. The same fate, however, is not shared by the Biennial exhibition per se, which has been perceived, for at least the past three centuries, if not earlier, as an ephemeral addendum whose only paramountcy is the Denuntiatio Ad Regime ceremony on the second day of the event. There are no official visitor statistics of the exhibition, for they would disclose this mournful truth. You might face difficulty looking for people who cherish the actual event when it is happening, as most do so retrospectively when it can be studied and dissected from the printed elements left behind, within the walls of the library; when it can be observed in connection to a larger sequence of editions that came afore and after it. <br>
-<br>
-Art philomaths are delighted to confabulate theories around the curatorial shifts, the desacralization of the event, the discursive tensions that have emerged between different editions, or, a personal favorite, the conspiracy around the appointments. Some particular editions have been absorbed into the art historians’ canons ecumenical, such as those when curators had misread the intentions of their heirs resulting in Biennials of antagonistic persuasions, or when for certain periods nepotism and partisanship affected the appointments for Main Curators for several editions in a row, turning Rexia into a stale event. These episodes, as any reputable art historian would confirm, have been normally followed by a series of decidedly surprising, and chaotic editions. The cumulative succession of turns -often good, at times detrimental-, the lamentable decisions, the expected and unexpected results, and the manifestation of curatorial egos stretched over the elephantine existence of the event, were the main attractions of Rexia. Regardless of the unexpected shifts, its continuation remains certain: if I were to speak of what ascertains the survival of Rexia, is the resolute compliance and reverence to the Main Curator’s orders, no matter who they are, or how delirious their wishes present to be.<br>
-<br>
+          <br>
+          No artistic gathering has a more obscure inception story than that of the Biennial of Rexia, the most ancient of cultural events known to humans. It is no surprise that its origins remain a mystery to many. Everyone concurs that its first edition was nine hundred thirty-two years ago, for there is enough evidence for that claim, but what attendees often seem to forget is that it commenced as a religious pilgrimage event, where artisans from the region of Nackchi, where Rexia took place, would flock to flaunt, flash and emblazon their latest creations and crafts smothered in devotional fervor about God, or the Prophet’s life. Over the centuries, as winds -and their names- changed, earthquakes shivered the Earth, and civilizations rose and fell, Rexia had naturally evolved into an agnostic artistic event, desacralized and emancipated from any religious trace.<br>
+          <br>
+          If a facet that has remained untouched throughout time was to be mentioned, scholars would agree that such an immutable element would be the election ceremony of its main, and sole, curator; a figure directly appointed by the curator of the previous edition. This promulgation, known as Denuntiatio Ad Regime, the auspices of which have been known to travelers and locals, cognoscenti and illiterates, occurs, since time immemorial, the day after the aperture of the Biennial. In front of all attendees, among all the fervency and zeal, the current curator solemnly proclaims the name of the curator for the next edition. The secrecy around the promulgation, as well as the anticipation, have historically triggered tremendously emotional scenes in the audience, often followed by a profound murmuration of gossip and commentary, muffed by clapping, cheer, and, at times, gasps.<br>
+          <br>
+          The position of Chief Curator of Rexia, the pinnacle of absolute curatorial virtues, is coveted by curators from all cardinals points, eager to enter the cannons of History of Art. In its four hundred sixty-six editions, the position has only been rejected on one occurrence. The unabridged power characterizing the role of Chief Curator of Rexia, a position like no other, where appointees do not have to answer to anyone but their ambitions, where budgets know no limits, and infrastructure is of the highest quality known, often turns events into largely dramatic, yet often disjointed, monuments to their custodian’s egos. For this reason, no critic has ever considered Rexia an influential event. <br>
+          <br>
+          Yet, if I must speak to you about its importance, it is not its repercussion, but on its archive, that one must consider. Rexia has a library whose contents have been intensely studied by scholars, collectors, and artists, containing all physical, and, more recently, digital, documentation of every single precedent edition. Ancient parchments and scrolls coexist with unsold catalogs, samples of posters, lost tote bags, and exhibition brochures with curatorial statements, all of which are archived in the most rigorous chronological order. This tremendous archive has matured into a pilgrimage destination known to all in the art world, the visit of which remains a rite of passage that everyone who calls themself artist, curator, or historian, must, at least once in their lifetime, complete. The same fate, however, is not shared by the Biennial exhibition per se, which has been perceived, for at least the past three centuries, if not earlier, as an ephemeral addendum whose only paramountcy is the Denuntiatio Ad Regime ceremony on the second day of the event. There are no official visitor statistics of the exhibition, for they would disclose this mournful truth. You might face difficulty looking for people who cherish the actual event when it is happening, as most do so retrospectively when it can be studied and dissected from the printed elements left behind, within the walls of the library; when it can be observed in connection to a larger sequence of editions that came afore and after it. <br>
+          <br>
+          Art philomaths are delighted to confabulate theories around the curatorial shifts, the desacralization of the event, the discursive tensions that have emerged between different editions, or, a personal favorite, the conspiracy around the appointments. Some particular editions have been absorbed into the art historians’ canons ecumenical, such as those when curators had misread the intentions of their heirs resulting in Biennials of antagonistic persuasions, or when for certain periods nepotism and partisanship affected the appointments for Main Curators for several editions in a row, turning Rexia into a stale event. These episodes, as any reputable art historian would confirm, have been normally followed by a series of decidedly surprising, and chaotic editions. The cumulative succession of turns -often good, at times detrimental-, the lamentable decisions, the expected and unexpected results, and the manifestation of curatorial egos stretched over the elephantine existence of the event, were the main attractions of Rexia. Regardless of the unexpected shifts, its continuation remains certain: if I were to speak of what ascertains the survival of Rexia, is the resolute compliance and reverence to the Main Curator’s orders, no matter who they are, or how delirious their wishes present to be.<br>
+          <br>
 
         <br>
       </h3>
@@ -1913,55 +1939,65 @@ Art philomaths are delighted to confabulate theories around the curatorial shift
 
 
     <div class="Contributors_Frame" onclick="contributors_FrameUp()" onmouseover="contributors_FrameUp()" onmouseout="contributors_FrameDown()" style="
-    font-family: 'Special Elite', cursive;
-    position:fixed; width:15rem; height: 50vh; right:5%; top:10%; border: solid; border-color: #a5d1a9; border-width: 0; background-color: white; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #151617; background-size: cover; background-image: url(./data/11rex/Contributor_Background_REXIA.jpg);">
-      <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem;">
+    font-family: 'Didot', 'Didot-Regular';
+    position:fixed; width:16rem; height: 22rem; right:5%; top:10%; background-color: white; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #201d1d; background-size: cover; background-image: url(./data/11rex/Contributor_Background_REXIA.jpg);">
+      <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem; background-color: rgba(255,255,255,0.5); padding-left: 0.5rem; padding-right: 0.5rem;">
       <h4>
-REXIA, TOO<br>
-<br>
-Georg Seeßlen. studied painting, art history, and semiotics in Munich. He is a lecturer and curator of film programs and art exhibitions. He has written books on Film, Art & Politics. He features on the German radio alongside Markus Metz.<br>
-<br>
-No artistic gathering has a more obscure inception story than that of the Biennial on Planet Rexia, near the End of the Universe, just some lightyears away from that famous restaurant where healthy people used to look at the great apocalypse night after night. It was the last cultural event mankind would be able to perform. It is no surprise that most of the people, looking forward to the ultimate explosion didn’t give a damn to the mysterious event called “Rexia Art Gathering Surprise“ - RAGS in short. But on the other hand, there were groups of enthusiastic art lovers, true believers in the eternal power of art. Pure art, and nothing but art. Art that won’t save our lives, but will last forever and ever. Every one of them concurred that this last edition would take place nine hundred thirty-two days from the day the art councils of planet Earth had assembled to take their last decision: Every piece of art of the doomed planet should be brought to Rexia, a planet without dust, without humility, without wind… and without life. There was enough evidence for that aim, mainly because for a lot of people there was nothing else to do. (Who would struggle for careers, when the end is apparently near?) Not all the attendees stuck to it, but in the end, it was a religious pilgrimage event, where artisans from all continents would flock to flaunt, flash and emblazon their best creations and that of their ancestors and heroes in the long history of art on earth, smothered in devotional fervor about Nature and the men and women who had seen it through artist’s eyes. Over the centuries as winds - and their names - changed, crises and catastrophes had shivered the Earth, and civilizations rose and fell. Only the works of art had survived and been passed from one dying civilization to the other emerging. The name of Rexia, where the first Biennial took place some centuries ago, was given to the small planet, where the last Biennial should be staged, surviving all men, surviving every civilization, surviving every Goddess. Rexia had naturally evolved into a spiritual event, sacralized and emancipated from any trace of market, hype, and fuzz. <br>
-<br>
-The remaining problem for this biggest and last artistic effort was to elect its main, and sole, curator because there was no time left for discussions and democracy. The election ceremony was easy and quick: The hundred most influential persons in the International art scene choose the SUPER-KURATOR. And because life tended to be short in the last days of mankind, every SUPER-KURATOR appointed his or her successor for the next step in this sacred project: finding the 100 000 works of art worth for bringing them to Rexia. This promulgation, known as Denuntiatio ad Fatum Artis, had been known to TV-audiences and Newschatters all over the world because it seemed the most interesting thing about the whole Rexia-Mission. A lot of people who would not distinguish Rafael from Van Gogh, did know the name of the SUPER-KURATOR. After a while, the SUPER-KURATOR was as popular as presidents, kings, and revolutionaries, and the Denuntiatio was televised frequently. (No SUPER-KURATOR seemed to survive in his position more than a week, which may underline how challenging the work of curators was till the end of curating itself.) In front of all attendees of the mission, among all the fervency and zeal, the current (and exhausted) SUPER-KURATOR solemnly proclaimed the name of the next curator. The secrecy around the promulgation, as well as the anticipation, triggered tremendously emotional scenes within the audiences, often followed by a profound murmuration of gossip and commentary, muffed by e.mails, sky-phones, and mental storm waves. People would jump out of their windows, kill their neighbors, or riot in the streets when their favorite curator was not nominated. "Who will be the SUPER-KURATOR“ was the most popular TV-Show internationally broadcasted. Curators and nominees had to be carefully protected, because of the danger of getting killed or kidnapped by fans. <br>
-<br>
-The position of SUPER-KURATOR of the Rexia-mission, the pinnacle of absolute curatorial virtues, was coveted by curators from all cardinals points, eager to enter the cannons of History of Art. Every SUPER-KURATOR left his traces in defining the essence of art and deciding, which work of art would be saved for cosmic eternity on Rexia. In its four hundred sixty-six days’ history, the position had only been rejected on one occurrence. The unabridged power characterizing the role of the SUPER-KURATOR (every one of them hoped for longevity, but mysteriously no one had enough time than to choose roundabout 50 works of art for the Rexia-mission), a position like no other, where appointees did not have to answer to anyone but their own ambitions, where budgets knew no limits, and disjointed, monuments to their custodian’s egos. For a brief slot in time, the SUPER-KURATOR was kind of God or Goddess. For this reason, no one was listening to critics. How dared they argue the last Biennial in the Art History of Men! <br>
-<br>
-Yet, if I must speak to you about its importance, it is not on its cultural repercussion, but on its civil impact, that one must consider. Rexia generated a proud narrative. Because of the art, that was to be saved from the big explosion, humans would leave a heritage and would not vanish without leaving something important. Many people tried eagerly to be part of the Rexia-mission, knowing very well, that landing on Rexia, finding the right place for the works of art, and following the last curatorial orders would be the last thing in their lives. No one would survive on Rexia, but after all, no one would survive on earth. Of course, there were only a small crew needed, so in order to become at least a spiritual member of the mission, people began to study the history and the theory of art, they acclaimed (or did not so) the work of the SUPER-KURATORS and they hated the critics, especially those, who denied the deep cultural and (more or less) religious sense of the Rexia-mission. The archives of art were intensely studied by scholars, collectors, and artists, containing all physical and digital documentation of every single precedent step by the SUPER-KURATORS and their explanations, both in the historical and the Ästhetik context. Art was the new - and last religion. Art was the new - and last ideology. Art was the new - and last reason to live. People gathered in the archives. Ancient parchments and scrolls there coexisted with unsold catalogs, samples of posters, lost tote bags, and exhibition brochures with curatorial statements, all of which are archived around the world in very different orders. But the tremendous archives had matured into a pilgrimage destination known to all, not only in the art world, and the visits to every kind of art archive, museum, library, collection emerged into a new rite of passage, the great farewell in the name of Rexia. Once before the big explosion, nearly everyone (including those who wouldn’t give a damn at the beginning of the Rexia-mission) must perform such a rite: Being part of the SUPER-MISSION: Man will die, but art will survive.<br> 
-<br>
-The same fate, however, is not shared by the mission of the Last Biennial itself, which had perceived, more and more, for the last hundred days, if not longer, as an ephemeral addendum whose only paramountcy is the Denuntio ad Fatum Arts-ceremony and the inauguration of the SUPER-KURATOR every now and then. There are no official statistics about the real knowledge of the works of art chosen for the Rexia-mission, for they would disclose this mournful truth. The new religious art had no real content. You might face difficulty looking for people who cherish the actual event of the mission and how it is happening, as most do so prospectively, when it could be studied and dissected from the broadcasted elements left behind, within the circuits of followers and friends of Rexia. The art-religion of the Rexia-mission were both, fundamentalistic and superficial.<br>
-<br>
-The small group of art philomaths however were delighted to confabulate theories around the curatorial shifts, the strange sacralization of the mission, the discursive tensions that had emerged between different regimes of the SUPER-KURATORS, or, a personal favorite, the conspiracy around the appointments. Some particular “chapters“ have been absorbed into the narration of the end as ecumenical (fate or guilt?) such as those when SUPER-KURATORS had misread the intentions of their heirs resulting in decisions of antagonistic persuasions, or when for certain periods nepotism and partisanship affected the appointments for SUPER-KURATORS for a certain time, turning the Rexia-mission into a stale event (including declining “likes“ and followers). These episodes, as even any reputable art critic would confirm, had been normally followed by a series of decidedly surprising and chaotic curatorial politics. "This you call a masterpiece?“ We heard some people gasp (and "whataboutism“ got a new meaning). The cumulative succession of turns - often good, at times detrimental -, the lamentable decisions, the expected and unexpected results, and the manifestation of curatorial egos stretched over the elephantine existence of the mission, were the main attractions of Rexia. Regardless of the unexpected shifts, its continuation remained certain: If I were to speak of what ascertains the survival of the Rexia-mission till the end, ist the resolute compliance and reverence to the SUPER-KURATORS orders, no matter who they were, or how delirious their wishes presented to be. <br>
-<br>
-When the Rexia-mission started, taking 100 000 works of art to post-human eternal life, it left us not only with some kind of transcendental hope but also with a new concept of leadership. Three days after the WARHOLA 1 started its flight, an Icelandic scientist discovered a bug in the algorithm that predicted the end of the world. The big explosion is canceled. Mankind will live on. If only without the 100 000 masterpieces of art, which will live on Rexia, without dust, without humidity, without wind, and without life. Forever and ever and ever and ever and ever… <br>
-<br>
+          REXIA, TOO<br>
+          <br>
+          <span style="font-family: 'EB Garamond', serif; font-style: italic;"><span style="font-weight: bold;">
+          Georg Seeßlen</span> studied painting, art history, and semiotics in Munich. He is a lecturer and curator of film programs and art exhibitions. He has written books on Film, Art & Politics. He features on the German radio alongside Markus Metz.<br></span>
+          <br>
+          No artistic gathering has a more obscure inception story than that of the Biennial on Planet Rexia, near the End of the Universe, just some lightyears away from that famous restaurant where healthy people used to look at the great apocalypse night after night. It was the last cultural event mankind would be able to perform. It is no surprise that most of the people, looking forward to the ultimate explosion didn’t give a damn to the mysterious event called “Rexia Art Gathering Surprise“ - RAGS in short. But on the other hand, there were groups of enthusiastic art lovers, true believers in the eternal power of art. Pure art, and nothing but art. Art that won’t save our lives, but will last forever and ever. Every one of them concurred that this last edition would take place nine hundred thirty-two days from the day the art councils of planet Earth had assembled to take their last decision: Every piece of art of the doomed planet should be brought to Rexia, a planet without dust, without humility, without wind… and without life. There was enough evidence for that aim, mainly because for a lot of people there was nothing else to do. (Who would struggle for careers, when the end is apparently near?) Not all the attendees stuck to it, but in the end, it was a religious pilgrimage event, where artisans from all continents would flock to flaunt, flash and emblazon their best creations and that of their ancestors and heroes in the long history of art on earth, smothered in devotional fervor about Nature and the men and women who had seen it through artist’s eyes. Over the centuries as winds - and their names - changed, crises and catastrophes had shivered the Earth, and civilizations rose and fell. Only the works of art had survived and been passed from one dying civilization to the other emerging. The name of Rexia, where the first Biennial took place some centuries ago, was given to the small planet, where the last Biennial should be staged, surviving all men, surviving every civilization, surviving every Goddess. Rexia had naturally evolved into a spiritual event, sacralized and emancipated from any trace of market, hype, and fuzz. <br>
+          <br>
+          The remaining problem for this biggest and last artistic effort was to elect its main, and sole, curator because there was no time left for discussions and democracy. The election ceremony was easy and quick: The hundred most influential persons in the International art scene choose the SUPER-KURATOR. And because life tended to be short in the last days of mankind, every SUPER-KURATOR appointed his or her successor for the next step in this sacred project: finding the 100 000 works of art worth for bringing them to Rexia. This promulgation, known as Denuntiatio ad Fatum Artis, had been known to TV-audiences and Newschatters all over the world because it seemed the most interesting thing about the whole Rexia-Mission. A lot of people who would not distinguish Rafael from Van Gogh, did know the name of the SUPER-KURATOR. After a while, the SUPER-KURATOR was as popular as presidents, kings, and revolutionaries, and the Denuntiatio was televised frequently. (No SUPER-KURATOR seemed to survive in his position more than a week, which may underline how challenging the work of curators was till the end of curating itself.) In front of all attendees of the mission, among all the fervency and zeal, the current (and exhausted) SUPER-KURATOR solemnly proclaimed the name of the next curator. The secrecy around the promulgation, as well as the anticipation, triggered tremendously emotional scenes within the audiences, often followed by a profound murmuration of gossip and commentary, muffed by e.mails, sky-phones, and mental storm waves. People would jump out of their windows, kill their neighbors, or riot in the streets when their favorite curator was not nominated. "Who will be the SUPER-KURATOR“ was the most popular TV-Show internationally broadcasted. Curators and nominees had to be carefully protected, because of the danger of getting killed or kidnapped by fans. <br>
+          <br>
+          The position of SUPER-KURATOR of the Rexia-mission, the pinnacle of absolute curatorial virtues, was coveted by curators from all cardinals points, eager to enter the cannons of History of Art. Every SUPER-KURATOR left his traces in defining the essence of art and deciding, which work of art would be saved for cosmic eternity on Rexia. In its four hundred sixty-six days’ history, the position had only been rejected on one occurrence. The unabridged power characterizing the role of the SUPER-KURATOR (every one of them hoped for longevity, but mysteriously no one had enough time than to choose roundabout 50 works of art for the Rexia-mission), a position like no other, where appointees did not have to answer to anyone but their own ambitions, where budgets knew no limits, and disjointed, monuments to their custodian’s egos. For a brief slot in time, the SUPER-KURATOR was kind of God or Goddess. For this reason, no one was listening to critics. How dared they argue the last Biennial in the Art History of Men! <br>
+          <br>
+          Yet, if I must speak to you about its importance, it is not on its cultural repercussion, but on its civil impact, that one must consider. Rexia generated a proud narrative. Because of the art, that was to be saved from the big explosion, humans would leave a heritage and would not vanish without leaving something important. Many people tried eagerly to be part of the Rexia-mission, knowing very well, that landing on Rexia, finding the right place for the works of art, and following the last curatorial orders would be the last thing in their lives. No one would survive on Rexia, but after all, no one would survive on earth. Of course, there were only a small crew needed, so in order to become at least a spiritual member of the mission, people began to study the history and the theory of art, they acclaimed (or did not so) the work of the SUPER-KURATORS and they hated the critics, especially those, who denied the deep cultural and (more or less) religious sense of the Rexia-mission. The archives of art were intensely studied by scholars, collectors, and artists, containing all physical and digital documentation of every single precedent step by the SUPER-KURATORS and their explanations, both in the historical and the Ästhetik context. Art was the new - and last religion. Art was the new - and last ideology. Art was the new - and last reason to live. People gathered in the archives. Ancient parchments and scrolls there coexisted with unsold catalogs, samples of posters, lost tote bags, and exhibition brochures with curatorial statements, all of which are archived around the world in very different orders. But the tremendous archives had matured into a pilgrimage destination known to all, not only in the art world, and the visits to every kind of art archive, museum, library, collection emerged into a new rite of passage, the great farewell in the name of Rexia. Once before the big explosion, nearly everyone (including those who wouldn’t give a damn at the beginning of the Rexia-mission) must perform such a rite: Being part of the SUPER-MISSION: Man will die, but art will survive.<br> 
+          <br>
+          The same fate, however, is not shared by the mission of the Last Biennial itself, which had perceived, more and more, for the last hundred days, if not longer, as an ephemeral addendum whose only paramountcy is the Denuntio ad Fatum Arts-ceremony and the inauguration of the SUPER-KURATOR every now and then. There are no official statistics about the real knowledge of the works of art chosen for the Rexia-mission, for they would disclose this mournful truth. The new religious art had no real content. You might face difficulty looking for people who cherish the actual event of the mission and how it is happening, as most do so prospectively, when it could be studied and dissected from the broadcasted elements left behind, within the circuits of followers and friends of Rexia. The art-religion of the Rexia-mission were both, fundamentalistic and superficial.<br>
+          <br>
+          The small group of art philomaths however were delighted to confabulate theories around the curatorial shifts, the strange sacralization of the mission, the discursive tensions that had emerged between different regimes of the SUPER-KURATORS, or, a personal favorite, the conspiracy around the appointments. Some particular “chapters“ have been absorbed into the narration of the end as ecumenical (fate or guilt?) such as those when SUPER-KURATORS had misread the intentions of their heirs resulting in decisions of antagonistic persuasions, or when for certain periods nepotism and partisanship affected the appointments for SUPER-KURATORS for a certain time, turning the Rexia-mission into a stale event (including declining “likes“ and followers). These episodes, as even any reputable art critic would confirm, had been normally followed by a series of decidedly surprising and chaotic curatorial politics. "This you call a masterpiece?“ We heard some people gasp (and "whataboutism“ got a new meaning). The cumulative succession of turns - often good, at times detrimental -, the lamentable decisions, the expected and unexpected results, and the manifestation of curatorial egos stretched over the elephantine existence of the mission, were the main attractions of Rexia. Regardless of the unexpected shifts, its continuation remained certain: If I were to speak of what ascertains the survival of the Rexia-mission till the end, ist the resolute compliance and reverence to the SUPER-KURATORS orders, no matter who they were, or how delirious their wishes presented to be. <br>
+          <br>
+          When the Rexia-mission started, taking 100 000 works of art to post-human eternal life, it left us not only with some kind of transcendental hope but also with a new concept of leadership. Three days after the WARHOLA 1 started its flight, an Icelandic scientist discovered a bug in the algorithm that predicted the end of the world. The big explosion is canceled. Mankind will live on. If only without the 100 000 masterpieces of art, which will live on Rexia, without dust, without humidity, without wind, and without life. Forever and ever and ever and ever and ever… <br>
+          <br>
 
       </h4>
       </div>
     </div>
 
 
-<div style="position:fixed; width:20vw; height: 20vw; right:20%; bottom:10%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #c42f5c;">
+    <div style="position:fixed; width:20vw; height: 20vw; right:20%; bottom:10%; border: none; background-color: rgba(255, 0, 0, 0.2); overflow: scroll;  box-shadow: -1rem 1rem #c42f5c;">
+      <a href="#REXIA_R01"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/11rex/REXIA_R01.jpg">
+      </a>
+    </div>
+
+    <div style="position:fixed; width:14vw; height: 14vw; left:5%; top:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #c42f5c;">
+      <a href="#CLOSEUP_REXIA_01_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/11rex/CLOSEUP_REXIA_01_R00.jpg">
+      </a>
+    </div>
+
+    <div style="position:fixed; width:12vw; height: 12vw; left:35%; top:8%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #c42f5c;">
+      <a href="#CLOSEUP_REXIA_02_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/11rex/CLOSEUP_REXIA_02_R00.jpg">
+      </a>
+    </div>
+
       
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_REXIA_01_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/11rex/CLOSEUP_REXIA_01_R00.jpg">
+          <div id="CLOSEUP_REXIA_01_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/11rex/CLOSEUP_REXIA_01_R00.jpg">
           </div>
       </a>
-      <a href="#CLOSEUP_REXIA_01_R00"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/11rex/CLOSEUP_REXIA_01_R00.jpg">
-      </a>
-    </div>
 
-    <div style="position:fixed; width:10rem; height: 10rem; left:5%; top:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #c42f5c;">
       <a href="#" class="JesterBox">
-          <div id="CLOSEUP_REXIA_02_R00"><img style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/11rex/CLOSEUP_REXIA_02_R00.jpg">
+          <div id="CLOSEUP_REXIA_02_R00"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/11rex/CLOSEUP_REXIA_02_R00.jpg">
           </div>
       </a>
-      <a href="#CLOSEUP_REXIA_02_R00.jpg"><img style="position:absolute; height:100%; object-fit: cover;" src="./data/11rex/CLOSEUP_REXIA_02_R00.jpg">
+
+      <a href="#" class="JesterBox">
+          <div id="REXIA_R01"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/11rex/REXIA_R01.jpg">
+          </div>
       </a>
-    </div>
-
-
-
 </div>
 
 
