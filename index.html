@@ -20,9 +20,9 @@
 
 html {
   background-color: #feffff;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
   background-size: contain;
   background-image: url(LeBiennaliInvisibili-light.jpg);
   background-attachment: fixed;
@@ -57,6 +57,127 @@ h4 {
   font-size: 0.8rem;
 }
 
+
+#bgr1 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(/data/1bot/BOTTAVIA_R01.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bgr2 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(/data/2can/CANONICE_R01.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bgr3 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(/data/3ecc/ECCESSA_R01.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bgr4 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(/data/4eve/EVENIA_R02.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bgr5 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(/data/5gen/GENERICA_R01.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bgr6 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(/data/6ins/INSEGNA_R02.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bgr7 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(/data/7nov/NOVECHELOVEKAN_R01.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bgr8 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(/data/8pal/PALIMPSESTIA_R01.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bgr9 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(/data/9puer/PUERILIA_R01.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bgr10 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(/data/10ref/REFERENDA_R01.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#bgr11 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: url(/data/11rex/REXIA_R01.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
 
 
 .JesterBox div {
@@ -248,6 +369,11 @@ html {
 
 <div id="MenuItems" style="position: fixed; display: none; z-index: 10; transition: all 3s linear; overflow: scroll; right: 0; top: 0; width: 25%; height: 100%; opacity: 90%; background-color: white; padding-left: 1.5rem; padding-right: 3rem; padding-top: 2.5rem;">
 
+<div style="cursor: pointer;" onclick="showMainPage(); closeMenu();">
+<span style="font-weight: bold;">Le<br></span>
+<span style="font-style: italic;">Biennali<br></span>
+Invisibili<br></div>
+<br>
 <div style="cursor: pointer;" onclick="showSketch1(); closeMenu();">
 <span style="font-weight: bold;">Bottavia<br></span>
 <span style="font-style: italic;">A bot-curated biennial<br></span>
@@ -296,12 +422,12 @@ With Araks Sahakyan<br></div>
 <div style="cursor: pointer;" onclick="showSketch10(); closeMenu();">
 <span style="font-weight: bold;">Referenda<br></span>
 <span style="font-style: italic;">A democratic biennial<br></span>
-With Shumi Bose<br></div>
+With Matīss Groskaufmanis<br></div>
 <br>
 <div style="cursor: pointer;" onclick="showSketch11(); closeMenu();">
 <span style="font-weight: bold;">Rexia<br></span>
 <span style="font-style: italic;">A dynastic biennial<br></span>
-With Georg Seesslen<br></div>
+With Georg Seeßlen<br></div>
 <br>
 <div style="cursor: pointer;" onclick="showAbout(); showMainPage(); closeMenu();">
 <span style="font-weight: bold;">About<br></span>
@@ -542,6 +668,7 @@ With Georg Seesslen<br></div>
 
 
 <div id="sketch1" style="display: none;">
+  <div id="bgr1" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0; background-color: #feffff;"></div>
     <div style="visibility: visible;">  
     <iframe id="1bot" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/507bec3605124a16ba6ac937842f76fb/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" 
     srcdoc="<style>*{padding:0;margin:0;overflow:hidden}html,body{height:100%}img,span{position:absolute;width:100%;top:0;bottom:0;margin:auto}span{height:1.5em;text-align:center;font:48px/1.5 sans-serif;color:white;text-shadow:0 0 0.5em black}</style><a href=https://sketchfab.com/models/507bec3605124a16ba6ac937842f76fb/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> 
@@ -568,7 +695,7 @@ With Georg Seesslen<br></div>
 
 
     <div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:5%; top:15%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
-      <div style="position: absolute; top: 2rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
+      <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
       <h3>
         <p style="text-align: center;">Bottavia</p>
           <br>         
@@ -676,21 +803,20 @@ With Georg Seesslen<br></div>
 
 
 <div id="sketch2" style="display: none;">
+  <div id="bgr2" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0; background-color: #feffff;"></div>  
     <div style="visibility: visible;">  
-      <div class="sketchfab-embed-wrapper">
     <iframe id="2can" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/722fdaf93a0441c2b34fae6332802653/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" 
     srcdoc="<a href=https://sketchfab.com/models/722fdaf93a0441c2b34fae6332802653/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>" 
     frameborder="0" allow="autoplay; fullscreen; vr;" mozallowfullscreen="true" webkitallowfullscreen="true"> 
     </iframe>
-      </div>
-
     </div>
+
 <!-- srcdoc="<a href=https://sketchfab.com/models/722fdaf93a0441c2b34fae6332802653/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>"  -->
 
 
     
     <div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:5%; bottom: 5%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
-      <div style="position: absolute; top: 2rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
+      <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
       <h3>
         <p style="text-align: center;">Canonice</p>
             <br>
@@ -713,19 +839,19 @@ With Georg Seesslen<br></div>
     font-family: 'Courier1'; position:fixed; width:21rem; height: 28rem; right:5%; top:20%; border: solid; border-color: #a5d1a9; border-width: 0; background-color: white; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #151617; background-size: cover; background-image: url(./data/2can/Contributor_Background_CANONICE.jpg);">
       <div style="position: absolute; overflow: scroll; top: 2rem; bottom: 2rem; right: 2rem; left: 2rem; color:#803025; background-color:rgba(255,255,255,0.5); text-align: justify; text-justify: inter-word; padding: 0.8rem 2rem 0.8rem 2rem;">
       <h4>
-
-
+          
+          <div style="text-align: center;">The Wall</div>
+          <br>
           <span style="font-style: italic; font-family: 'EB Garamond'; "><span style="font-weight: bold;">Sabina Shikhlinskaya</span> - artist, independent curator, educator. She explores multimedia practices, creating art works with the priority of social subjects. <a style="text-decoration: none; color:#803025;" target="_blank"   href="http://sabinashikhlinskaya.info/">http://sabinashikhlinskaya.info/</a></span>
           <br>
           <br>
-          The Wall<br>
-          <br>
           Neophobia is the fear of anything new. In its milder form, it can manifest as the unwillingness to break from routine.<br>
           <br>
+          <span style="display: inline-block; text-align: right;">
           “Accepted and approved by those who were before us, and devoted to us in the inadmissibility of any deviation, innovation, or abolition in their content ...<br>
           No one will be allowed to change the above rules, or accept instead of the proposed rules others, drawn up by certain people who have dared to trade the truth. "<br>
           <br>
-          2nd Canon of the V-VI Ecumenical Council<br>
+          2nd Canon of the V-VI Ecumenical Council<br></span>
           <br>
           <br>
           <br>
@@ -746,17 +872,18 @@ With Georg Seesslen<br></div>
           <br>
           Thus, the experience that humanity has is always on this side of the horizons, while they continue to shift. The world is something that precedes all experience, a miracle, and a mystery that instills concern in the existence of man and makes him seek salvation in the existing order of things.<br>
           <br>
-          СТЕНА<br>
           <br>
+          <div style="text-align: center;">СТЕНА</div>
           <br>
           Neophobia is the fear of anything new. In its milder form, it can manifest as the unwillingness to break from routine
           Неофобия — боязнь чего-либо нового. В более мягкой форме это может проявляться в нежелании отказываться от рутины 
-          ru.qaz.wiki/wiki/Neophobia<br>
+          <a style="text-decoration: none; color:#803025;" target="_blank" href="https://ru.qaz.wiki/wiki/Neophobia">ru.qaz.wiki/wiki/Neophobia</a><br>
           <br>
           <br>
+          <span style="display: inline-block; text-align: right;">
           «Принятые и утвержденные бывшими прежде нас, и нам преданные в недопустимости всякого отступления, нововведения или упразднения в их содержании… <br>
           Никому не будет позволено вышеозначенные правила изменять или принимать вместо предложенных правил иные, составленные некими людьми, дерзнувшими торгашествовать истиной» <br>
-          2-ой канон V-VI Вселенского Собора<br>
+          2-ой канон V-VI Вселенского Собора<br></span>
           <br>
           <br>
           <br>
@@ -1046,6 +1173,7 @@ With Georg Seesslen<br></div>
 
 
 <div id="sketch3" style="display: none;">
+    <div id="bgr3" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0; background-color: #feffff;"></div>  
     <div style="visibility: visible;">  
     <iframe id="3ecc" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/908cbaa5b2a44e1aab0c51fd08434766/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" 
     srcdoc="<a href=https://sketchfab.com/models/908cbaa5b2a44e1aab0c51fd08434766/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>" 
@@ -1070,7 +1198,7 @@ With Georg Seesslen<br></div>
 
 
 <div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:45%; bottom: 10%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
-      <div style="position: absolute; top: 2rem; bottom: 4rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
+      <div style="position: absolute; top: 3rem; bottom: 4rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
       <h3>
         <p style="text-align: center;">Eccessa</p>
             <br>
@@ -1089,7 +1217,7 @@ With Georg Seesslen<br></div>
     <div class="Contributors_Frame" onmouseover="contributors_FrameUp()" onmouseout="contributors_FrameDown()" style="
     font-style: italic; font-family: 'EB Garamond';
     position:fixed; width:16rem; height: 20rem; left: 2.5%; top:10%; border: solid; border-color: #a5d1a9; border-width: 0; background-color: white; z-index: 0; padding: 0.8rem 0.4rem 0.8rem 0.4rem; color: #201d1d; background-size: cover; background-image: url(./data/3ecc/Contributor_Background_ECCESSA.jpg);">
-      <div style="position: absolute; overflow: scroll; top: 0.8rem; bottom: 0.8rem; right: 1rem; left: 1rem; background-color: rgba(255, 255, 255, 0.5); text-justify: inter-word;">
+      <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem; background-color: rgba(255, 255, 255, 0.5); text-justify: inter-word;">
       <h4 style="padding-left: 0.4rem; padding-right: 0.4rem;">
       <span style="font-weight: bold;">Nora Akawi</span> is a Palestinian architect teaching at The Cooper Union. She studies architecture as a project of erasure and exclusion in settler colonialism. Eduardo Rega is a Canarian architect teaching at UPenn. He studies architectures of social movements that refuse the capitalist world order. <a style="text-decoration: none; color: #201d1d;" target="_blank" href="https://www.architecturesofrefusal.org/"> https://www.architecturesofrefusal.org/</a>
       <br>
@@ -1171,6 +1299,7 @@ With Georg Seesslen<br></div>
 
 
 <div id="sketch4" style="display: none;">
+    <div id="bgr4" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0; background-color: #feffff;"></div>  
     <div style="visibility: visible;">  
     <iframe id="4eve" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/a4923c387c074f17a41848f9dca27f79/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" 
     srcdoc="<a href=https://sketchfab.com/models/a4923c387c074f17a41848f9dca27f79/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>" 
@@ -1199,7 +1328,7 @@ With Georg Seesslen<br></div>
 
 
 <div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:5%; top:10%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
-      <div style="position: absolute; top: 2rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
+      <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
       <h3>
         <p style="text-align: center;">Evenia</p>
             <br>
@@ -1217,7 +1346,7 @@ With Georg Seesslen<br></div>
     <div onmouseover="contributors_FrameUp()" onmouseout="contributors_FrameDown()" class="Contributors_Frame" style="
     font-family: 'Special Elite', cursive;
     position:fixed; width:16rem; height: 21rem; right:2%; bottom: 10%; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #201d1d; background-color: blue; background-image: url(./data/4eve/Contributor_Background_EVENIA.jpg); background-size: cover;">
-      <div style="position: absolute; overflow: scroll; top: 0.6rem; bottom: 0.3rem; right: 1rem; left: 1rem; background-color: rgba(255,255,255,0.5); padding-left: 0.5rem; padding-right: 0.5rem; color:#201d1d;">
+      <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem; background-color: rgba(255,255,255,0.5); padding-left: 0.5rem; padding-right: 0.5rem; color:#201d1d;">
       <h4>
           <span style="font-family: 'EB Garamond', serif; font-style: italic;"><span style="font-weight: bold;">Sofia Pia Belenky</span> is a designer currently based in Milan, Italy. Her work with Space Caviar uses built work, event, exhibition design, research and film as forms of an extended mode of architectural practice. <a style="text-decoration: none; color: #201d1d;" target="_blank" href="http://spacecaviar.net"> spacecaviar.net</a></span><br>
           <br>
@@ -1295,6 +1424,7 @@ With Georg Seesslen<br></div>
 
 
 <div id="sketch5" style="display: none;">
+    <div id="bgr5" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0; background-color: #feffff;"></div>  
     <div style="visibility: visible;">  
     <iframe id="5gen" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/3dd1c71405044e27969a6963cdbeb08d/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" 
     srcdoc="<a href=https://sketchfab.com/models/3dd1c71405044e27969a6963cdbeb08d/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>" 
@@ -1319,7 +1449,7 @@ With Georg Seesslen<br></div>
 
 
 <div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:5%; bottom:5%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
-      <div style="position: absolute; top: 2rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
+      <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
       <h3>
         <p style="text-align: center;">Generica</p>
           <br>
@@ -1380,7 +1510,7 @@ With Georg Seesslen<br></div>
       </a>
     </div>
 
-    <div style="position:fixed; width:14vw; height: 14vw; right:36%; bottom:40%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #696b67;">
+    <div style="position:fixed; width:14vw; height: 14vw; right:36%; top:20%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #696b67;">
       <a href="#CLOSEUP_GENERICA_02_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/5gen/CLOSEUP_GENERICA_02_R00.jpg">
       </a>
     </div>
@@ -1425,6 +1555,7 @@ With Georg Seesslen<br></div>
 
 
 <div id="sketch6" style="display: none;">
+    <div id="bgr6" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0; background-color: #feffff;"></div>  
     <div style="visibility: visible;">  
 
     <iframe id="6ins" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/86ff78c8a41c49f8a6b52966b34b923b/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" 
@@ -1450,7 +1581,7 @@ With Georg Seesslen<br></div>
 
 
 <div class="lefttext" style="position:fixed; width:23rem; height: 28rem; right:5%; bottom:10%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
-      <div style="position: absolute; top: 2rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
+      <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
       <h3>
         <p style="text-align: center;">Insegna</p>
           <br>
@@ -1546,7 +1677,7 @@ With Georg Seesslen<br></div>
       </a>
     </div>
 
-    <div style="position:fixed; width:12vw; height: 12vw; right:10%; top:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #6c2269;">
+    <div style="position:fixed; width:12vw; height: 12vw; right:28%; top:10%; border: none; overflow: scroll;box-shadow: -0.7rem 0.7rem #6c2269;">
       <a href="#CLOSEUP_INSEGNA_01_R00"><img loading='lazy' style="position:absolute; height:100%; object-fit: cover;" src="./data/6ins/CLOSEUP_INSEGNA_01_R00.jpg">
       </a>
     </div>
@@ -1616,6 +1747,7 @@ With Georg Seesslen<br></div>
 
 
 <div id="sketch7" style="display: none;">
+  <div id="bgr7" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0; background-color: #feffff;"></div>    
     <div style="visibility: visible;">  
 
     <iframe id="7nov" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/embed?autostart=1&amp;camera=0&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" 
@@ -1642,7 +1774,7 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
 
 
 <div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:40%; top:20%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
-      <div style="position: absolute; top: 2rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
+      <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
       <h3>
         <p style="text-align: center;">Novichelovekan</p>
           <br>
@@ -1682,12 +1814,18 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
           They are intended to present critical interventions into its modes of production and capture of cultural capital, and its transformation into financial capital. Entangled within this are the processes of imperialist consumption of cultural production from countries in the global south by those in the global north, responding in particular to the situation of biennalization in Bangkok, where the corporate-sponsored Bangkok Art Biennale, the artist-run Bangkok Biennial and other initiatives projected as biennials vie for space in the context of a divided political landscape. In this context, we ask who the biennial is for, and to whom it belongs, and how one might develop modes of critiquing its hegemonization of visibility/visuality.<br>
           <br>
               <div style="width:100%;">
-                <a href="#Contributor-Image-1_NOVICHELOVEKAN"><img loading='lazy' style="position:absolute; width:94%; object-fit: cover;" src="./data/7nov/Contributor-Image-1_NOVICHELOVEKAN.jpeg">
+                <a href="#Contributor-Image-1_NOVICHELOVEKAN"><img loading='lazy' style="position:absolute; width:92%; object-fit: cover;" src="./data/7nov/Contributor-Image-1_NOVICHELOVEKAN.jpeg">
                 </a>
               </div>     
           <br><br><br><br><br><br><br><br><br>
               <div style="width:100%;">
-                <a href="#Contributor-Image-3_NOVICHELOVEKAN"><img loading='lazy' style="position:absolute; width:94%; object-fit: cover;" src="./data/7nov/Contributor-Image-3_NOVICHELOVEKAN.jpeg">
+                <a href="#Contributor_Image_2_NOVICHELOVEKAN"><img loading='lazy' style="position:absolute; width:92%; object-fit: cover;" src="./data/7nov/Contributor_Image_2_NOVICHELOVEKAN.jpeg">
+                </a>
+              </div>     
+          <br><br><br><br><br><br><br><br><br><br>
+
+              <div style="width:100%;">
+                <a href="#Contributor-Image-3_NOVICHELOVEKAN"><img loading='lazy' style="position:absolute; width:92%; object-fit: cover;" src="./data/7nov/Contributor-Image-3_NOVICHELOVEKAN.jpeg">
                 </a>
               </div>
           <br><br><br><br><br><br><br><br><br><br>
@@ -1737,6 +1875,10 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
           <div id="Contributor-Image-1_NOVICHELOVEKAN"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/7nov/Contributor-Image-1_NOVICHELOVEKAN.jpeg">
           </div>
       </a>            
+      <a href="#" class="JesterBox">
+          <div id="Contributor_Image_2_NOVICHELOVEKAN"><img loading='lazy' style="display: inline-block; margin-left: auto; margin-right: auto; width: 100%; height: 100%; position: relative; object-fit: contain;" src="./data/7nov/Contributor_Image_2_NOVICHELOVEKAN.jpeg">
+          </div>
+      </a>            
 </div>
 
 
@@ -1748,6 +1890,7 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
 
 
 <div id="sketch8" style="display: none;">
+  <div id="bgr8" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0; background-color: #feffff;"></div>    
     <div style="visibility: visible;">  
         <iframe id="8pal" loading=lazy style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" title="A 3D model" width="640" height="480" src="https://sketchfab.com/models/44b94e7c73a44de09e84631d06a8486f/embed?autostart=1&amp;ui_controls=1&amp;ui_infos=1&amp;ui_inspector=1&amp;ui_stop=1&amp;ui_watermark=1&amp;ui_watermark_link=1" 
     srcdoc="<a href=https://sketchfab.com/models/44b94e7c73a44de09e84631d06a8486f/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>"     
@@ -1758,7 +1901,7 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
 
 
     <div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:5%; top:20%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
-      <div style="position: absolute; top: 2rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
+      <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
       <h3>
         <p style="text-align: center;">Palimpsestia</p>
         When you enter the exhibition of Palimpsestia, you might rejoice in observing, and absorbing, the gargantuan amount of information that is available to you: models from previous editions are layered on top of each other, projectors of different ages casting images and shadows over a compound alloy of information panels, and scaled prototypes of different eras. This Biennial, unique among architectural events, remains a favorite among the cognoscenti: now on its twenty-third edition, Palimpsestia's only policy, and its most distinguishing feature, is that all of which is exhibited (models, projectors, television screens, and media players, and countless other devices that have been used by architects and curators to express ideas of space and light) remains wedged in their position, permanently. Curators and presenters of Palimpsestia have to address not only their curatorial pursuits but also the context in which they are presented.<br>
@@ -1857,6 +2000,7 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
 
 
 <div id="sketch9" style="display: none;">
+  <div id="bgr9" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0; background-color: #feffff;"></div>    
     <div style="visibility: visible;">  
     <iframe id="9pue" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/aad283079c7049f0810a011f24f0b937/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" 
   srcdoc="<a href=https://sketchfab.com/models/aad283079c7049f0810a011f24f0b937/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>"   
@@ -1883,7 +2027,7 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
 
 
 <div class="lefttext" style="position:fixed; width:23rem; height: 28rem; right:5%; top:30%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
-      <div style="position: absolute; top: 2rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
+      <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
       <h3>
         <p style="text-align: center;">Puerrilia</p>
         Puerilia welcomes two types of audiences: children or adults. The Biennial displays one face to adults and a different one to children, who curate the event and produce the content. When a mature visitor sees, in the roughness of the warehouse, the pinnacles of the cakes and sweets come into view, the diary-looking pamphlets, the early adolescence reminiscent collages, the girly bedroom corners, he thinks of an unusual birthday party; he knows it is a Biennial, but he thinks of it as a vessel to enjoy frivolous youthful celebrations, a playground about to cast off, lifted by pastel-toned balloons, or a cute gathering for handicrafts, innocent and naive; and he thinks of the peach times of his childhood, the memories of the toy cranes unloaded on the docks, but also the city outside the Biennial, where crews of different background break bottles over one another's heads, the Reality. In the warehouse hall, children discern the form of the unapologetic party of Puerilia, an embroidered mixture of glittering fringes and activist toolkits, unashamedly overlapped; they know it is a Biennial, but they think of it as a multitude of matters to be used, broken, hacked, decorated, and already they see themselves as the head of an afternoon climate strike, or eating cakes and exchanging friendly suggestions in the cozy corners, among DIY necklaces with the names of their new loves and earth charter manuals to discuss new forms of citizenships. They lay on the floor where young girls are dancing barefoot, moving their arms, with hand made crowns made of daisies in their hair.<br>
@@ -1908,14 +2052,22 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
         <span style="font-family: 'EB Garamond', serif; font-style: italic;"><span style="font-weight: bold;">Araks Sahakyan</span> is a multidisciplinary artist, researcher and translator based in Paris.<br>
         <a style="color: #201d1d; text-decoration: none;" target="_blank" href="https://www.papercarpets.com/en">https://www.papercarpets.com/en</a><br></span>
         <br>
+              <div style="width:100%;">
+                <a href="#Contributor-Image_PUERILIA_Araks-Sahakyan---Birthday-photo_Courtesy-of-the-artist"><img loading='lazy' style="position:absolute; width:93%; object-fit: cover;" src="./data/9puer/Contributor-Image_PUERILIA_Araks-Sahakyan---Birthday-photo_Courtesy-of-the-artist.jpg">
+                </a>
+              </div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+        <span style="display: inline-block; text-align: right;">
         “When we are unhappy, we are afraid of pleasure.
         Not only do we not have the desire for pleasure,
-        but we are ashamed of the idea of ​​having pleasure.”
+        but we are ashamed of the idea of ​​having pleasure.”<br>
         Boris Cyrulnik<br>
         <br>
         “and that child they buried this morning cried so much
-        it was necessary to call out the dogs to keep him quiet.”
-        Federico García Lorca<br>
+        it was necessary to call out the dogs to keep him quiet.”<br>
+        Federico García Lorca<br></span>
+        <br>
         <br>
         One day per year, the birth of a being is celebrated, and turning six is ​​an important event in one’s life. It is a turning point where the child starts school, enters into the ranks and statistics of "passes" and "fails". Progressively, this being stops wondering about the invention of butterflies, communicating with a ladybug, sending messages with paper airplanes, or creating earrings with a couple of cherries. Thus, the autocracy of adult wishes is imposed.<br>
         <br>
@@ -1931,11 +2083,6 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
         <br>
         Turning six is ​​an important event in one’s life. From the age of six, the child starts school, enters into the ranks and statistics of "passes" and "fails", into the dictatorship of adult desires. The child begins to repress his own pleasures. The child begins to obey this other repressed child, which is the adult. However, what is the right of the adult to take away the imagination of a child? As if that adult knew about the invention of butterflies, as if he knew about the way to talk to a ladybug, about sending messages with paper airplanes, about creating earrings with a couple of cherries... As if that adult knew that it is not necessary for the mechanics to move a car, as if that adult knew that religions or ideologies are not indispensable to answer to universes mysteries and know what is wrong or what is right, because the child has its own way to understand the world and just by the gesture of removing the petals of a flower will get an answer to all the questions.<br>
         <br>
-              <div style="width:100%;">
-                <a href="#Contributor-Image_PUERILIA_Araks-Sahakyan---Birthday-photo_Courtesy-of-the-artist"><img loading='lazy' style="position:absolute; width:93%; object-fit: cover;" src="./data/9puer/Contributor-Image_PUERILIA_Araks-Sahakyan---Birthday-photo_Courtesy-of-the-artist.jpg">
-                </a>
-              </div>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
               <div style="width:100%;">
                 <a href="#Contributor-Image_PUERILIA_Araks-Sahakyan---Fragmentation-Birthday_Courtesy-of-the-artist"><img loading='lazy' style="position:absolute; width:93%; object-fit: cover;" src="./data/9puer/Contributor-Image_PUERILIA_Araks-Sahakyan---Fragmentation-Birthday_Courtesy-of-the-artist.JPG">
                 </a>
@@ -1998,6 +2145,7 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
 
 
 <div id="sketch10" style="display: none;">
+  <div id="bgr10" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0; background-color: #feffff;"></div>    
     <div style="visibility: visible;">  
     <iframe id="10ref" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/fa442c6a71534ecb8a590d41369c1509/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" 
 srcdoc="<a href=https://sketchfab.com/models/fa442c6a71534ecb8a590d41369c1509/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>"   
@@ -2022,7 +2170,7 @@ srcdoc="<a href=https://sketchfab.com/models/fa442c6a71534ecb8a590d41369c1509/em
 
 
 <div class="lefttext" style="position:fixed; width:23rem; height: 28rem; right:20%; top:10%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
-      <div style="position: absolute; top: 2rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
+      <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
       <h3>
         <p style="text-align: center;">Referenda</p>
           <br>         
@@ -2044,33 +2192,23 @@ srcdoc="<a href=https://sketchfab.com/models/fa442c6a71534ecb8a590d41369c1509/em
     position:fixed; width:16rem; height: 22rem; left:5%; bottom:5%; background-color: white; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #201d1d; background-size: cover; background-image: url(./data/10ref/Contributor_Background_DEMOCRATICA.jpg);">
       <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem; background-color: rgba(255,255,255,0.5); padding-left: 0.5rem; padding-right: 0.5rem;">
       <h4>
+        <span style="text-align: center;">
+        The Biennial of Chaotic Maybe<br>
+        </span>
+        <br>
         <span style="font-family: 'EB Garamond', serif; font-style: italic;"><span style="font-weight: bold;">
-          Shumi Bose</span> is a teacher, curator, and editor based
-          on London. She is a senior lecturer in architecture at
-          Central Saint Martins and curator of exhibitions at
-          the Royal Institute of British Architects.<br></span>
+          Matīss Groskaufmanis</span> is an architect and educator, based at the Aarhus School of Architecture. His research and design work examines architecture’s relationship to economies of production, with a particular focus on the management of design practice.<br>
+          <a style="text-decoration: none; color: #201d1d;" target="_blank" href="https://matiss.work/">www.matiss.work</a><br>
+        </span>
           <br>
-          Referenda<br>
+          By design, most forms of participation have their limitations. Often these are set by someone or something. As the walled garden of Venice’s Giardini is limited in its space to a small number of world nations to exhibit whatever they like, a project can be participative only for those who are granted the opportunity to take part, and have the means to do so. Participation needs time, stamina, and a set of skills—the possession of these entail a degree of privilege, especially in today’s accelerating pace of life and the infinite array of choices imposed by the mechanisms of the market and the state. Aside from the debate about the extent to which a fully horizontal participation is possible in practice, and in which circumstances that would be desirable, perhaps it is more productive to ask—what can a flat organizational model produce, provoke, and reveal?<br>
           <br>
-          This will be Shumi’s text when it is
-          finished. This will be Shumi’s text when
-          it is finished. This will be Shumi’s text
-          when it is finished. This will be Shumi’s<br>
+          The market rewards efficiency, and this is achieved through organization and compression. Managing the vast majority of complex processes requires some division of labor, where tasks are delegated, and hierarchies created. These hierarchies, then, require coordination and planning so that the production schedules and deadlines are met. Time is money, efficiency is life, and organization is value—this is no less true to the sphere of cultural production, such as the making of a biennale, where the pressures of creative output, financial resource allocation, and time schedules all go hand in hand. Whether taking place online or in-real-life, the smooth circulation of cultural capital requires the knowledge to be compressed, and hence reduced. Uncertain volumes of world-complexity are flattened into circulation-friendly units of knowledge and objects, think-pieces, five-minute video reels, press releases, Instas, Snaps, and TikToks.<br>
           <br>
-          text when it is finished. This will be Shu-
-          mi’s text when it is finished. This will be<br>
+          In this regard, perhaps a hyper-participative model can serve as a means of building up friction against these smooth flows of cultural capital. Perhaps, this is where the true potential of Referenda is located. Rather than reenacting an idealized decision making ritual belonging to the western mythology, perhaps the biennial should be seen as a perpetually unfinished project, where the absence of any hierarchy constitutes not only the means but also the end goal. Instead of signaling the virtues of inclusive decision making, the plural process reveals the complexities and contradictions of today’s world. Lacking an overall objective, well-meaning but disorganized, Referenda is an inefficient, slow, and messy version of “chaotic good”. The decision making process is too “cringe” to ever be finished, and too “based” to be canceled, so the preparation of the event goes on indefinitely. All of this ensures that no part of Referenda could ever be converted into marketable units of cultural capital—no press images, no catalog, no ribbons to cut.<br>
           <br>
-          Shumi’s text when it is finished. This will
-          be Shumi’s text when it is finished. This
-          will be Shumi’s text when it is finished.
-          This will be Shumi’s text when it is
-          finished. This will be Shumi’s text when
-          it is finished. This will be Shumi’s text
-          when it is finished. This will be Shumi’s<br>
-          <br>
-          text when it is finished. This will be Shu-
-          mi’s text when it is finished.<br>
-          <br>
+          Devoid of managerial oversight, it is not unlikely that Referenda will not be finished at its opening date. Most of the audience will arrive one day before the opening, only to find the exhibition venue littered with coffee cups, leftovers of on-site catering, half-unboxed shipments, and an insurmountable amount of post-it notes, covering all available vertical surfaces. The place will be abuzz with fatigued yet passionate groups of people discussing, Zooming, deliberating, and trying things out. In the search for a broad consensus, things will be done and undone on a regular basis. Some parts of the exhibition will look spectacular and complete, while others—half-finished or not present at all. However, the biennial as a finished cultural product will be nowhere in sight. Like an eternal flame, the bi-annual event will have turned into a long-form performance and a permanent tourist attraction, rated on TripAdvisor at 3.9 of 5.<br>
+
       </h4>
       </div>
     </div>
@@ -2119,6 +2257,7 @@ srcdoc="<a href=https://sketchfab.com/models/fa442c6a71534ecb8a590d41369c1509/em
 
 
 <div id="sketch11" style="display: none;">
+  <div id="bgr11" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0; background-color: #feffff;"></div>    
     <div style="visibility: visible;">  
     <iframe id="11rex" style="position:fixed; top:0; left:0; bottom:0; right:0; width:100%; height:100%; border:none; margin:0; padding:0; overflow:hidden; z-index:0;" width="640" height="480" src="https://sketchfab.com/models/447c848774524f669d41c672105f04df/embed?autostart=1&amp;camera=0&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0" 
 srcdoc="<a href=https://sketchfab.com/models/447c848774524f669d41c672105f04df/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>" 
@@ -2144,7 +2283,7 @@ srcdoc="<a href=https://sketchfab.com/models/447c848774524f669d41c672105f04df/em
 
 
 <div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:10%; bottom:10%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
-      <div style="position: absolute; top: 2rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
+      <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
       <h3>
         <p style="text-align: center;">Rexia</p>
           <br>
