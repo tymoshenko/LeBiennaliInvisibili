@@ -51,10 +51,25 @@ h2 {
 h3 {
 /*left-text*/
   font-size: 1rem;
+  font-weight: normal;
 }
 h4 {
 /*contributors-frame*/
   font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.like-h4 {
+/*contributors-frame*/
+  font-size: 0.8rem;
+  font-weight: normal;
+}
+
+.like-h3 {
+/*left-text*/
+  font-size: 1rem;
+  font-weight: normal;
+  line-height: 1.2;
 }
 
 
@@ -371,8 +386,8 @@ html {
 
 <div style="cursor: pointer;" onclick="showMainPage(); closeMenu();">
 <span style="font-weight: bold;">Le<br></span>
-<span style="font-style: italic;">Biennali<br></span>
-Invisibili<br></div>
+<span style="font-style: italic;">&nbsp;&nbsp;&nbsp;&nbsp;Biennali<br></span>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Invisibili<br></div>
 <br>
 <div style="cursor: pointer;" onclick="showSketch1(); closeMenu();">
 <span style="font-weight: bold;">Bottavia<br></span>
@@ -696,10 +711,11 @@ With Georg Seeßlen<br></div>
 
 
 
-    <div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:5%; top:15%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
+    <div class="lefttext" style="position:fixed; width:23rem; height: 27.5rem; left:5%; top:15%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
       <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem; line-height: 1.2; font-family: 'EB Garamond';">
-      <h3>
-        <p style="text-align: center;">Bottavia</p>
+      <div class="like-h3">
+        
+        <div style="text-align: center;">Bottavia</div>
           <br>         
           In Bottavia, which includes contributions both from north and south, with installations, photography, models, artifacts, and so on, there is a script through which you can sense how the Biennial takes form. At first sight, nothing seems to resemble Bottavia’s Biennial less than the machinery that runs the script itself, racks of CPUs and wires whose patterns are repeated along straight and circular lines, interwoven with brilliantly coloured spires, in a repetition that can be followed throughout the whole system. But if you pause and examine its open code carefully, you become convinced that each operation performed by the script has its own objective in the almost infinite process of pre-selection of the artists, from literary anywhere, and all the things contained in the Biennial are related to some hidden affinity, arranged according to their somehow “true” relationship, which escapes your eye distracted by the bustle, the throngs, the shoving. <br>
           <br>
@@ -708,20 +724,20 @@ With Georg Seeßlen<br></div>
           An AI geek was questioned about the mysterious bond between two objects so dissimilar as the structure of the script and its curatorial concept. One of the two objects -he replied- has the form the big data gave to the internet itself in which the worlds embody their virtual counterparts; the other is an approximate reflection, like any automatic creation. For some time the augurs had been sure that the script's harmonious machine learning routines were of a new generation that the world had yet to understand. The geek was interpreted in this sense, arousing no controversy. But you could, similarly, come to the opposite conclusion: that a truly unbiased map of the universe is the Biennial of Bottavia, just as it is, a stain that spreads out shapelessly, with crooked links, contents that crumble one upon the other amid clouds of data, streams, screams in the darkness.<br>
           <br>
         <br>
-      </h3>
+      </div>
     </div>
     </div>
 
 
     <div class="Contributors_Frame" onmouseover="contributors_FrameUp()" onmouseout="contributors_FrameDown()" style="font-family:Hack-Regular;position:fixed; width:20rem; height: 20rem; right:5%; top:30%; background-color: #201d1d; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #ffffff; background-size: cover;">
       <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem;">
-      <h4>      
+      <div class="like-h4">      
           <!-- #67d8ef; #f92472; #e7db74;-->
           <span style="color: #df2fcb;">Conversation</span> between <span style="color: #22fafa;">Merve Bedir</span> and <span style="color: #22fafa;">Bager Akbay</span><br>
           <br>
           <span style="font-family: 'EB Garamond', serif; font-style: italic;"><span style="font-weight: bold;">
-          Merve Bedir is an architect based in Hong Kong. She works at the intersection of the technologies of labour, landscape, mobility, and commons. <a style="text-decoration: none; color:#ffffff;" target="_blank" href="https://www.aformalacademy.com/">https://www.aformalacademy.com/</a> & <a style="text-decoration: none; color:#ffffff;" target="_blank"  href="http://landandcc.com/"> http://landandcc.com/ </a><br>
-          Bager Akbay is an artist-as-researcher based in Istanbul.<br></span></span>
+          Merve Bedir</span> is an architect based in Hong Kong. She works at the intersection of the technologies of labour, landscape, mobility, and commons. <a style="text-decoration: none; color:#ffffff;" target="_blank" href="https://www.aformalacademy.com/">https://www.aformalacademy.com/</a> & <a style="text-decoration: none; color:#ffffff;" target="_blank"  href="http://landandcc.com/"> http://landandcc.com/ </a><br>
+          Bager Akbay is an artist-as-researcher based in Istanbul.<br></span>
           <br>
           <span style="color: #22fafa;">Merve Bedir:</span> I research the <a style="text-decoration: none; color:#e7db74;" target="_blank"  href="https://automated-landscapes.hetnieuweinstituut.nl/en/https%3A/automated-landscapes.hetnieuweinstituut.nl/research/automated-landscapes-pearl-river-delta">automation of labor</a> in the factories of Pearl River Delta region, as well as an unrealized 2018 Hong Kong Biennale exhibition proposal called "Collective Intelligence," where we wanted to research the coalescing forms of intelligence among peoples and nonhumans. For this conversation with you as a joint contribution to the Invisible Biennale exhibition, my interests were your former works "Deniz Yılmaz" (bot poet) and "Shepherd" (bot curator). Shepherd, especially, as a metaphor for the curator fascinates me. Shepherd is the one who cares and is responsible for the herd.<br>
           <br>
@@ -759,7 +775,7 @@ With Georg Seeßlen<br></div>
           <br>
 
 
-      </h4>
+      </div>
       </div>
     </div>
 
@@ -817,10 +833,11 @@ With Georg Seeßlen<br></div>
 
 
     
-    <div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:5%; bottom: 5%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
+    <div class="lefttext" style="position:fixed; width:23rem; height: 27.5rem; left:5%; bottom: 5%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
       <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
-      <h3>
-        <p style="text-align: center;">Canonice</p>
+      <div class="like-h3">
+
+        <div style="text-align: center;">Canonice</div>
             <br>
             Never in all my travels had I ventured as far as the Triennale of Canonice. It was dusk when I landed there. At the entrance of the main venue, the assistant curator who welcomed me with the catalog in his hands, “the Architecture we have always Built”, resembled a professor who had taught me 30 years before and was dead. I was invited to tour the exhibition and, at the same time, to examine some old publications to understand how the show used to be: the same plans and sections in black and white instead of more saturated colours, a hand-carved timber model instead of gently CNC milled, another model to contemplate the coherence and poetry of a space instead of trendy collages. To not disappoint the curators, you must praise the old publications together with the current one, and you must be careful to contain your regret at the absence of any significant change: highlighting in your dialogues the eternal relevance of architectural fundamentals, the indisputable role of architecture drawings, the unquestionable methodologies of architectural design and the unmissable role of architectural references, you need to express a contained but visible excitement for the epidermal deviations from the canon, praising their foresight and the progeny of the canon in all the corners of the kingdom. If Canonice had remained unchanged because this is its own true skin or the mask it is convenient to wear, I don’t know, and nobody in the kingdom dares to guess.<br> 
             <br>
@@ -828,7 +845,7 @@ With Georg Seeßlen<br></div>
             <br>
             An elegant architect was scrupulously cleaning a diorama with miniature velvet curtains, to arrange it on a table together with other models of the same kind. He raised his face: he was Aldo Rossi. I thought: "You reach a moment in life when, among the people that inspire your work, the dead outnumber the living. And the mind refuses to accept new paradigms and new expressions: on every new work you start, it tries to print the old forms, to each one it finds the most suitable mask." Perhaps, to him, I also resemble someone who was dead. I had barely arrived at Canonice and I was already one of them, I had gone over to their side, absorbed in that kaleidoscope of line-weight, solid timber, plaster casts. I thought: "Perhaps Canonice is the Triennale where you arrive dying and where each finds again the masters he has known. This means I, too, am dead." And I also thought: "This means the beyond is not necessarily new."<br>
         <br>
-      </h3>
+      </div>
     </div>
     </div>
 
@@ -840,8 +857,8 @@ With Georg Seeßlen<br></div>
     <div class="Contributors_Frame" onmouseover="contributors_FrameUp()" onmouseout="contributors_FrameDown()" style="
     font-family: 'Courier1'; position:fixed; width:21rem; height: 28rem; right:5%; top:20%; border: solid; border-color: #a5d1a9; border-width: 0; background-color: white; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #151617; background-size: cover; background-image: url(./data/2can/Contributor_Background_CANONICE.jpg);">
       <div style="position: absolute; overflow: scroll; top: 2rem; bottom: 2rem; right: 2rem; left: 2rem; color:#803025; background-color:rgba(255,255,255,0.5); text-align: justify; text-justify: inter-word; padding: 0.8rem 2rem 0.8rem 2rem;">
-      <h4>
-          
+      <div class="like-h4">
+          <br>
           <div style="text-align: center;">The Wall</div>
           <br>
           <span style="font-style: italic; font-family: 'EB Garamond'; "><span style="font-weight: bold;">Sabina Shikhlinskaya</span> - artist, independent curator, educator. She explores multimedia practices, creating art works with the priority of social subjects. <a style="text-decoration: none; color:#803025;" target="_blank"   href="http://sabinashikhlinskaya.info/">http://sabinashikhlinskaya.info/</a></span>
@@ -1008,7 +1025,7 @@ With Georg Seeßlen<br></div>
                 </a>
               </div>
           <br><br><br><br><br><br><br><br><br>                                                                                                                                                                                        
-      </h4>
+      </div>
       </div>
     </div>
 
@@ -1199,11 +1216,12 @@ With Georg Seeßlen<br></div>
   </div>
 
 
-<div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:45%; bottom: 10%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
-      <div style="position: absolute; top: 3rem; bottom: 4rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
-      <h3>
-        <p style="text-align: center;">Eccessa</p>
-            <br>
+<div class="lefttext" style="position:fixed; width:23rem; height: 27.5rem; left:45%; bottom: 10%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
+      <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
+      <div class="like-h3">
+
+           <div style="text-align: center;">Eccessa
+            <br></div><br>
             There are many ways of describing the Biennial of Eccessa: you can say that four gilded masts rise from the glazed facade flanking seven arches with gracefully saluting doormen that connect the halls whose marble floors feed four arcades which cross the Biennial, dividing it into nine spaces, each with three hundred pavilions and seven hundred projects. And bearing in mind that the attentive entrepreneurs of each pavilion cooperate with their counterparts of other quarters and their managers exchange the assets that each investor aims to secure - sculptures, paintings, installations, prototypes, or anything else - you can then work from these facts until you trace everyone who made some profit out of the Biennial in the past, present, and future, its organizers, contributors, collaborators or even a simple layman.<br>
             <br>
             Or else you can say, like the sponsor curator who took me there: "I arrived here with my first press card, one morning, many people were hurrying along the escalators toward the demonstration stage, the MC had a guest list and called you by your name, three stewardesses on a platform handed catalogs, and all-around screens flickered and promotional pitches echo in the halls. Before then I had seen many other strategies in play here since the remote times of the old gallery district and the annual ‘Tours des Vernissages’ concluded at Hotel Bauer. In the years that followed, my eyes returned to contemplate the gallery district expanse and the exhibition routes; but now I know this hall is only one of the many that opened before me on that morning in Eccessa."<br>
@@ -1211,7 +1229,7 @@ With Georg Seeßlen<br></div>
             But with all this, I would not be telling you the Biennial's true essence; for while the description of Eccessa unveils business strategies one at a time only to force you to stifle them; when you are in the heart of Eccessa one morning the opportunities waken all at once and surround you. The Biennial appears to you as a whole where no investment is lost and of which you are a part, and since it generates profit from everything at every level, you can do nothing but deep dive into this excitement and be content. Such is the power, sometimes called malignant, sometimes benign, that Eccessa, the shrewd Biennial, possesses; if for eight hours a day you work as an artist, a curator, or a simple collaborator, your labor which gives form to the initiative takes from the investment itself its form, and you believe you are enjoying Eccessa wholly only when you are effectively part of its success.<br>
 
         <br>
-      </h3>
+      </div>
     </div>
     </div>
 
@@ -1220,7 +1238,8 @@ With Georg Seeßlen<br></div>
     font-style: italic; font-family: 'EB Garamond';
     position:fixed; width:16rem; height: 20rem; left: 2.5%; top:10%; border: solid; border-color: #a5d1a9; border-width: 0; background-color: white; z-index: 0; padding: 0.8rem 0.4rem 0.8rem 0.4rem; color: #201d1d; background-size: cover; background-image: url(./data/3ecc/Contributor_Background_ECCESSA.jpg);">
       <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem; background-color: rgba(255, 255, 255, 0.5); text-justify: inter-word;">
-      <h4 style="padding-left: 0.4rem; padding-right: 0.4rem;">
+      <div class="like-h4" style="padding-left: 0.4rem; padding-right: 0.4rem;">
+        <br>
       <span style="font-weight: bold;">Nora Akawi</span> is a Palestinian architect teaching at The Cooper Union. She studies architecture as a project of erasure and exclusion in settler colonialism. Eduardo Rega is a Canarian architect teaching at UPenn. He studies architectures of social movements that refuse the capitalist world order. <a style="text-decoration: none; color: #201d1d;" target="_blank" href="https://www.architecturesofrefusal.org/"> https://www.architecturesofrefusal.org/</a>
       <br>
       <br>
@@ -1238,7 +1257,7 @@ With Georg Seeßlen<br></div>
       </a>
     </div>
       <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-      </h4>
+      </div>
       </div>
     </div>
 
@@ -1329,10 +1348,11 @@ With Georg Seeßlen<br></div>
 
 
 
-<div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:5%; top:10%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
+<div class="lefttext" style="position:fixed; width:23rem; height: 27.5rem; left:5%; top:10%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
       <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
-      <h3>
-        <p style="text-align: center;">Evenia</p>
+      <div class="like-h3">
+
+        <div style="text-align: center;">Evenia</div>
             <br>
             Proceeding eighty miles into the northwest wind, you reach the Quadriennale of Evenia, where the artists of seven nations gather at every spring equinox of a leap year. The boat that lands there with a cargo of props, prints, and paraphernalia will sail again the following day, its hold filled with stories and experiences, and the caravan that has just unloaded sacks of unique tote bags is already cramming its saddlebags with content to be published and shared on the return journey. But what drives men to travel up rivers and cross deserts to come here, for just one day, is not only the display of artworks, which you could find, everywhere the same, in all the galleries inside and outside the region, scattered at your feet on the same polished floor, in the shade of the same awnings protecting them from the cameras of the passersby. Whether Evenia Quadriennale is like this because it lasts the blink of an eye or because of its unmatched exclusivity, whether the cause is some enchantment or only a whim, I do not know. The fact remains that it has no venues, no pavilions, no conference halls: it has nothing that makes it seem like a biennial, except the Party, that lasts until sunrise.<br>
             <br>
@@ -1340,7 +1360,7 @@ With Georg Seeßlen<br></div>
             <br>
             Evenia's secret lies in the way your gaze runs over stories following one another, and those stories will multiply and resonate to each other: each word that one says -such as "performance," "installation," "hidden treasure," "battle," "videographer," "lovers"- the others tell, each one, his tale of performances, installations, videographers, treasures, lovers, battles. And you know that in the long journey ahead of you, when staying awake against the train’s gentle rocking, you start summoning up your stories one by one, in the mist of social media. Your performance will have become another performance, your videographer a different videographer, your battle other battles, and the larger audience anywhere will experience, through every shared performance, every shared videographer, every shared battle, the greatness of Evenia, the Quadriennale where stories are traded at every spring equinox of a leap year.<br>
             <br>
-      </h3>
+      </div>
     </div>
     </div>
 
@@ -1349,7 +1369,8 @@ With Georg Seeßlen<br></div>
     font-family: 'Special Elite', cursive;
     position:fixed; width:16rem; height: 21rem; right:2%; bottom: 10%; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #201d1d; background-color: blue; background-image: url(./data/4eve/Contributor_Background_EVENIA.jpg); background-size: cover;">
       <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem; background-color: rgba(255,255,255,0.5); padding-left: 0.5rem; padding-right: 0.5rem; color:#201d1d;">
-      <h4>
+      <div class="like-h4">
+        <br>
           <span style="font-family: 'EB Garamond', serif; font-style: italic;"><span style="font-weight: bold;">Sofia Pia Belenky</span> is a designer currently based in Milan, Italy. Her work with Space Caviar uses built work, event, exhibition design, research and film as forms of an extended mode of architectural practice. <a style="text-decoration: none; color: #201d1d;" target="_blank" href="http://spacecaviar.net"> spacecaviar.net</a></span><br>
           <br>
         <span style="font-family: 'CONSOLA', 'Inconsolata', monospace;">
@@ -1373,7 +1394,7 @@ With Georg Seeßlen<br></div>
           <br>
           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
         </span>
-      </h4>
+      </div>
       </div>
     </div>
 
@@ -1450,10 +1471,11 @@ With Georg Seeßlen<br></div>
   </div>
 
 
-<div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:5%; bottom:5%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
+<div class="lefttext" style="position:fixed; width:23rem; height: 27.5rem; left:5%; bottom:5%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
       <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
-      <h3>
-        <p style="text-align: center;">Generica</p>
+      <div class="like-h3">
+        
+        <div style="text-align: center;">Generica</div>
           <br>
           Passing six ministries and three parking lots rises Generica, a Biennial that no one, having seen it, can forget. But not because, like other memorable Biennials, it leaves an unusual image in your recollections. Generica has the quality of remaining in your memory point by point, in its succession of enfilades, of rooms along the enfilades, and plaques and bronze signages in the rooms, though nothing in them possesses a special kind of beauty or rarity. Generica's secret lies in the way your gaze runs through the enfilade following one room to another as in a musical score where not a note can be altered or displaced. The man who knows by heart how Generica is made, if he is unable to sleep at night, can imagine he is walking through the unaltered rooms and he remembers the order by which the granite stair follows the curator’s dusty office, then the scale model of the Biennial, the receptionist’s desk, the pencil and tote bag kiosk, the faded Biennial catalog on a pedestal, the cleaner’s station, the water tap, the corridor that leads to the exit. <br>
           <br>
@@ -1463,7 +1485,7 @@ With Georg Seeßlen<br></div>
           <br>
 
         <br>
-      </h3>
+      </div>
     </div>
     </div>
 
@@ -1475,7 +1497,8 @@ With Georg Seeßlen<br></div>
                 <a href="#Caribs_Marco_Generica"><img loading='lazy' style="position:absolute; width:100%; object-fit: cover;" src="./data/5gen/Caribs_Marco_Generica.jpg">
                 </a>
               </div>
-        <h4>              
+        <div class="like-h4">
+        <br>              
           <br><br><br><br><br><br><br><br><br>
         <span style="font-family: Helvetica1, 'Roboto', sans-serif;">
           Theodore de Bry (1528-1598)  <br>
@@ -1501,7 +1524,7 @@ With Georg Seeßlen<br></div>
           Very few participants manage to recover, some fall into hard drugs and others into alcoholism, some can recover over the years, but many will never come back to a Biennale, they will disappear forever. <br>
           <br>
         </span>  
-      </h4>
+      </div>
       </div>
     </div>
 
@@ -1582,10 +1605,11 @@ With Georg Seeßlen<br></div>
   </div>  
 
 
-<div class="lefttext" style="position:fixed; width:23rem; height: 28rem; right:5%; bottom:10%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
+<div class="lefttext" style="position:fixed; width:23rem; height: 27.5rem; right:5%; bottom:10%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
       <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
-      <h3>
-        <p style="text-align: center;">Insegna</p>
+      <div class="like-h3">
+
+        <div style="text-align: center;">Insegna</div>
           <br>
           You browse for days among .gifs and thumbnails. Rarely does the eye light on an invitation, and then only when it has recognized that invitation as the sign of another invitation: a print on the screen indicates the pressure/gesture of a hand; a VR headset announces an augmented environment; ambient sunrise, the end of spring. All the rest is silent and interchangeable; wires and remote controls are only what they are. Finally, the journey leads to the virtual Biennial of Insegna. You penetrate it along directories thick with objects and simulations projected on rendered textured surfaces. The eye does not see things but images of things that mean other things: avatars dressed as mascots point out the direction to themes, pavilions, curatorial vision, events; a live video feed broadcasts mute interactions between visitors. <br>
           <br>
@@ -1597,7 +1621,7 @@ With Georg Seeßlen<br></div>
           <br>
 
         <br>
-      </h3>
+      </div>
     </div>
     </div>
 
@@ -1605,7 +1629,8 @@ With Georg Seeßlen<br></div>
     <div class="Contributors_Frame" onmouseover="contributors_FrameUp()" onmouseout="contributors_FrameDown()" style="
     font-family: 'georgia1'; position:fixed; width:20rem; height: 26rem; left:30%; top: 30%; background-color: #feffff; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #201d1d; background-size: cover; background-image: url(./data/6ins/Contributor_Background_INSEGNA.jpg);">
       <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem; background-color: rgba(255,255,255,0.5); padding-left: 0.5rem; padding-right: 0.5rem;">
-      <h4>
+      <div class="like-h4">
+        <br>
         <span style="font-family: 'EB Garamond', serif; font-style: italic;"><span style="font-weight: bold;">  
           Gili Merin</span> is an architect, photographer, and Ph.D. candidate at the AA (London), where she is also a Diploma Unit Master. <a style="text-decoration: none; color:#201d1d;" href="www.gilimerin.com">www.gilimerin.com</a><br></span>
           <br>
@@ -1667,7 +1692,7 @@ With Georg Seeßlen<br></div>
           <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
           The systematization of the Stations and crystallization of the path allowed its replicability across Europe. Finally, it was imported to Jerusalem itself, where the Stational ritual was born but never fully realized. There, in Christ’s city, nothing remained but numbers on old-new walls. Overlaid on a city fabric where religions have coexisted for millennia, the Passionate route remains but a floating sign amongst the city’s many. <br>
 
-      </h4>
+      </div>
       </div>
     </div>
 
@@ -1775,10 +1800,11 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
 
 
 
-<div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:40%; top:20%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
+<div class="lefttext" style="position:fixed; width:23rem; height: 27.5rem; left:40%; top:20%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
       <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
-      <h3>
-        <p style="text-align: center;">Novichelovekan</p>
+      <div class="like-h3">
+        
+        <div style="text-align: center;">Novichelovekan</div>
           <br>
           The Lilliputian town of Novichelovekan, otherwise a lethargic byzantine settlement in a placid wine-producing region, up in the mountains, had gained notoriety in recent years as an incipient hotspot for incipient artists. The Picassos of tomorrow gathered together in a city of yesteryear. Whereas aforetime, adventurous collectors, thirsty gallerists, and experimental patrons would go on a grand tour, visiting the degree shows of different art academies around the world whilst scouting for new artists that they could acquire into their collection, for the past decennium, over the course of five very prosperous editions, the Biennial of Novichelovekan -the BoN as it had come to be known-, had concentrated the most promising new talent. Since its very origins, the BoN had a very limpid curatorial line: with every edition, everyone involved in the production of that Biennial had to be absolutely novel to the art world. No precedent group or solo shows, no former curatorial internships, no prior exhibition design experience. A virginal condition, inexperienced, unexposed and callow, that museums curators from all corners of the Earth relished referring to as ‘fresh’. <br>
           <br>
@@ -1794,7 +1820,7 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
           <br>
 
         <br>
-      </h3>
+      </div>
     </div>
     </div>
 
@@ -1803,7 +1829,8 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
     font-family: Tahoma; color:#201d1d; font-weight: normal;
     position:fixed; width:15rem; height: 21rem; right:5%; top: 15%; background-color: #feffff; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #201d1d; background-size: cover; background-image: url(./data/7nov/Contributor_Background_NOVICHELOVEKAN.jpg);">
       <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem; background-color: rgba(255,255,255,0.5); padding-left: 0.5rem;padding-right: 0.5rem;">
-      <h4>
+      <div class="like-h4">
+        <br>
           <span style="font-weight: bold; text-align: center;">365 SO FRESH</span><br>
           <br> 
           <span style="font-family: 'EB Garamond', serif; font-style: italic;"><span style="font-weight: bold;">
@@ -1831,7 +1858,7 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
                 </a>
               </div>
           <br><br><br><br><br><br><br><br><br><br>
-      </h4>
+      </div>
       </div>
     </div>
 
@@ -1902,10 +1929,12 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
 <!-- srcdoc="<a href=https://sketchfab.com/models/44b94e7c73a44de09e84631d06a8486f/embed?autostart=1&amp;ui_controls=0&amp;ui_infos=0&amp;ui_inspector=0&amp;ui_stop=0&amp;ui_watermark=0&amp;ui_watermark_link=0> <span>▶</span></a>"  -->
 
 
-    <div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:5%; top:20%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
+    <div class="lefttext" style="position:fixed; width:23rem; height: 27.5rem; left:5%; top:20%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
       <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
-      <h3>
-        <p style="text-align: center;">Palimpsestia</p>
+      <div class="like-h3">
+        
+        <div style="text-align: center;">Palimpsestia</div>
+        <br>
         When you enter the exhibition of Palimpsestia, you might rejoice in observing, and absorbing, the gargantuan amount of information that is available to you: models from previous editions are layered on top of each other, projectors of different ages casting images and shadows over a compound alloy of information panels, and scaled prototypes of different eras. This Biennial, unique among architectural events, remains a favorite among the cognoscenti: now on its twenty-third edition, Palimpsestia's only policy, and its most distinguishing feature, is that all of which is exhibited (models, projectors, television screens, and media players, and countless other devices that have been used by architects and curators to express ideas of space and light) remains wedged in their position, permanently. Curators and presenters of Palimpsestia have to address not only their curatorial pursuits but also the context in which they are presented.<br>
         <br>
         The cumulative amalgamation of exhibition displays over the years is no stranger to the citizens of Palitomograd, the city that hosts Palimpsestia every two years, who, rather familiar with the amassing ambitions of the Biennial, have seen several of their municipal buildings overflow with exhibition paraphernalia. Worried that Palimpsestia would eventually submerge all of their old palaces, its disused arsenal, libraries, and museums, undercoats of architectural ideas and metaphors, the citizens of Palitomograd voiced their apprehension to the organizers. “What is a delightful archive of the evolution of architectural discourse, a wunderkammer of sorts, to some, is a hoarding threat to others”, I heard many of them repeat to any candid visitor who would listen.<br>
@@ -1914,7 +1943,7 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
         <br>
         To this day, any visitor, whether an expert in Palladio or categorically unfamiliar with the world of architecture, is capable of observing the abundance of space-conscious works, as well as astute exhibition design solutions that support the circulation of visitors among new oeuvres, and their antecedents. Yet, as the years sum up, the sunsets and sunrises accumulate, and the dust settles, as any visitor would tell you, one is left to wonder how many more Palimpsestia editions are left, how many more exhibitions will there be space for?<br>
         <br>
-      </h3>
+      </div>
     </div>
     </div>
 
@@ -1923,7 +1952,8 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
     font-family: myraidpro-regular;
     position:fixed; width:16rem; height: 22rem; right:5%; top:20%; background-color: white; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #201d1d; background-size: cover; background-image: url(./data/8pal/Contributor_Background_PALIMSESTIA.jpg);">
       <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem; background-color: rgba(255,255,255,0.5); padding-left: 0.5rem; padding-left: 0.5rem;">
-      <h4>
+      <div class="like-h4">
+        <br>
           <span style="font-weight: bold;">
           Failed Biennials<br></span>
           <br>
@@ -1943,7 +1973,7 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
           <br>
           As the years pass and one edition of the Biennial follows the other in different parts of the world this idea of creating an event in such a manner slowly becomes absurd. One might say that the concept of the “ Biennials” as we know it is already fading away. A progressive revival of the concept is urgently needed, and anything else in our society “Biennials” should also reflect the current environmental and urban state we live in.<br>
           <br>
-      </h4>
+      </div>
       </div>
     </div>
 
@@ -2028,17 +2058,19 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
   </div>  
 
 
-<div class="lefttext" style="position:fixed; width:23rem; height: 28rem; right:5%; top:30%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
+<div class="lefttext" style="position:fixed; width:23rem; height: 27.5rem; right:5%; top:30%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
       <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
-      <h3>
-        <p style="text-align: center;">Puerrilia</p>
+      <div class="like-h3">
+        
+        <div style="text-align: center;">Puerrilia</div>
+        <br>
         Puerilia welcomes two types of audiences: children or adults. The Biennial displays one face to adults and a different one to children, who curate the event and produce the content. When a mature visitor sees, in the roughness of the warehouse, the pinnacles of the cakes and sweets come into view, the diary-looking pamphlets, the early adolescence reminiscent collages, the girly bedroom corners, he thinks of an unusual birthday party; he knows it is a Biennial, but he thinks of it as a vessel to enjoy frivolous youthful celebrations, a playground about to cast off, lifted by pastel-toned balloons, or a cute gathering for handicrafts, innocent and naive; and he thinks of the peach times of his childhood, the memories of the toy cranes unloaded on the docks, but also the city outside the Biennial, where crews of different background break bottles over one another's heads, the Reality. In the warehouse hall, children discern the form of the unapologetic party of Puerilia, an embroidered mixture of glittering fringes and activist toolkits, unashamedly overlapped; they know it is a Biennial, but they think of it as a multitude of matters to be used, broken, hacked, decorated, and already they see themselves as the head of an afternoon climate strike, or eating cakes and exchanging friendly suggestions in the cozy corners, among DIY necklaces with the names of their new loves and earth charter manuals to discuss new forms of citizenships. They lay on the floor where young girls are dancing barefoot, moving their arms, with hand made crowns made of daisies in their hair.<br>
         <br>
         The resulting aesthetic of Puerilia, the assemblage of its decoration, handy works, settings, costumes, food, is unexpectedly refreshing: something off is always present, embraced and multiplied, in a swarm of unstructured contributions. Those works are not manufactured with extreme precision, the settings in which they stand have unclear colour schemes, the cakes, and the other desserts, offered to every visitor, have way too much cream on top, and taste very sweet to a mature palate. The catalog of the current edition, called “Evolving Pains” is intriguingly assembled: contributions flow between mundane and serious matters, politics, dear diary, more than human care, poetry, fun, fiction, everything else.<br>
         <br>
         There are three hypotheses about Lise Anison, Puerilia’s child curator: that she hates the adults; that to keep independence she avoids all contacts, even with her own family; that she is an adult invention and she never existed, and the adults are all behind Puerilia’s success, never tired of praising it, collage by collage, diary by diary, cake by cake, contemplating with fascination their absence. Each Biennial receives its form from the model it opposes; and so we see Puerilia, a Biennial for Children and by Children.<br>
         <br>
-      </h3>
+      </div>
     </div>
     </div>
 
@@ -2048,10 +2080,11 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
     font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded';
     position:fixed; width:16rem; height: 22rem; left:5%; top:20%; background-color: white; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #201d1d; background-size: cover; background-image: url(./data/9puer/Contributor_Background_PUERILIA.jpg);">
       <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem; background-color: rgba(255,255,255,0.5); padding-left: 0.5rem; padding-right: 0.5rem;">
-      <h4>
+      <div class="like-h4">
+        <br>
         The gift, or when the pleasure of eating a piece of birthday cake frightens the child<br>
         <br>
-        <span style="font-family: 'EB Garamond', serif; font-style: italic;"><span style="font-weight: bold;">Araks Sahakyan</span> is a multidisciplinary artist, researcher and translator based in Paris.<br>
+        <span style="font-family: 'EB Garamond', serif; font-style: italic;"><span style="font-weight: bold;">Araks Sahakyan</span> is a multidisciplinary artist, researcher and translator based in Paris. 
         <a style="color: #201d1d; text-decoration: none;" target="_blank" href="https://www.papercarpets.com/en">https://www.papercarpets.com/en</a><br></span>
         <br>
               <div style="width:100%;">
@@ -2090,7 +2123,7 @@ srcdoc="<a href=https://sketchfab.com/models/ff54663308e34b6284f20b2b10fc6e0a/em
                 </a>
               </div>
         <br><br><br><br><br><br><br><br><br>
-      </h4>
+      </div>
       </div>
     </div>
 
@@ -2171,10 +2204,11 @@ srcdoc="<a href=https://sketchfab.com/models/fa442c6a71534ecb8a590d41369c1509/em
   </div>  
 
 
-<div class="lefttext" style="position:fixed; width:23rem; height: 28rem; right:20%; top:10%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
+<div class="lefttext" style="position:fixed; width:23rem; height: 27.5rem; right:20%; top:10%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
       <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
-      <h3>
-        <p style="text-align: center;">Referenda</p>
+      <div class="like-h3">
+        
+        <div style="text-align: center;">Referenda</div>
           <br>         
           The man who is traveling and does not yet know the Biennial awaiting him along his route wonders what the installation will be like, the selected artworks, the curatorial concept, the catalogs, the merchandise. In every kermesse of the empire, the structure to design such events is clear and everybody has its own role, the curator, the assistants, the staff, the artists, the visitors. As soon as the stranger arrives at the unknown event, his eye can penetrate the hierarchy of who is managing and who is displaying, and he immediately distinguishes which works are more beloved and praised, which men are more influential, which topics are more relevant.<br>
           <br>
@@ -2184,7 +2218,7 @@ srcdoc="<a href=https://sketchfab.com/models/fa442c6a71534ecb8a590d41369c1509/em
           <br>
 
         <br>
-      </h3>
+      </div>
     </div>
     </div>
 
@@ -2193,7 +2227,8 @@ srcdoc="<a href=https://sketchfab.com/models/fa442c6a71534ecb8a590d41369c1509/em
     font-family: FuturaPT-Light;
     position:fixed; width:16rem; height: 22rem; left:5%; bottom:5%; background-color: white; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #201d1d; background-size: cover; background-image: url(./data/10ref/Contributor_Background_DEMOCRATICA.jpg);">
       <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem; background-color: rgba(255,255,255,0.5); padding-left: 0.5rem; padding-right: 0.5rem;">
-      <h4>
+      <div class="like-h4">
+        <br>
         <span style="text-align: center;">
         The Biennial of Chaotic Maybe<br>
         </span>
@@ -2211,7 +2246,7 @@ srcdoc="<a href=https://sketchfab.com/models/fa442c6a71534ecb8a590d41369c1509/em
           <br>
           Devoid of managerial oversight, it is not unlikely that Referenda will not be finished at its opening date. Most of the audience will arrive one day before the opening, only to find the exhibition venue littered with coffee cups, leftovers of on-site catering, half-unboxed shipments, and an insurmountable amount of post-it notes, covering all available vertical surfaces. The place will be abuzz with fatigued yet passionate groups of people discussing, Zooming, deliberating, and trying things out. In the search for a broad consensus, things will be done and undone on a regular basis. Some parts of the exhibition will look spectacular and complete, while others—half-finished or not present at all. However, the biennial as a finished cultural product will be nowhere in sight. Like an eternal flame, the bi-annual event will have turned into a long-form performance and a permanent tourist attraction, rated on TripAdvisor at 3.9 of 5.<br>
 
-      </h4>
+      </div>
       </div>
     </div>
 
@@ -2284,10 +2319,11 @@ srcdoc="<a href=https://sketchfab.com/models/447c848774524f669d41c672105f04df/em
 
 
 
-<div class="lefttext" style="position:fixed; width:23rem; height: 28rem; left:10%; bottom:10%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
+<div class="lefttext" style="position:fixed; width:23rem; height: 27.5rem; left:10%; bottom:10%; border: none; background-color: white; padding-left: 0; padding-bottom: 1.5rem; z-index: 0;" onclick="leftTextZindexUp()" onmouseover="leftTextZindexUp()" onmouseout="leftTextZindexDown()">
       <div style="position: absolute; top: 3rem; bottom: 3rem; overflow: scroll; text-align: justify; text-justify: inter-word; padding: 0 3rem;">
-      <h3>
-        <p style="text-align: center;">Rexia</p>
+      <div class="like-h3">
+        
+        <div style="text-align: center;">Rexia</div>
           <br>
           No artistic gathering has a more obscure inception story than that of the Biennial of Rexia, the most ancient of cultural events known to humans. It is no surprise that its origins remain a mystery to many. Everyone concurs that its first edition was nine hundred thirty-two years ago, for there is enough evidence for that claim, but what attendees often seem to forget is that it commenced as a religious pilgrimage event, where artisans from the region of Nackchi, where Rexia took place, would flock to flaunt, flash and emblazon their latest creations and crafts smothered in devotional fervor about God, or the Prophet’s life. Over the centuries, as winds -and their names- changed, earthquakes shivered the Earth, and civilizations rose and fell, Rexia had naturally evolved into an agnostic artistic event, desacralized and emancipated from any religious trace.<br>
           <br>
@@ -2301,7 +2337,7 @@ srcdoc="<a href=https://sketchfab.com/models/447c848774524f669d41c672105f04df/em
           <br>
 
         <br>
-      </h3>
+      </div>
     </div>
     </div>
 
@@ -2311,7 +2347,8 @@ srcdoc="<a href=https://sketchfab.com/models/447c848774524f669d41c672105f04df/em
     font-family: 'Didot', 'Didot-Regular';
     position:fixed; width:16rem; height: 22rem; right:5%; top:10%; background-color: white; z-index: 0; padding: 0.8rem 0.8rem 0.8rem 0.8rem; color: #201d1d; background-size: cover; background-image: url(./data/11rex/Contributor_Background_REXIA.jpg);">
       <div style="position: absolute; overflow: scroll; top: 1rem; bottom: 1rem; right: 1rem; left: 1rem; background-color: rgba(255,255,255,0.5); padding-left: 0.5rem; padding-right: 0.5rem;">
-      <h4>
+      <div class="like-h4">
+        <br>
           REXIA, TOO<br>
           <br>
           <span style="font-family: 'EB Garamond', serif; font-style: italic;"><span style="font-weight: bold;">
@@ -2332,7 +2369,7 @@ srcdoc="<a href=https://sketchfab.com/models/447c848774524f669d41c672105f04df/em
           When the Rexia-mission started, taking 100 000 works of art to post-human eternal life, it left us not only with some kind of transcendental hope but also with a new concept of leadership. Three days after the WARHOLA 1 started its flight, an Icelandic scientist discovered a bug in the algorithm that predicted the end of the world. The big explosion is canceled. Mankind will live on. If only without the 100 000 masterpieces of art, which will live on Rexia, without dust, without humidity, without wind, and without life. Forever and ever and ever and ever and ever… <br>
           <br>
 
-      </h4>
+      </div>
       </div>
     </div>
 
